@@ -23,7 +23,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
+timezone: Asia/Bangkok
+paginate: 5
 # Build settings
 markdown: kramdown
 theme: minima
@@ -32,3 +33,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+future: true
+incremental: true
+port: 3000
+verbose: true
