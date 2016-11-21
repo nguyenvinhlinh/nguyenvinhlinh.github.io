@@ -25,11 +25,14 @@ twitter_username: jekyllrb
 github_username:  jekyll
 timezone: Asia/Bangkok
 paginate: 5
+
 # Build settings
 markdown: kramdown
-theme: minima
+sass:
+  sass_dir: _sass
 gems:
   - jekyll-feed
+  - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
