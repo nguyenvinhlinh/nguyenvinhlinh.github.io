@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Phoenix and using multiple layouts
 date: 2016-01-26 15:30:00
 categories: Phoenix
