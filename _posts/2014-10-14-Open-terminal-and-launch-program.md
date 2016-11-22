@@ -2,7 +2,7 @@
 layout: post
 title: "Run gnome-terminal and open new program"
 date: 2014-10-14 21:55:37
-categories: linux
+categories: Linux
 tags: gnome-terminal, linux
 ---
 This is script which open a new `gnome-terminal` window and automatically run,

@@ -2,7 +2,7 @@
 layout: post
 title: Comparison of LinkList,Tuples, Maps, HashDict and Keyword Comparison in Elixir
 date: 2015-12-01 13:37:56
-categories: etc
+categories: Elixir
 tag: etc
 --- 
 
