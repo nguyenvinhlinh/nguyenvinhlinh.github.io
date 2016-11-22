@@ -230,6 +230,12 @@ div.pagination {
   }
 }
 
+code.highlighter-rouge {
+  color: black;
+  background-color: rgba(225,255,255,0.8);
+  border-radius: 3px;
+}
+
 @media  (max-width: 768px) {
   div.sidebar{
     display: none;
