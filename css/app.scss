@@ -5,6 +5,7 @@ $sidebar-href-color:  #009ECE;
 $background-image-sidebar: url("../image/stardust.png");
 $background-image-content: url("../image/stardust.png");
 $paragraph-color: white;
+$code-highlight-color: #333;
 
 body {
   padding: 0px;
@@ -147,6 +148,9 @@ div.post {
       color: $heading-color;
     }
   }
+  h2 ~ h2{
+    color: $paragraph-color;
+  }
 
   div.date-address-category{
     font-size: 1.2em;
@@ -231,7 +235,7 @@ div.pagination {
 }
 
 code.highlighter-rouge {
-  color: black;
+  color: $code-highlight-color;
   background-color: rgba(225,255,255,0.8);
   border-radius: 3px;
 }
