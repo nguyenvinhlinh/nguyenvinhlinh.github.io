@@ -2,8 +2,8 @@
 layout: post
 title: "Git - cheatsheet"
 date: 2014-12-05 12:24:00
-categories:  Cheatsheet
-tag: git, cheatsheet
+categories: cheatsheet
+tag: git
 ---
 ### 1. Untrack an already check-in directory or file ###
 {%highlight bash%}

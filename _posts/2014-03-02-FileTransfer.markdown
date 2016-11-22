@@ -30,7 +30,7 @@ If you are interest in my FileTransfer, You can clone it with the branch “
 master”
 I also attach a jar file. FileTransfer.jar. It is an executable jar file.
 
-#Known issue: The speed of FileTransfer is low, approximately 0.5MB/s. The reason is that I did not cut file into multiple parts and transfer it concurently, this software send file in only one connection.
+# Known issue: The speed of FileTransfer is low, approximately 0.5MB/s. The reason is that I did not cut file into multiple parts and transfer it concurently, this software send file in only one connection.
 
 Link Download: [https://github.com/nguyenvinhlinh/FileTransfer.git][link]
 

@@ -2,7 +2,7 @@
 layout: post
 title: Elixir Cheatsheet
 date: 2015-11-20 15:37:17
-categories: etc
+categories: cheatsheet
 tag: etc
 --- 
 
