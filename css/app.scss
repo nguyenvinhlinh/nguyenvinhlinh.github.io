@@ -1,6 +1,5 @@
 ---
 ---
-
 $heading-color: yellow;
 $sidebar-href-color:  #009ECE;
 $background-image-sidebar: url("../image/stardust.png");
@@ -207,6 +206,25 @@ div.post {
           padding: 0 12px;
         }
       }
+    }
+  }
+}
+
+div.pagination {
+  text-align: center;
+  margin: 30px auto 60px auto;
+  padding: 0px 20px 20px 20px;
+  a.previous, a.next {
+    float: left;
+    width: 40%;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: $heading-color;
+    text-decoration: none;
+    border: 1px;
+    border-radius: 25px;
+    &:hover {
+      background-color: rgba(0,0,0,0.2);
     }
   }
 }
