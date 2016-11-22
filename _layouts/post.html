@@ -4,7 +4,10 @@ layout: default
 <post-index>
   <div class="post">
     <h2>{{page.title}}</h2>
-    <div class="date-address-category">{{page.date}} - {{page.address}}
+    <div class="date-address-category">{{page.date | date: '%d/%m/%Y'}}
+      {% if post.address %}
+      - {{post.address}}
+      {% endif %}
       <span class="category-icon"></span>
       <a href="#">{{page.categories}}</a>
     </div>
