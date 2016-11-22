@@ -127,11 +127,12 @@ div.content{
 
 div.post {
   margin: 0px 20px;
-  padding: 0px 20px;
+  padding: 0px 20px 10px 20px;
   background-color: rgba(0,0,0, 0.2);
   border-radius: 25px;
   a {
     text-decoration:none;
+    color: $sidebar-href-color;
     &:hover {
       text-decoration: underline;
     }
@@ -165,7 +166,7 @@ div.post {
     max-width: 120ch;
     font-size: 1.5em;
     padding-bottom: 20px;
-    a.read-more {
+    a {
       color: $sidebar-href-color;
     }
   }
