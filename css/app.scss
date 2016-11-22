@@ -131,6 +131,7 @@ div.post {
   padding: 0px 20px 10px 20px;
   background-color: rgba(0,0,0, 0.2);
   border-radius: 25px;
+  color: $paragraph-color;
   a {
     text-decoration:none;
     color: $sidebar-href-color;
@@ -169,7 +170,7 @@ div.post {
     color: $paragraph-color;
     max-width: 120ch;
     font-size: 1.5em;
-    padding-bottom: 20px;
+
     a {
       color: $sidebar-href-color;
     }
