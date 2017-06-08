@@ -29,4 +29,4 @@ $ cat /lib64/opera-developer/resources/pepper_flash_config.json
 
 {% endhighlight %}
 
-As you can guess, we gonna download flash plugin from its [official site](https://get.adobe.com/flashplayer/) then extract into any of these directory such as `/usr/lib/adobe-flashplugin/`. Remember to set extracted files with appropriate permission `(chmod command)`.
+As you can guess, we gonna download flash plugin from its [official site](https://get.adobe.com/flashplayer/) then extract into any of these directory such as `/usr/lib/adobe-flashplugin/`. You need to extract two files including `libpepflashplayer.so` and `manifiest.json`, it's a must to copy `manifest.json` along with the `libpepflashplayer.so`. Remember to set extracted files with appropriate permission `(chmod command)`.
