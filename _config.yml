@@ -10,7 +10,7 @@ twitter_username: "https://twitter.com/LinhNguyenV"
 github_username:  "https://github.com/nguyenvinhlinh"
 facebook_username: "https://www.facebook.com/LinkBall"
 timezone: Asia/Bangkok
-paginate: 5
+paginate: 10
 
 # Build settings
 markdown: kramdown
