@@ -18,13 +18,14 @@ Kịch bản cụ thể như sau. Có 2 tính năng phát triển độc lập v
 - feature-2
 
 ![[1] Nhánh feature-1 và feature-2](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574493875961_1.png)
-
+*[1] Nhánh feature-1 và feature-2*
 
 Nhánh `feature-1`  hoàn thành sớm và nhanh chóng merge vào master.  Lúc này nhánh `master` đang có mã nguồn mới nhất từ nhánh `feature-1`. Vấn đề bây giờ đó là ở nhánh `feature-2`, nhánh `feature-2` hiện tại chưa phát triển xong, tuy nhiên nhánh `feature-2` muốn có các tính năng mới nhất mà hiện tại đang có ở nhánh `master`.
 
 
 
 ![[2] Nhánh feature-1 merge vào nhánh master, và tạo ra node màu xanh dương.](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574493965302_2.png)
+*[2] Nhánh feature-1 merge vào nhánh master, và tạo ra node màu xanh dương.*
 
 
 Sẽ có 2 cách làm trong kịch bản này:
@@ -42,9 +43,11 @@ Lưu ý là nhánh master đang nói ở đây cụ thể là điểm commit m�
 # II. Giải pháp
 ## 1. Merge từ nhánh `master` qua nhánh `feature-2`
 ![[3] Merge từ nhánh master qua nhánh feature-2](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574494447506_3.png)
+*[3] Merge từ nhánh master qua nhánh feature-2*
 
 ## 2. Rebase nhánh `feature-2` qua nhánh `master`
 ![[4] Rebase nhánh feature-2 đến commit mới nhất của nhánh master](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574494782199_4.png)
+*[4] Rebase nhánh feature-2 đến commit mới nhất của nhánh master*
 
 
 Có thể nhận ra điểm khác biệt ngay lập tức đó là nhánh `feature-2` được phát triển dựa vào **commit màu xanh dương** thay vì là **màu xanh lá**.
@@ -58,7 +61,7 @@ Có thể nhận ra điểm khác biệt ngay lập tức đó là nhánh `featu
 **Nhược điểm**: Git log nhìn sẽ rất xấu.
 
 ![[5] git log khi áp dụng phương pháp merge](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574497220779_Screenshot+from+2019-11-23+14-56-01.png)
-
+*[5] git log khi áp dụng phương pháp merge*
 
 
 ## 2. Rebase nhánh `feature-2` sang commit mới nhất thuộc nhánh `master`
@@ -66,6 +69,7 @@ Có thể nhận ra điểm khác biệt ngay lập tức đó là nhánh `featu
 **Ưu điểm:** Git log nhìn sẽ cực kì, cực kì đẹp.
 
 ![[6] git log khi áp dụng phương pháp rebase](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574497211247_Screenshot+from+2019-11-23+15-18-13.png)
+*[6] git log khi áp dụng phương pháp rebase*
 
 
 **Nhược điểm:** Các commit cũ của nhánh `feature-2` lúc nhánh này dựa trên commit cũ thuộc nhánh master sẽ bị biến mất trên git log. Thay vào đó, các commit thuộc nhánh `feature-2` sẽ hoàn toàn dựa trên commit mới nhất thuộc nhánh `master`.  Giả sử như muốn quay lại các commit cũ, mã nguồn không dính dáng gì đến mã nguồn của `feature-1`, để làm được việc này khó khăn hơn rất nhiều so với phương pháp `merge`.
