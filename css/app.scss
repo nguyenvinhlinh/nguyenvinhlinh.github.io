@@ -241,10 +241,13 @@ code.highlighter-rouge {
   border-radius: 3px;
 }
 
-figure.image, figure.highlight {
+figure {
   margin-left: 5px;
   margin-right: 5px;
   overflow-x: auto;
+  &.image {
+    text-align: center;
+  }
 }
 
 @media  (max-width: 768px) {
