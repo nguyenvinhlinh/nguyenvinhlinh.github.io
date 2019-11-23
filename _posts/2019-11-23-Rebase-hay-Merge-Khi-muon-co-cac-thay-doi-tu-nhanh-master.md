@@ -45,6 +45,9 @@ Lưu ý là nhánh master đang nói ở đây cụ thể là điểm commit m�
 ![[3] Merge từ nhánh master qua nhánh feature-2](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574494447506_3.png)
 *[3] Merge từ nhánh master qua nhánh feature-2*
 
+
+{% include image.html url="https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574494447506_3.png" description="[3] Merge từ nhánh master qua nhánh feature-2" %}
+
 ## 2. Rebase nhánh `feature-2` qua nhánh `master`
 ![[4] Rebase nhánh feature-2 đến commit mới nhất của nhánh master](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574494782199_4.png)
 *[4] Rebase nhánh feature-2 đến commit mới nhất của nhánh master*
