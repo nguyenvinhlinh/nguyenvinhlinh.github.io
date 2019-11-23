@@ -35,7 +35,7 @@ Sẽ có 2 cách làm trong kịch bản này:
 
 Lưu ý là nhánh master đang nói ở đây cụ thể là điểm commit mới nhất, cuối cùng trên nhánh `master`.
 
-**Một lần nữa, vấn đề hiện tại đó là làm sao để nhánh** `**feature-2**` **các các tính năng mới nhất từ nhánh** `**master**` **và rồi phát triển tiếp trên nhánh** `**feature-2**`**.**
+**Một lần nữa, vấn đề hiện tại đó là làm sao để nhánh** `**feature-2**` ** có các tính năng mới nhất từ nhánh** `**master**` **và rồi lập trình viên có thể phát triển tiếp trên nhánh** `**feature-2**`**.**
 
 
 # II. Giải pháp
