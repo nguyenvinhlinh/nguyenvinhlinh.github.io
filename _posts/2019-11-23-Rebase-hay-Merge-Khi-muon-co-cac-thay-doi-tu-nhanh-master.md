@@ -84,7 +84,8 @@ Hãy thử tưởng tượng xem nếu cần debug trong nhánh `feature-2` và 
 lập trình viên sẽ gặp khó khăn trong việc quay lại commit cũ của mình trước khi `rebase`.
 Thêm vào đó, lúc tranh luận **LỖI CỦA ANH - LỖI CỦA TÔI**, cũng sẽ thêm ít nhiều vấn đề.
 
-Để áp dụng phương pháp `rebase`, lập trình viên thật sự cần biết là anh ta đang làm gì và chịu trách nhiệm cho nó.
+Để áp dụng phương pháp `rebase`, lập trình viên thật sự cần biết là anh ta đang làm gì và
+chịu trách nhiệm cho nó.
 {% endhighlight %}
 
 
