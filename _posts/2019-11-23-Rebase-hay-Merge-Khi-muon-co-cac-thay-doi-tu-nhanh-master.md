@@ -16,6 +16,7 @@ Kịch bản cụ thể như sau. Có 2 tính năng phát triển độc lập v
 
 - feature-1
 - feature-2
+
 ![[1] Nhánh feature-1 và feature-2](https://paper-attachments.dropbox.com/s_9A5922A5E1B2FE32362A01401C8777056248ABCA0BD0B2C251102B65A6C8F176_1574493875961_1.png)
 
 
