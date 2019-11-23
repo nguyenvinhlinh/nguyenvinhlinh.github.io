@@ -75,7 +75,19 @@ Có thể nhận ra điểm khác biệt ngay lập tức đó là nhánh `featu
 
 
 ## 3. Tóm tắt
-|                | **Merge**                                                                                                                                      | **Rebase**                                                                                                                                                                                                            |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Ưu Điểm**    | Nhìn rõ các commit lịch sử của nhánh `feature-2`, từng commit lúc này hoàn toàn ko có dính dáng gì đến `commit`  mới nhất thuộc nhánh `master` | Trên git log nhìn cực kì đẹp. Các branch không bị lộn xộn, chồng chéo nhau                                                                                                                                            |
-| **Nhược Điểm** | Trên git log nhìn rất xấu. Các branch bị chồng chéo.                                                                                           | Các commit cũ của nhánh `feature-2` lúc nhánh này dựa trên commit cũ thuộc nhánh master sẽ bị biến mất.<br>Thay vào đó, các commit thuộc nhánh `feature-2` sẽ hoàn toàn dựa trên commit mới nhất thuộc nhánh `master` |
+{% highlight text %}
+|------------+------------------------------------------------------+----------------------------------------|
+|            | Merge                                                | Rebase                                 |
+|------------+------------------------------------------------------+----------------------------------------|
+| Ưu Điểm    | Nhìn rõ các commit lịch sử của nhánh feature-2,      | Trên git log nhìn cực kì đẹp.          |
+|            | từng commit lúc này hoàn toàn ko có dính dáng        | Các branch không bị lộn xộn,           |
+|            | gì đến commit  mới nhất thuộc nhánh master           | chồng chéo nhau                        |
+|------------+------------------------------------------------------+----------------------------------------|
+| Nhược Điểm | Trên git log nhìn rất xấu. Các branch bị chồng chéo. | Các commit cũ của nhánh `feature-2`    |
+|            |                                                      | lúc nhánh này dựa trên commit cũ       |
+|            |                                                      | thuộc nhánh master sẽ bị biến mất.     |
+|            |                                                      | Thay vào đó, các commit thuộc nhánh    |
+|            |                                                      | feature-2 sẽ hoàn toàn dựa trên commit |
+|            |                                                      | mới nhất thuộc nhánh master            |
+|------------+------------------------------------------------------+----------------------------------------|
+{% endhighlight %}
