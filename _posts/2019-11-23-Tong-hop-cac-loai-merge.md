@@ -85,5 +85,6 @@ Giả sử với một người phát triển phần mềm và commit liên tụ
 
 **Ưu Điểm:**
 Khi nhìn vào `git log`, sẽ thấy git log cực kì sạch sẽ. Khi phát triển phần mềm, luôn luôn tồn tại những commit có message ít ý nghĩa, khi nhìn vào `git log` và đọc `git message`, thấy rất có vấn đề. Đặc biệt là những lập trình viên code và commit liên tục.
+
 **Nhược điểm:**
 Cực kì sạch sẽ quá cũng là vấn đề. Giả sử đó là một chuỗi commit, khi tìm cách debug theo brach ví dụ sử dụng `git bisect` , nhìn một cái commit đơn độc cũng khá là mệt.
