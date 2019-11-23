@@ -69,25 +69,40 @@ Có thể nhận ra điểm khác biệt ngay lập tức đó là nhánh `featu
 
 **Nhược điểm:** Các commit cũ của nhánh `feature-2` lúc nhánh này dựa trên commit cũ thuộc nhánh master sẽ bị biến mất trên git log. Thay vào đó, các commit thuộc nhánh `feature-2` sẽ hoàn toàn dựa trên commit mới nhất thuộc nhánh `master`.  Giả sử như muốn quay lại các commit cũ, mã nguồn không dính dáng gì đến mã nguồn của `feature-1`, để làm được việc này khó khăn hơn rất nhiều so với phương pháp `merge`.
 
+{% highlight text %}
+Trên hình số [5] và [6], hãy chú ý đến các commits thuộc nhánh feature-2.
+- [feature-2] change 1
+- [feature-2] change 2
+- [feature-3] change 3
 
-| Trên hình số [5] và [6], hãy chú ý đến các commits thuộc nhánh feature-2. <br><br>- [feature-2] change 1<br>- [feature-2] change 2<br>- [feature-3] change 3<br><br>Sau khi áp dụng phương pháp rebase, commit hash của các commits thuộc nhánh `feature-2`  đã thay đổi hoàn toàn. Ví dụ như commit có tên là: `[feature-2] change 3`<br> Commit hash đã thay đổi từ `2eea38a` sang `5c59d21`. <br> <br> Hãy thử tưởng tượng xem nếu cần debug trong nhánh `feature-2` và áp dụng phương pháp `rebase`, lập trình viên sẽ gặp khó khăn trong việc quay lại commit cũ của mình trước khi `rebase`. Thêm vào đó, lúc tranh luận **LỖI CỦA ANH - LỖI CỦA TÔI**, cũng sẽ thêm ít nhiều vấn đề. <br> <br> Để áp dụng phương pháp `rebase`, lập trình viên thật sự cần biết là anh ta đang làm gì và chịu trách nhiệm cho nó. |
+Sau khi áp dụng phương pháp rebase, commit hash của các commits thuộc nhánh `feature-2` đã thay
+đổi hoàn toàn. Ví dụ như commit có tên là: `[feature-2] change 3`
 
+Commit hash đã thay đổi từ `2eea38a` sang `5c59d21`.
+
+Hãy thử tưởng tượng xem nếu cần debug trong nhánh `feature-2` và áp dụng phương pháp `rebase`,
+lập trình viên sẽ gặp khó khăn trong việc quay lại commit cũ của mình trước khi `rebase`.
+Thêm vào đó, lúc tranh luận **LỖI CỦA ANH - LỖI CỦA TÔI**, cũng sẽ thêm ít nhiều vấn đề.
+
+Để áp dụng phương pháp `rebase`, lập trình viên thật sự cần biết là anh ta đang làm gì và chịu trách nhiệm cho nó.
+{% endhighlight %}
 
 
 ## 3. Tóm tắt
 {% highlight text %}
-|------------+------------------------------------------------------+----------------------------------------|
-|            | Merge                                                | Rebase                                 |
-|------------+------------------------------------------------------+----------------------------------------|
-| Ưu Điểm    | Nhìn rõ các commit lịch sử của nhánh feature-2,      | Trên git log nhìn cực kì đẹp.          |
-|            | từng commit lúc này hoàn toàn ko có dính dáng        | Các branch không bị lộn xộn,           |
-|            | gì đến commit  mới nhất thuộc nhánh master           | chồng chéo nhau                        |
-|------------+------------------------------------------------------+----------------------------------------|
-| Nhược Điểm | Trên git log nhìn rất xấu. Các branch bị chồng chéo. | Các commit cũ của nhánh `feature-2`    |
-|            |                                                      | lúc nhánh này dựa trên commit cũ       |
-|            |                                                      | thuộc nhánh master sẽ bị biến mất.     |
-|            |                                                      | Thay vào đó, các commit thuộc nhánh    |
-|            |                                                      | feature-2 sẽ hoàn toàn dựa trên commit |
-|            |                                                      | mới nhất thuộc nhánh master            |
-|------------+------------------------------------------------------+----------------------------------------|
+|------------+---------------------------------------+----------------------------------------|
+|            | Merge                                 | Rebase                                 |
+|------------+---------------------------------------+----------------------------------------|
+| Ưu Điểm    | Nhìn rõ các commit lịch sử của nhánh  | Trên git log nhìn cực kì đẹp.          |
+|            | feature-2, từng commit lúc này hoàn   | Các branch không bị lộn xộn,           |
+|            | toàn ko có dính dáng gì đến commit    | chồng chéo nhau                        |
+|            | mới nhất thuộc nhánh master           |                                        |
+|------------+---------------------------------------+----------------------------------------|
+| Nhược Điểm | Trên git log nhìn rất xấu. Các branch | Các commit cũ của nhánh `feature-2`    |
+|            | bị chồng chéo.                        | lúc nhánh này dựa trên commit cũ       |
+|            |                                       | thuộc nhánh master sẽ bị biến mất.     |
+|            |                                       | Thay vào đó, các commit thuộc nhánh    |
+|            |                                       | feature-2 sẽ hoàn toàn dựa trên commit |
+|            |                                       | mới nhất thuộc nhánh master            |
+|------------+---------------------------------------+----------------------------------------|
 {% endhighlight %}
