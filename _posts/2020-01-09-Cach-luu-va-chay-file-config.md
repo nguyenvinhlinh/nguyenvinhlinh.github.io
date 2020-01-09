@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSGO, Cách lưu và chạy file config
-date: 2020-01-09 00:10:40 +0700
+date: 2020-01-09 00:10:50 +0700
 categories: CSGO
 tag: csgo
 comments: true
