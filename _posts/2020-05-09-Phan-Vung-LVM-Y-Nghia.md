@@ -21,7 +21,7 @@ Hệ thống từ vựng được sử dụng khi nói đến `LVM` hơi nhầm 
 
 Hiểu nôm na thì ta sẽ có sơ đồ từ vựng thứ tự của các định nghĩa như sau:
 {% highlight text %}
-Ổ Đĩa → Partition → Physical Volume → Physical Volume Group → Logical Volume
+Ổ Đĩa (LEVEL 1) → Partition (LEVEL 2) → Physical Volume (LEVEL 3) → Physical Volume Group (LEVEL 4) → Logical Volume (LEVEL 5)
 {% endhighlight %}
 
 
