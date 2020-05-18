@@ -10,7 +10,7 @@ comments: true
 Bài viết này đưa ra cách nhanh nhất để mã hóa cũng như giải mã file trên linux. Việc mã hóa và giải mã sẽ sử dụng mật mã **(symmetric-key - key đổi xứng)**
 
 # I. Mã hóa file
-{% highlight sh %}
+{% highlight text %}
 gpg --symmetric tesla.org
 {% endhighlight %}
 
@@ -18,7 +18,7 @@ gpg --symmetric tesla.org
 Lệnh này sẽ mã hỏi bạn mật mã, hay ghi nhớ **mật mã** này. Sau khi quá trình mã hóa kết thúc, một file có tên là `tesla.org.gpg` sẽ xuất hiện. Đây chính là file đã được mã hóa.
 
 # II. Giải mã file
-{% highlight sh %}
+{% highlight text %}
 gpg tesla.org.gpg
 {% endhighlight %}
 
