@@ -9,7 +9,7 @@ comments: true
 
 # I. Logical Volume Manager (LVM)
 
-LVM - Phần mềm quản lý nhiều ổ cứng `Logical Volume`, tác dụng của LVM đó là cho phép ghép nhiều ổ đĩa cứng (`physical volume`) thành `Volume Group` , từ volume group sẽ tách được nhiều  phân vùng (`logical volume`) và các phân vùng này có thể tùy chỉnh dung lượng dễ dàng.
+LVM - Phần mềm quản lý nhiều ổ cứng Logical Volume, tác dụng của LVM đó là cho phép ghép nhiều ổ đĩa cứng với nhau, sau đó tạo ra một lớp trừu tượng trước hệ điều hành. Với lợi thế này, việc gia tăng dung lượng cho hệ điều hành dễ dàng hơn bao giờ hết. Hệ điều hành có thể đang chạy trên hai ổ cứng vẫn đảm bảo được sự trơn tru, đơn giản khi vận hành như đang làm việc với một ổ cứng mà thôi.
 
 Hệ thống từ vựng được sử dụng khi nói đến `LVM` hơi nhầm lẫn khi dịch qua tiếng Việt
 
