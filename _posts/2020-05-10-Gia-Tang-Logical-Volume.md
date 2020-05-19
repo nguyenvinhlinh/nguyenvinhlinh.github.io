@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Gia tăng logical volume!
+title: LVM, Gia tăng logical volume!
 date: 2020-05-10 12:00:00 +0700
 categories: Linux
-tag: Linux
+tag: Linux, LVM
 comments: true
 ---
 # I. Giới thiệu

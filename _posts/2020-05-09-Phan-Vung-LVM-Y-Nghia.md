@@ -3,7 +3,7 @@ layout: post
 title: Phân Vùng LVM - Ý Nghĩa và Phát Triển
 date: 2020-05-09 19:49:00 +0700
 categories: Linux
-tag: Linux
+tag: Linux, LVM
 comments: true
 ---
 
