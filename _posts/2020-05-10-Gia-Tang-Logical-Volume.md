@@ -7,7 +7,7 @@ tag: Linux, LVM
 comments: true
 ---
 # I. Giới thiệu
-![[1] Các lớp trừa tượng - LVM](https://paper-attachments.dropbox.com/s_ACF98148A0699BBCA5E5790546E829542B1DB41E9A9A66B61D2458257ABF1E29_1589858246775_1.png)
+![[1] Các lớp trừa tượng - LVM](/image/posts/2020-05-10-Gia-Tang-Logical-Volume/1.png)
 
 
 Đây là câu chuyện tôi đã trải qua khi phải bắt buộc gia tăng `logical volume` hệ thống. Trong quá trình phát triển, không gian dữ liệu hệ điều hành chiếm dụng bắt đầu nhiều hơn và nhiều hơn. Đã có những lúc tôi nghịch ngợm với VM, Docker, Backup file quá nhiều, kết cục là ổ cứng 500 GB của tôi dần dần cạn kiệt.
@@ -54,7 +54,7 @@ Nghe dễ thật, nhưng tôi lại gặp một vấn đề khác.
 ---> Hệ điều hành khởi động thành công, sau khi đăng nhập nó đã nhận được ổ đĩa mới.
 Như trên hình, `sdb` là ổ đĩa mới.
 {% endhighlight %}
-![](https://paper-attachments.dropbox.com/s_ACF98148A0699BBCA5E5790546E829542B1DB41E9A9A66B61D2458257ABF1E29_1589859705781_Screenshot+from+2020-05-19+10-41-21.png)
+![](/image/posts/2020-05-10-Gia-Tang-Logical-Volume/2.png)
 
 ## 2. Tạo phân vùng loại `Linux LVM` từ ổ đĩa [LEVEL 2]
 
@@ -74,14 +74,14 @@ Sử dụng lệnh sau với quyền root.
 
 Để tạo **GPG partition table**, hãy chọn chỉ mục có tên là `create a new empty GPT partition table`.
 
-![[2] Tạo GPT Partition table](https://paper-attachments.dropbox.com/s_ACF98148A0699BBCA5E5790546E829542B1DB41E9A9A66B61D2458257ABF1E29_1589860331249_Screenshot+from+2020-05-19+10-51-04.png)
+![[2] Tạo GPT Partition table](/image/posts/2020-05-10-Gia-Tang-Logical-Volume/3.png)
 
 
 **b. Tạo phân vùng** `Linux LVM`
 
 Chọn chỉ mục có tên là `add a new partition`
 
-![[3] Tạo phân vùng mới](https://paper-attachments.dropbox.com/s_ACF98148A0699BBCA5E5790546E829542B1DB41E9A9A66B61D2458257ABF1E29_1589860592217_Screenshot+from+2020-05-19+10-55-31.png)
+![[3] Tạo phân vùng mới](/image/posts/2020-05-10-Gia-Tang-Logical-Volume/4.png)
 
 
 Tiếp theo, tôi sẽ bị yêu cầu nhập
@@ -102,12 +102,12 @@ Tiếp theo, tôi sẽ bị yêu cầu nhập
 
 Tôi đã tạo xong phân vùng mới, tuy nhiên định dạng của nó là `Linux filesystem`, Cái tôi muốn là `Linux LVM`. Chọn chỉ mục có tên là `change a partion type`
 
-![[4] Đổi loại phân vùng](https://paper-attachments.dropbox.com/s_ACF98148A0699BBCA5E5790546E829542B1DB41E9A9A66B61D2458257ABF1E29_1589861309970_Screenshot+from+2020-05-19+11-08-16.png)
+![[4] Đổi loại phân vùng](/image/posts/2020-05-10-Gia-Tang-Logical-Volume/5.png)
 
 
 Phần mềm sẽ chọn phân vùng duy nhất trong trường hợp này là `1`. Trong phần chọn loại phân vùng, `Linux LVM` có mã số là `31`.
 
-![[4a] Đổi loại phân vùng](https://paper-attachments.dropbox.com/s_ACF98148A0699BBCA5E5790546E829542B1DB41E9A9A66B61D2458257ABF1E29_1589861491725_Screenshot+from+2020-05-19+11-10-42.png)
+![[4a] Đổi loại phân vùng](/image/posts/2020-05-10-Gia-Tang-Logical-Volume/6.png)
 
 
 Kiểm tra lại với chỉ mục có tên `print the partition table`. Nó nên có phân vùng mới kèm theo là loại phân vùng có tên `Linux LVM`.
@@ -115,7 +115,7 @@ Kiểm tra lại với chỉ mục có tên `print the partition table`. Nó nê
 Kết thúc giai đoạn này với chỉ mục mang tên `write table to disk and exit`
 
 
-![[5] Lưu lại thiết lập](https://paper-attachments.dropbox.com/s_ACF98148A0699BBCA5E5790546E829542B1DB41E9A9A66B61D2458257ABF1E29_1589861681613_Screenshot+from+2020-05-19+11-14-28.png)
+![[5] Lưu lại thiết lập](/image/posts/2020-05-10-Gia-Tang-Logical-Volume/7.png)
 
 ## 3. Tạo phsyical volume [LEVEL 3]
 
