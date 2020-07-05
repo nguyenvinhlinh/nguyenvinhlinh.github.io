@@ -24,5 +24,9 @@ mp_startmoney 60000;
 mp_buytime 9999;
 mp_buy_anywhere 1;
 mp_restartgame 1;
+bot_kick;
+bot_stop;
+
 bind "ALT" "noclip";
+bind "i" "bot_place";
 {% endhighlight %}
