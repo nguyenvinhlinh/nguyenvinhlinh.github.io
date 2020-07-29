@@ -64,7 +64,8 @@ div.sidebar{
     }
     div.contact {
       order: 2;
-      padding: 10px 25px;
+      padding: 0px 25px 10px 25px;
+
       a {
         color: $sidebar-href-color;
         text-decoration: none;
