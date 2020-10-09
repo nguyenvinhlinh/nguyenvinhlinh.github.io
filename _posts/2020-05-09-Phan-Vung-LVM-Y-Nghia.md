@@ -26,7 +26,8 @@ Hiểu nôm na thì ta sẽ có sơ đồ từ vựng thứ tự của các đ�
 
 
 
-![](/image/posts/2020-05-09-Phan-Vung-LVM-Y-Nghia.md/1.png)
+![]()
+{% include image.html url="/image/posts/2020-05-09-Phan-Vung-LVM-Y-Nghia.md/1.png" description="[1] Các Mức độ trìu tượng của LVM" %}
 
 # II. Các quy trình thường gặp khi làm việc với LVM
 ## a. Tạo `logical volume`
@@ -55,8 +56,7 @@ Cực kì nguy hiểm!
 
 Hãy backup trước khi làm việc này. Là người viết, tôi chưa bao giờ thử cái tính năng này. Viết cho nó có chữ thôi chứ, dùng cái tính năng của khỉ này, tôi không dám.
 
-<br>
-![](/image/posts/2020-05-09-Phan-Vung-LVM-Y-Nghia.md/2.jpg)
+{% include image.html url="/image/posts/2020-05-09-Phan-Vung-LVM-Y-Nghia.md/2.jpg" description="[2] Chắc là không sao đâu!" %}
 
 - Xác định xem logical volume, bao nhiêu dung lượng đã được sử dụng, dung lượng còn lại có thể giảm được hay không. **[LEVEL 5]**
     - Sử dụng lệnh `df -h`, nó sẽ hiển thị dung lượng sử dụng.
