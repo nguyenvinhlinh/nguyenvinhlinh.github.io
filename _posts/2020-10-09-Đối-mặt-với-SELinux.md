@@ -43,3 +43,5 @@ Câu lệnh trên sẽ tạo ra file `my_module.pp`. Sử dụng lệnh sau đ�
 {% highlight sh %}
 semodule -i my_module.pp
 {% endhighlight %}
+
+Happy!
