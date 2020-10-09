@@ -169,13 +169,21 @@ div.post {
 
   p {
     color: $paragraph-color;
-    max-width: 120ch;
+    max-width: 100ch;
     font-size: 1.5em;
 
     a {
       color: $sidebar-href-color;
     }
   }
+
+  li {
+    color: $paragraph-color;
+    max-width: 90ch;
+    font-size: 1.5em;
+  }
+
+
   div.category-tree {
     padding: 20px 30px;
     ul.parent, ul.parent ul {
@@ -238,7 +246,7 @@ div.pagination {
 
 code.highlighter-rouge {
   color: $code-highlight-color;
-  background-color: rgba(225,255,255,0.8);
+  background-color: rgba(241, 250, 140, 0.9);
   border-radius: 3px;
 }
 
