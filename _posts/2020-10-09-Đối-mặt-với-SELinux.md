@@ -39,7 +39,10 @@ khi đã đọc và hiểu tại sao SELinux block, giờ là lúc bổ sung lu�
 cat  /var/log/audit/audit.log | grep denied | audit2allow -a -M my_module
 {% endhighlight %}
 
-Câu lệnh trên sẽ tạo ra file `my_module.pp`. Sử dụng lệnh sau để cài đặt module này và SELinux.
+Câu lệnh trên sẽ tạo ra file `my_module.pp`. Sử dụng lệnh sau để cài đặt module này vào SELinux.
 {% highlight sh %}
 semodule -i my_module.pp
 {% endhighlight %}
+
+
+Sau khi kiểm tra cẩn thận, hay nhớ bật chế độ `Enforcing` cho SELinux.
