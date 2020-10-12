@@ -25,8 +25,6 @@ Hiểu nôm na thì ta sẽ có sơ đồ từ vựng thứ tự của các đ�
 {% endhighlight %}
 
 
-
-![]()
 {% include image.html url="/image/posts/2020-05-09-Phan-Vung-LVM-Y-Nghia.md/1.png" description="[1] Các Mức độ trìu tượng của LVM" %}
 
 # II. Các quy trình thường gặp khi làm việc với LVM
