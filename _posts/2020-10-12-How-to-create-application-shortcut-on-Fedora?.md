@@ -16,6 +16,7 @@ Type=Application
 Name=Postman
 Comment=Postman
 Icon=/home/nguyenvinhlinh/Software/Postman-7.0.9/icon.png
+Path=/home/nguyenvinhlinh/Software/Postman-7.0.9
 Exec=/home/nguyenvinhlinh/Software/Postman-7.0.9/Postman
 Terminal=false
 Categories=Development;
