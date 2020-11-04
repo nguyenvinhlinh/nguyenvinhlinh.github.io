@@ -2,8 +2,8 @@
 layout: post
 title: "Postgresql - Thiết lập hot-standby"
 date: 2020-11-04 16:33:36
-tags:
-categories:
+tags: linux, postgresql, fedora
+categories: Postgresql
 ---
 
 # I. Khái niệm
@@ -42,7 +42,7 @@ sudo systemctl start postgresql-12
 
 ## 2. Thiết lập máy `primary`
 
-**a. Tạo user**
+### a. Tạo user
 
 Bạn sẽ cần phải tạo 2 users
 
@@ -64,7 +64,8 @@ createuser --no-login --pwprompt --replication repuser;
 # Tạo user admin/admin
 createuser --pwprompt --superuser admin;
 ```
-**b. Thay đổi `pg_hba.conf` để cấp quyền truy cập**
+
+### b. Thay đổi `pg_hba.conf` để cấp quyền truy cập
 
 
 ``` text
@@ -78,7 +79,7 @@ host    replication     repuser         {standy_server_ip}/{mask}         md5
 Ở trên hình thì `IP/MASK` của máy standby là `192.168.2.43/24`.
 
 
-**c. Thay đổi** `postgresql.conf`
+### c. Thay đổi** `postgresql.conf`
 
 ``` text
 listen_addresses = '*'
@@ -115,7 +116,7 @@ Trước khi chạy các bước tiếp theo, bắt buộc phải tắt postgres
 systemctl stop posgresql-11;
 ```
 
-**a. Kéo thư mục `data` từ máy `primary` sang `standby`**
+### a. Kéo thư mục `data` từ máy `primary` sang `standby`
 
 - Di chuyển thư mục `data` cũ đến nơi khác.
 ``` sh
@@ -137,7 +138,7 @@ Thêm vào đó, trong thư mục `data` sẽ có thêm 2 file
 - postgresql.auto.conf
 - recovery.conf
 
-**b. Thiết lập file `recovery.conf`**
+### b. Thiết lập file `recovery.conf`
 
 
 File `recovery.conf` được tạo ra từ lệnh `pg_basebackup` với flag `--write-recovery-conf`. Nội dung của nó đề cập đến chế độ hiện tại của `standby server` và vị trị của `primary server`.
@@ -149,7 +150,7 @@ File `recovery.conf` được tạo ra từ lệnh `pg_basebackup` với flag `-
 ```
 Trong file `recovery.conf`, có thể thấy rõ ràng thông tin truy cập vào `primary server`
 
-**c. Thiết lập `posgresql.conf`**
+### c. Thiết lập `posgresql.conf`
 
 ``` text
 hot_standby = on

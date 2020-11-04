@@ -141,17 +141,43 @@ div.post {
     }
   }
 
-  h2{
+  h1{
     color: $heading-color;
     font-size: 2em;
-    padding-top: 20px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h1 ~ h1{
+    color: $paragraph-color;
+  }
+
+
+  h2{
+    color: $paragraph-color;
+    font-size: 1.75em;
     margin-bottom: 10px;
     a {
       color: $heading-color;
     }
   }
-  h2 ~ h2{
+
+  h3{
     color: $paragraph-color;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    a {
+      color: $heading-color;
+    }
+  }
+
+  h4{
+    color: $paragraph-color;
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    a {
+      color: $heading-color;
+    }
   }
 
   div.date-address-category{
@@ -170,7 +196,7 @@ div.post {
   p {
     color: $paragraph-color;
     max-width: 100ch;
-    font-size: 1.5em;
+    font-size: 1em;
 
     a {
       color: $sidebar-href-color;
