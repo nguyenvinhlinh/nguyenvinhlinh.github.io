@@ -146,6 +146,9 @@ div.post {
     font-size: 2em;
     padding-top: 10px;
     margin-bottom: 10px;
+    a {
+      color: $heading-color;
+    }
   }
 
   h1 ~ h1{
