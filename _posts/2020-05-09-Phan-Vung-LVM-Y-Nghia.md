@@ -64,7 +64,7 @@ Hãy backup trước khi làm việc này. Là người viết, tôi chưa bao g
 
 
 # III. Các câu lệnh liên quan
-```
+
 | Command        | Level              | Ý nghĩa                                                                                                           |
 | -------------- | ------------------ | ----------------------------------------------------------------------------------------------------------------- |
 | lsblk          | Level 1, Level 2   | Liệt kê danh sách các ổ cứng - hay còn gọi là `block devices`. Ví dụ như sda, sdb, sdc                            |
@@ -84,8 +84,6 @@ Hãy backup trước khi làm việc này. Là người viết, tôi chưa bao g
 | resize2fs      | Level 5            | Khi thao tác gia tăng `logical volume`, lệnh `resize2fs` được sử dụng để cập nhât filesystem cho `logical volume` |
 | mkfs           |                    | Định dạng cho `logical volume` ví  dụ như là ext2, ext3, ext4 , ntfs. <br>**Make File System**                    |
 
-
-```
 
 # IV. Hứa hẹn
 
