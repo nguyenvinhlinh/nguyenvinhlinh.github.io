@@ -258,6 +258,10 @@ figure {
     text-align: center;
     max-width: 90%;
   }
+
+  & > img {
+    max-width: 100%;
+  }
 }
 
 table, th, td {
