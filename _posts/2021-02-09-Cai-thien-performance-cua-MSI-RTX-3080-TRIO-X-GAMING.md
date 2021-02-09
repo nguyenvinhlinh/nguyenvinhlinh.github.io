@@ -44,3 +44,7 @@ Kể từ đây, TRIO đã có nhiều điện hơn vì xài BIOS của suprim, 
 {% include image.html url="/image/posts/2021-02-09-Cai-thien-performance-cua-MSI-RTX-3080-TRIO-X-GAMING/5.jpg" description="[5] Kết quả sau khi tinh chỉnh với MSI Afterburner" %}
 
 {% include image.html url="/image/posts/2021-02-09-Cai-thien-performance-cua-MSI-RTX-3080-TRIO-X-GAMING/6.jpg" description="[6] Tổng quan dàn máy" %}
+
+Đây là các link tôi đã tham khảo:
+- MSI RTX 3080 Gaming X Trio is unstable when I mine and I can't get a good hashrate. What's going on here?, [https://www.reddit.com/r/EtherMining/comments/jowjaj/msi_rtx_3080_gaming_x_trio_is_unstable_when_i/](https://www.reddit.com/r/EtherMining/comments/jowjaj/msi_rtx_3080_gaming_x_trio_is_unstable_when_i/)
+- MSI RTX 3080 Gaming X Trio Ethereum Mining FIX, [https://www.youtube.com/watch?v=MvaWnEf7c78&feature=youtu.be](https://www.youtube.com/watch?v=MvaWnEf7c78&feature=youtu.be)
