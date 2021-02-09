@@ -36,8 +36,8 @@ Sau khi đã thay pad nhiệt thành công, bước tiếp theo sẽ là flash l
 - Bước 1: Vào [https://www.techpowerup.com/download/nvidia-nvflash/](https://www.techpowerup.com/download/nvidia-nvflash/), download bản mới nhất. Sau khi download xong, giải nén bạn sẽ có file `nvflash.exe`, ghi nhớ thư mục chứa cái file này, ví dụ là mình sẽ lưu ở `/User/Admin/Desktop/MSI_TRIO`
 - Bước 2: Vào [https://www.techpowerup.com/vgabios/](https://www.techpowerup.com/vgabios/?architecture=NVIDIA&manufacturer=MSI&model=RTX+3080&interface=&memType=&memSize=&since=), tìm phiên bản mới nhất của dòng 3080 Suprim. Sau khi download xong, bạn sẽ được file có tên là `MSI.RTX3080.10240.201123.rom` (ví dụ) , copy file này ngang hàng với với `nvflash.exe`.
 - Bước 3: Chạy `cmd` với quyền administrator, `change directory (cd)` vào `/User/Admin/Desktop/MSI_TRIO`. Lưu file room hiện tại của TRIO đang chạy với lệnh `nvflash.exe --save original.rom` . Trong trường hợp bạn fuck up, hay đơn giản là muốn xài bios gốc, hãy dùng file này `orignal.room`.
-- Bước 4: Chạy lệnh `nvflash` `--``protectoff` , gỡ bảo vệ bios.
-- Bước 5: Chạy lệnh nvflash `MSI.RTX3080.10240.201123.rom` `--``overridesub=true` .
+- Bước 4: Chạy lệnh `nvflash --protectoff` , gỡ bảo vệ bios.
+- Bước 5: Chạy lệnh `nvflash MSI.RTX3080.10240.201123.rom --overridesub=true`.
 
 Kể từ đây, TRIO đã có nhiều điện hơn vì xài BIOS của suprim, thêm vào đó nhiệt năng cũng hiệu quả hơn vì có thermal pad mới. Đừng quên là bạn còn chưa tinh trỉnh TRIO với `MSI Afterturner` Ở bài viết khác, mình sẽ nêu chi tiết thông tin tinh chỉnh của TRIO với Afterburner. Đây là terminal kết quả của mình sau khi tinh chỉnh. Chú ý GPU số 2, số 1 là `MSI RTX 3080 VENTUS 10G OC`.
 
