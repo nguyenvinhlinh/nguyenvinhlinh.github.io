@@ -16,8 +16,8 @@ tôi muốn đề cập đến giá của ETH hiện tại, `ngày 11/2/2021, 1 
 
 {% include image.html url="/image/posts/2021-02-12-Tinh-chinh-afterburner,-chi-phi-va-loi-nhuan-van-hanh-MSI-RTX-3080/2.png" description="[2] 11/2/2021 23:23 GMT+7, CoinMarketCap, Giá trị Ethereum" %}
 
-MSI 3080 Ventus 10G OC & Trio X Gaming sau khi đã áp dụng các thiệt lập sẽ có hiệu năng như hình dưới đây. Hoàn toàn có
-thể đấy lên 101MH/s nếu muốn. Tuy nhiên tôi chỉ muốn ở mức 100MH/s cho mỗi card màn hình. Nếu bạn để ý kĩ, bạn sẽ thấy răng
+`MSI 3080 Ventus 10G OC & Trio X Gaming` sau khi đã áp dụng các thiệt lập sẽ có hiệu năng như hình dưới đây. Hoàn toàn có
+thể đấy lên 101MH/s nếu muốn. Tuy nhiên tôi chỉ muốn ở mức **100MH/s** cho mỗi card màn hình. Nếu bạn để ý kĩ, bạn sẽ thấy răng
 mặc dù Ventus và Trio có mức hashrate là tương đương nhau, tuy nhiên số lượng share của Trio luôn luôn lớn hơn của Ventus,
 khá là kì quặc, có lẽ là tiền nào của nấy. Khi nào thị trường bớt khan hiếm, tôi sẽ thử xem `MSI 3080 Suprim` có gì đặc biệt hơn.
 
