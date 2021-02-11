@@ -64,7 +64,7 @@ Phi phí dưới đây sẽ dựa trên thông tin ghi trên phần mềm, chưa
 
 ## b. Lợi nhuận
 
-Theo như trang web https://www.cryptocompare.com/ thì với hashrate là `201MH/s` , mỗi tháng sẽ kiếm đc `0.3766 Ethereum`.
+Theo như trang web [https://www.cryptocompare.com/](https://www.cryptocompare.com/) thì với hashrate là `201MH/s` , mỗi tháng sẽ kiếm đc `0.3766 Ethereum`.
 Nếu quy đổi số Ethereum này thành USD thì sẽ là `$669 USD` hoặc là `15,514,733 VND` . Sau khi trừ đi chi phí  lợi nhuận
 còn lại sẽ là `14.564.755 VND`.
 
