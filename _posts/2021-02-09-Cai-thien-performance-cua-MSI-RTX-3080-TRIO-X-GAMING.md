@@ -3,7 +3,8 @@ layout: post
 title: "Cải thiện performance của MSI RTX 3080 TRIO X GAMING"
 date: 2021-02-09 14:27:03
 tags: overlock, msi3080, trio_x_gaming, mining
-categories: Mining Rig
+categories:
+- Mining Rig
 ---
 
 Hiện tại tôi đã và đang sử dụng card màn hình này để đào ETH. Chiếc card đồ họa này có vấn đề nghiêm trọng với việc tản nhiệt.

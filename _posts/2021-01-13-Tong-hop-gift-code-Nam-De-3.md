@@ -3,7 +3,8 @@ layout: post
 title: "Tổng hợp giftcode Nam Đế 3"
 date: 2021-01-13 22:27:33
 tags: namde3
-categories: "Nam Đế 3"
+categories:
+- Nam Đế 3
 ---
 
 {% include image.html url="/image/posts/2021-01-13-Tong-hop-gift-code-Nam-De-3/1.jpg" description="Nam Đế 3 - Chiến thuật dã sử Việt" %}
