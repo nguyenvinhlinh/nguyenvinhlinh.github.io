@@ -10,7 +10,8 @@ categories:
 ---
 # I. Lời nói đầu
 
-Sau một thời gian dài chịu đựng sự ồn ào của bé trâu. Tôi đã quyết định cho bé lên trại. Sau một khoảng thời gian theo dõi vấn đề nhiệt độ của 3080 lại phát sinh. Lần này không phải là của `MSI 3080 TRIO` mà là của MSI 3080 VENTUS 10G OC. Nguyên nhân chắc chắn là đến từ nhiều phía.
+Sau một thời gian dài chịu đựng sự ồn ào của bé trâu. Tôi đã quyết định cho bé lên trại. Sau một khoảng thời gian theo dõi vấn đề nhiệt độ của 3080 lại phát sinh.
+Lần này không phải là của `MSI 3080 TRIO` mà là của `MSI 3080 VENTUS 10G OC`. Nguyên nhân chắc chắn là đến từ nhiều phía.
 
 - Từ nhiệt độ môi trường xung quanh
 - Từ cách thiết kế case 4U chưa hợp phù hợp cho những card màn hình sử dụng loại ram `GDDR6X`.
