@@ -18,6 +18,6 @@ categories:
 - Code Noel 2020: NOEL2020
 - Code năm mới 2021: NY2021
 - Code Tết 2021: TET2021
-- Code dỗ tổ Hùng Vương 2021: GTHV21
+- Code giỗ tổ Hùng Vương 2021: GTHV21
 
 Cập nhật cuối cùng 20/04/2021 23:10
