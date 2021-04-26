@@ -6,7 +6,7 @@ tags:
 - MSI3080
 - VENTUS 10G OC
 categories:
-- Minging Rig
+- Mining Rig
 ---
 # I. Lời nói đầu
 
