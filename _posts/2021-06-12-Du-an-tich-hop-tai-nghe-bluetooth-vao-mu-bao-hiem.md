@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Dự án tích hợp tai nghe bluetooth vào mũ bảo hiểm"
+title: "Tích hợp tai nghe bluetooth vào mũ bảo hiểm"
 date: 2021-06-12 23:35:14
 tags:
 - bluetooth
