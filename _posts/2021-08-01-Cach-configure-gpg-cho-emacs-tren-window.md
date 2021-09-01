@@ -14,7 +14,7 @@ Bài viết này hướng dẫn cách cài đặt GPG cho emacs trên window. Đ
 
 {% include image.html url="/image/posts/2021-08-01-Cach-configure-gpg-cho-emacs-tren-window/1.png" description="[1] Download Gpg4Win" %}
 
-Trong emacs, thiết lập các biến sau:
+Sau khi cài đặt xong Gpg4Win. Trong emacs, thiết lập các biến sau:
 - epg-gpg-home-directory
 - epg-gpg-program
 - epg-gpgconf-program
