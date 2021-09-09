@@ -20,3 +20,5 @@ In the `where` section, condition statement should look like this one
 {% highlight sql %}
 (column_name in (SELECT unnest(CONCAT('{', '{{column_name}}', '}')::varchar[])) OR '{{column_name}}' LIKE '%ALL%')
 {% endhighlight %}
+
+And It's all done, you are ready to go!
