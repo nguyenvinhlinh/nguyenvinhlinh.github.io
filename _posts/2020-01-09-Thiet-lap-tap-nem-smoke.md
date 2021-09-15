@@ -28,4 +28,5 @@ bot_kick;
 bot_stop;
 bind "ALT" "noclip";
 bind "i" "bot_place";
+alias +jumpthrow "+jump;-attack"; alias -jumpthrow "-jump"; bind mouse5 +jumpthrow;
 {% endhighlight %}
