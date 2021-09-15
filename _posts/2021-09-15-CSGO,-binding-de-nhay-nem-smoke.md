@@ -6,8 +6,12 @@ tags: csgo
 categories: csgo
 ---
 
-Trong console, gõ lệnh sau
+Trong trường hợp này phím nhảy ném là phím `mouse-5`. Mở console lên và gõ lệnh sau:
 
 ```sh
-alias +jumpthrow "+jump;-attack"; alias -jumpthrow "-jump"; bind mouse5 +jumpthrow;
+alias +jumpthrow "+jump;-attack";
+alias -jumpthrow "-jump";
+bind mouse5 +jumpthrow;
 ```
+
+Cách sử dụng tương đối đơn giản, bắt đầu bằng giữ chuột trái, tiếp theo là căn góc ném, cuối cùng là ấn phím `mouse-5`.
