@@ -8,7 +8,7 @@ categories:
 ---
 # I. Lời mở đầu
 
-Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi lỡ tay xóa mấy profile trên MSI Afterburner. Tôi sẽ quay lại đây xem. Hiện tại đây là 4 VGA trực thuộc dàn #1
+Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi lỡ tay xóa mấy profile trên MSI Afterburner. Tôi sẽ quay lại đây xem. Hiện tại đây là VGA đầu tiên thuộc dàn #2 Bạch Hổ
 
 
 - MSI 3080 GAMING X TRIO (1 cái)
