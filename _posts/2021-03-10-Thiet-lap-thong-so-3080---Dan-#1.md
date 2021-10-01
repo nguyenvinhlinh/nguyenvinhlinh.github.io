@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thiết lập thông số 3080 - Dàn #1"
+title: "Thiết lập thông số 3080 - Dàn #1 Thanh Long"
 date: 2021-03-10 15:51:00
 tags: mining
 categories:
