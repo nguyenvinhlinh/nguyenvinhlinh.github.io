@@ -12,7 +12,7 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 
 
 - MSI 3080 GAMING X TRIO (1 cái)
-{% include image.html url="/image/posts/2021-10-01-Thiet-lap-thong-so-3080---Dan-2/1.jpg" description="[1] Dàn 3080 - #1" %}
+{% include image.html url="/image/posts/2021-10-01-Thiet-lap-thong-so-3080---Dan-2/1.jpg" description="[1] Dàn 3080 - #2 Bạch Hổ" %}
 
 # II. Mức thiết lập - 95MH/s
 ## a. Tinh chỉnh tốc độ quạt theo nhiệt độ
