@@ -23,7 +23,7 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 - Temperature Limit: 65C
 - Core Clock: -502Mhz
 - Memory Clock: 825Mhz
-- Fan: Auto
+- Fan: User define - Auto
 
 Kết quả thu được:
 - Hashrate: 95.436MH/s

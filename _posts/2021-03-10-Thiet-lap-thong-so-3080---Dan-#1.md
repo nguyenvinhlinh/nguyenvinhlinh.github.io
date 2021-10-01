@@ -17,12 +17,15 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 {% include image.html url="/image/posts/2021-03-10-Thiet-lap-thong-so-3080---Dan-1/1.jpg" description="[1] Dàn 3080 - #1" %}
 
 # II. Mức thiết lập - 95MH/s
-## a. MSI 3080 VENTUS 10G OC
+## a. Tinh chỉnh tốc độ quạt theo nhiệt độ
+{% include image.html url="/image/posts/2021-10-01-Thiet-lap-thong-so-3080---Dan-2/2.jpg" description="[2] Tinh chỉnh tốc độ quạt" %}
+
+## b. MSI 3080 VENTUS 10G OC
 - Power Limit: 77%
 - Temperature Limit: 65C
 - Core Clock: -502Mhz
 - Memory Clock: 800MHz
-- Fan: Auto
+- Fan: User define - Auto
 
 Kết quả thu được:
 
@@ -32,12 +35,12 @@ Kết quả thu được:
 - Nhiệt độ VRAM: 94C
 
 
-## b. MSI 3080 GAMING X TRIO
+## c. MSI 3080 GAMING X TRIO
 - Power Limit: 106%
 - Temperature Limit: 65C
 - Core Clock: -502Mhz
 - Memory Clock: 825Mhz
-- Fan: Auto
+- Fan: User define - Auto
 
 Kết quả thu được:
 - Hashrate: 95.436MH/s
@@ -46,12 +49,12 @@ Kết quả thu được:
 - Nhiệt độ VRAM: 98C
 
 
-## c. ASUS 3080 ROG STRIX GAMING OC
+## d. ASUS 3080 ROG STRIX GAMING OC
 - Power Limit: 67%
 - Temperature Limit: 65C
 - Core Clock: -502Mhz
 - Memory Clock: 800Mhz
-- Fan: Auto
+- Fan: User define - Auto
 
 Kết quả thu được:
 - Hashrate: 95.474MH/s
