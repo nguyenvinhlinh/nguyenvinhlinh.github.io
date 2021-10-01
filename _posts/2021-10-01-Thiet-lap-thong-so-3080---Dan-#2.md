@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thiết lập thông số 3080 - Dàn #2 Bạch Hổ"
-date: 2021-03-10 15:51:00
+date: 2021-10-01 11:31:00
 tags: mining
 categories:
 - Mining Rig
