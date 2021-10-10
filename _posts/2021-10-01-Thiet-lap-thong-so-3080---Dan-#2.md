@@ -46,7 +46,7 @@ Kết quả thu được:
 - Fan: User define - Auto
 
 Kết quả thu được:
-- Hashrate: 87.317MH/s
-- Công suất: 218W
+- Hashrate: 96.013MH/s
+- Công suất: 237W
 - Nhiệt độ GPU: 61C
 - Nhiệt độ VRAM: 84C
