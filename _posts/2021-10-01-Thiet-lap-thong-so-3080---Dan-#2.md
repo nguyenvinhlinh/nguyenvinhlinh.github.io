@@ -18,6 +18,11 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 
 # II. Mức thiết lập - 95MH/s
 ## a. Tinh chỉnh tốc độ quạt theo nhiệt độ
+- 30C -->  40% Fan
+- 50C -->  60% Fan
+- 60C -->  85% Fan
+- 65C --> 100% Fan
+
 {% include image.html url="/image/posts/2021-10-01-Thiet-lap-thong-so-3080---Dan-2/2.jpg" description="[2] Tinh chỉnh tốc độ quạt" %}
 
 ## b. MSI 3080 GAMING X TRIO
@@ -34,14 +39,14 @@ Kết quả thu được:
 - Nhiệt độ VRAM: 98C
 
 ## c. GIGABYTE 3080 OC
-- Power Limit: 59%
+- Power Limit: 64%
 - Temperature Limit: 65C
 - Core Clock: -502 Mhz
-- Memory Clock: 0Mhz
-- Fan: 90% FIXED
+- Memory Clock: 850Mhz
+- Fan: User define - Auto
 
 Kết quả thu được:
 - Hashrate: 87.317MH/s
 - Công suất: 218W
-- Nhiệt độ GPU: 52C
-- Nhiệt độ VRAM: 104C
+- Nhiệt độ GPU: 61C
+- Nhiệt độ VRAM: 84C

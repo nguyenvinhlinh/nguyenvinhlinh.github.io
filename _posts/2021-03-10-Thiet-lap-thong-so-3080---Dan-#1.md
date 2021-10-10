@@ -18,6 +18,11 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 
 # II. Mức thiết lập - 95MH/s
 ## a. Tinh chỉnh tốc độ quạt theo nhiệt độ
+- 30C -->  40% Fan
+- 50C -->  60% Fan
+- 60C -->  85% Fan
+- 65C --> 100% Fan
+
 {% include image.html url="/image/posts/2021-10-01-Thiet-lap-thong-so-3080---Dan-2/2.jpg" description="[2] Tinh chỉnh tốc độ quạt" %}
 
 ## b. MSI 3080 VENTUS 10G OC
