@@ -15,7 +15,7 @@ dbcache=4000
 
 # II. Systemctl service - /etc/systemd/system/bitcoin.service
 
-```service
+```systemd
 [Unit]
 Description=Bitcoin Full Node
 After=network.target mnt-CaHeoNas-disk_3.mount
