@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Personal Note: Installing a Alephium full node"
+title: "Personal Note: Installing an Alephium full node"
 date: 2021-11-10 23:56:14
 tags:
 - Cryptocurrency Node
