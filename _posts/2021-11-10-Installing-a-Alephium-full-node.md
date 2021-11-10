@@ -34,7 +34,7 @@ RestartSec=10
 WantedBy=multi-user.target
 ```
 
-# III. Firewall-cmd service - /etc/firewalld/services/bitcoin.xml
+# III. Firewall-cmd service - /etc/firewalld/services/alephium.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
