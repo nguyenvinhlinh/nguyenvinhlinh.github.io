@@ -10,9 +10,18 @@ categories:
 
 Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi lỡ tay xóa mấy profile trên MSI Afterburner. Tôi sẽ quay lại đây xem. Hiện tại đây là 2 VGA thuộc dàn #2 Bạch Hổ
 
-
 - MSI 3080 GAMING X TRIO (1 cái)
+- MSI 3080 VENTUS (2 cái)
 - GIGABYTE 3080 GAMING OC 10G (1 cái)
+
+|------------------|-----------------------------|----------------|
+| Vị Trí trên main | VGA                         | Vị trí trên OS |
+|------------------|-----------------------------|----------------|
+| 1                | MSI 3080 GAMING X TRIO      | 3              |
+| 2                | MSI 3080 VENTUS             | 1              |
+| 3                | MSI 3080 VENTUS             | 2              |
+| 4                | GIGABYTE 3080 GAMING OC 10G | 4              |
+|------------------|-----------------------------|----------------|
 
 {% include image.html url="/image/posts/2021-10-01-Thiet-lap-thong-so-3080---Dan-2/1.jpg" description="[1] Dàn 3080 - #2 Bạch Hổ" %}
 
@@ -37,6 +46,19 @@ Kết quả thu được:
 - Công suất: 235W
 - Nhiệt độ GPU: 58C
 - Nhiệt độ VRAM: 98C
+
+## c. MSI 3080 VENTUS
+- Power Limit: 77%
+- Temperature Limit: 65C
+- Core Clock: -502Mhz
+- Memory Clock: 800Mhz
+- Fan: User define - Auto
+
+Kết quả thu được:
+- Hashrate: 95.426MH/s
+- Công suất: 238W
+- Nhiệt độ GPU: 61C
+- Nhiệt độ VRAM: 110C
 
 ## c. GIGABYTE 3080 OC
 - Power Limit: 64%
