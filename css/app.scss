@@ -244,6 +244,12 @@ div.pagination {
   }
 }
 
+div.highlight {
+  pre.highlight {
+    overflow-x: auto;
+  }
+}
+
 code.highlighter-rouge {
   color: $code-highlight-color;
   background-color: rgba(241, 250, 140, 0.9);
