@@ -61,7 +61,7 @@ All Credit goes this guy Mark Rahmani (diomark#8272) [https://www.facebook.com/d
 #first need to unlock wallet. not putting password in here
 
 #check wallet
-curlResult=`curl -X 'GET'   'http://127.0.0.1:12973/wallets/MINER_WALLET_NAME/balances'   -H 'accept: application/json' 2>/dev/null | json_pp | grep totalBalanceHint`
+curlResult=`curl -X 'GET'   'http://127.0.0.1:12973/wallets/MINER_WALLET_NAME/balances'   -H 'accept: application/json' 2>/dev/null | json_pp | grep totalBalanceHint| cut -f1 -d","`
 lastdate=`date +%s`
 
 
@@ -77,7 +77,7 @@ fi
 while true; do
  oldResult=$curlResult
 
- datestr=`date +"%x %R"`; echo -n "."; curlResult=`curl -X 'GET'   'http://127.0.0.1:12973/wallets/MINER_WALLET_NAME/balances'   -H 'accept: application/json' 2>/dev/null | json_pp | grep totalBalanceHint`
+ datestr=`date +"%x %R"`; echo -n "."; curlResult=`curl -X 'GET'   'http://127.0.0.1:12973/wallets/MINER_WALLET_NAME/balances'   -H 'accept: application/json' 2>/dev/null | json_pp | grep totalBalanceHint| cut -f1 -d","`
  if [ "$oldResult" != "" ]; then
     if [ "$curlResult" != "$oldResult" ]; then
        echo
@@ -93,4 +93,8 @@ while true; do
 
  sleep 30
 done
+
 ```
+
+
+{% include image.html url="/image/posts/2021-11-10-Installing-an-Alephium-full-node/1.png" description="Balance Checking Script" %}
