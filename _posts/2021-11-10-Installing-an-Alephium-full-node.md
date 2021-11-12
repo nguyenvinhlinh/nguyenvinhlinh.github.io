@@ -7,6 +7,7 @@ tags:
 - Alephium
 categories:
 - Cryptocurrency Node
+comments: true
 ---
 # I. Alephium node config - Alephium/user.conf
 ```config
