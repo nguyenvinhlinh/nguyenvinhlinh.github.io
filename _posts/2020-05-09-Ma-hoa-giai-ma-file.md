@@ -26,4 +26,5 @@ Phần mềm sẽ yêu cầu **mật mã.** Sau khi quá trình giải mã kết
 
 
 # III. Lưu ý.
-Nếu mà bạn mã hóa, rồi giải mã ngay lập tức. Khả năng rất cao là khi giải mã phần mềm sẽ không yêu cầu nhập mã.
+Nếu mà bạn mã hóa, rồi giải mã ngay lập tức. Khả năng rất cao là khi giải mã phần mềm sẽ không yêu cầu nhập mã. Để yêu cầu `gpg` hỏi mật khẩu, cần thêm flag  `--no-symkey-cache`,
+flag này sẽ rất cần thiết lúc testing.
