@@ -9,9 +9,15 @@ categories:
 - Cryptocurrency Node
 ---
 # I. Alephium node config - Alephium/user.conf
-
 ```config
-alephium.network.external-address="42.117.91.143:9973"
+alephium.network.external-address="x.x.x.x:9973"
+alephium.mining.api-interface="0.0.0.0"
+alephium.mining.miner-addresses=[
+ "miner_address_1",
+ "miner_address_2",
+ "miner_address_3",
+ "miner_address_4",
+]
 ```
 
 # II. Systemctl service - /etc/systemd/system/alephium.service
@@ -44,4 +50,46 @@ WantedBy=multi-user.target
   <port protocol="tcp" port="9973"/>
   <port protocol="udp" port="9973"/>
 </service>
+```
+
+# IV. Balance checking script
+All Credit to this discord guy: diomark#8272
+```sh
+#!/bin/zsh
+
+#first need to unlock wallet. not putting password in here
+
+#check wallet
+curlResult=`curl -X 'GET'   'http://127.0.0.1:12973/wallets/MINER_WALLET_NAME/balances'   -H 'accept: application/json' 2>/dev/null | json_pp | grep totalBalanceHint`
+lastdate=`date +%s`
+
+
+if echo $curlResult | grep -q ALPH; then
+  datestr=`date +"%x %R"`
+  echo -n "$datestr "
+  echo Wallet unlocked - $curlResult;
+else
+  echo Please unlock wallet first
+  exit
+fi
+
+while true; do
+ oldResult=$curlResult
+
+ datestr=`date +"%x %R"`; echo -n "."; curlResult=`curl -X 'GET'   'http://127.0.0.1:12973/wallets/MINER_WALLET_NAME/balances'   -H 'accept: application/json' 2>/dev/null | json_pp | grep totalBalanceHint`
+ if [ "$oldResult" != "" ]; then
+    if [ "$curlResult" != "$oldResult" ]; then
+       echo
+       echo -n "$datestr "
+       newdate=`date +%s`
+       secs=`expr $newdate - $lastdate`
+       mins=`expr $secs / 60`
+       echo  -n "Won a block after $mins minutes! "
+       echo $curlResult
+       lastdate=$newdate
+    fi
+ fi
+
+ sleep 30
+done
 ```
