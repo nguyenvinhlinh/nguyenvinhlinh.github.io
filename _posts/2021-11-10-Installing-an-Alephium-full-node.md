@@ -53,7 +53,8 @@ WantedBy=multi-user.target
 ```
 
 # IV. Balance checking script
-All Credit to this discord guy: diomark#8272
+All Credit goes this guy Mark Rahmani (diomark#8272) [https://www.facebook.com/diomark/](https://www.facebook.com/diomark/)
+
 ```sh
 #!/bin/zsh
 
