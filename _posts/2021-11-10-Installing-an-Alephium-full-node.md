@@ -46,9 +46,11 @@ WantedBy=multi-user.target
 <?xml version="1.0" encoding="utf-8"?>
 <service>
   <short>Alephium node</short>
-  <description>This option allows Alephium node to use tcp port 8333</description>
+  <description>This option allows Alephium node to use tcp port 9973 and 10973</description>
   <port protocol="tcp" port="9973"/>
   <port protocol="udp" port="9973"/>
+  <port protocol="tcp" port="10973"/>
+  <port protocol="udp" port="10973"/>
 </service>
 ```
 
