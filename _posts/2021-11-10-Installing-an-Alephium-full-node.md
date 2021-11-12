@@ -100,4 +100,4 @@ done
 ```
 
 
-{% include image.html url="/image/posts/2021-11-10-Installing-an-Alephium-full-node/1.png" description="Balance Checking Script" %}
+{% include image.html url="/image/posts/2021-11-10-Installing-an-Alephium-full-node/1.png" description="Balance Checking Script Output." %}
