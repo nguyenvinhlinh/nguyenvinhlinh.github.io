@@ -9,7 +9,7 @@ categories:
 - Cryptocurrency Node
 comments: true
 ---
-# I. Alephium node config - Alephium/user.conf
+# I. Alephium node config - $ALEPHIUM_HOME/user.conf
 ```config
 alephium.network.external-address="x.x.x.x:9973"
 alephium.api.network-interface = "0.0.0.0"
@@ -23,7 +23,12 @@ alephium.mining.miner-addresses=[
 ]
 ```
 
-# II. Systemctl service - /etc/systemd/system/alephium.service
+# II. Systemctl EnvironmentFile - /opt/alephium/alephium.env
+``` config
+ALEPHIUM_HOME=/mnt/CaHeoNas/disk_3/Alephium
+```
+
+# III. Systemctl service - /etc/systemd/system/alephium.service
 
 ```systemd
 [Unit]
@@ -41,11 +46,6 @@ RestartSec=10
 
 [Install]
 WantedBy=multi-user.target
-```
-
-# III. Systemctl EnvironmentFile - /opt/alephium/alephium.env
-``` config
-ALEPHIUM_HOME=/mnt/CaHeoNas/disk_3/Alephium
 ```
 
 # IV. Firewall-cmd service - /etc/firewalld/services/alephium.xml
