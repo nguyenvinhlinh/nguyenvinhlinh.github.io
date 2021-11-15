@@ -12,7 +12,9 @@ comments: true
 # I. Alephium node config - Alephium/user.conf
 ```config
 alephium.network.external-address="x.x.x.x:9973"
+alephium.api.network-interface = "0.0.0.0"
 alephium.mining.api-interface="0.0.0.0"
+
 alephium.mining.miner-addresses=[
  "miner_address_1",
  "miner_address_2",
@@ -41,17 +43,23 @@ RestartSec=10
 WantedBy=multi-user.target
 ```
 
-# III. Firewall-cmd service - /etc/firewalld/services/alephium.xml
+# III. Systemctl EnvironmentFile - /opt/alephium/alephium.env
+``` config
+ALEPHIUM_HOME=/mnt/CaHeoNas/disk_3/Alephium
+```
+
+# IV. Firewall-cmd service - /etc/firewalld/services/alephium.xml
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <service>
   <short>Alephium node</short>
-  <description>This option allows Alephium node to use tcp port 9973 and 10973</description>
+  <description>
+    This option allows Alephium node to use tcp port 9973, 10973, 12973
+  </description>
   <port protocol="tcp" port="9973"/>
-  <port protocol="udp" port="9973"/>
   <port protocol="tcp" port="10973"/>
-  <port protocol="udp" port="10973"/>
+  <port protocol="tcp" port="12973"/>
 </service>
 ```
 

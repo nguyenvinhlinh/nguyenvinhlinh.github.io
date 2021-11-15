@@ -3,7 +3,7 @@ layout: post
 title: "CSGO, binding để nhảy ném smoke"
 date: 2021-09-15 12:52:39
 tags: csgo
-categories: csgo
+categories: CSGO
 ---
 
 Trong trường hợp này phím nhảy ném là phím `mouse-5`. Mở console lên và gõ lệnh sau:
