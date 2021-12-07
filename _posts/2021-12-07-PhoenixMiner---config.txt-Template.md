@@ -8,7 +8,7 @@ categories:
 - Mining Rig
 ---
 
-{% highlight text %}
+{% highlight config %}
 -pool asia1.ethermine.org:4444
 -pool2 eu1.ethermine.org:4444
 -wal miner_address_here
