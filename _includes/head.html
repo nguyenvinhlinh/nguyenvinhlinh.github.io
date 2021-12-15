@@ -3,8 +3,8 @@
 {% if page.title %}
 <meta property="og:title"       content="{{ page.title }}">
 <meta property="og:type"        content="article">
-<meta property="og:description" content="{{ page.description }}"/>
-<meta property="og:image"       content="{{site.url}}{{ page.image }}"/>
+<meta property="og:description" content="{{ page.seo_description }}"/>
+<meta property="og:image"       content="{{site.url}}{{ page.seo_image }}"/>
 {% else %}
 <meta property="og:title" content="{{ site.title }}">
 <meta property="og:type" content="website">
