@@ -9,6 +9,8 @@ tags:
 - Nvidia
 categories:
 - Linux
+description: Just another tutorial to install Nvidia driver for GTX 1060 on Fedora 34.
+image: /image/posts/2021-12-15-How-to-install-GTX-1060-on-Fedora/1.png
 comments: true
 ---
 
