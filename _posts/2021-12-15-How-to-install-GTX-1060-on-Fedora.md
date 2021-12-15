@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install GTX 1060 on Fedora"
+title: "How to install GTX 1060 on Fedora with Secure Boot enabled?"
 date: 2021-12-15 14:55:51
 tags:
 - Linux
