@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to make executable jar with gradle?"
+title: "How to make executable jar with Gradle?"
 date: 2021-12-16 01:11:42
 tags:
 - Linux
