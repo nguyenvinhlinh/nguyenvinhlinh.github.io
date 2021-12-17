@@ -12,7 +12,7 @@ seo_description: >
     jack 24-pin cấp điện từ nguồn (PSU), điện được lấy từ các jack 6 pin. Những bo mạch chủ này không hiếm gặp trên các dàn
     đào tiền mã hóa. Trên những bo mạch chủ này, không thể cài đặt thành công từ BIOS chế độ tự khởi động được  mà bạn sẽ
     cần chơi chiêu trên jack 24-pin.
-seo_image:
+seo_image: /image/posts/2021-12-18-Cach-khoi-dong-nguon-may-tinh-tu-dong-moi-khi-co-dien/1.png
 comments: true
 ---
 Bài viết này tập trung giải quyết vấn đề khởi động máy tính tự động khi có điện dành cho bo mạch chủ không có cổng nhận
