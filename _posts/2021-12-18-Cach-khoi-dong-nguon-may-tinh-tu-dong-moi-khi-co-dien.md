@@ -17,7 +17,7 @@ comments: true
 ---
 Bài viết này tập trung giải quyết vấn đề khởi động máy tính tự động khi có điện dành cho bo mạch chủ không có cổng nhận
 jack 24-pin cấp điện từ nguồn (PSU), điện được lấy từ các jack 6 pin. Những bo mạch chủ này không hiếm gặp trên các dàn
-đào tiền mã hóa. Trên những bo mạch chủ này, không thể cài đặt thành công từ BIOS chế độ tự khởi động được  mà bạn sẽ
+đào tiền mã hóa. Trên những bo mạch chủ này, không thể cài đặt chế độ tự khởi động trên BIOS được mà bạn sẽ
 cần chơi chiêu trên jack 24-pin.
 
 Không dài dòng nữa, tất cả những gì bạn cần làm là chú ý đến dây 24-pin xuất ra từ bộ nguồn máy tính (PSU).
