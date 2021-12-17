@@ -25,7 +25,7 @@ Không dài dòng nữa, tất cả những gì bạn cần làm là chú ý đ�
 {% include image.html url="/image/posts/2021-12-18-Cach-khoi-dong-nguon-may-tinh-tu-dong-moi-khi-co-dien/1.png" description="[1] Sơ đồ jack 24-pin từ PSU." %}
 
 Hai cổng duy nhất cần chú ý đó là cổng số `16` và `17`, bạn sẽ cần phải làm chúng nối tiếp nhau. Lưu ý nhìn cái ngàm ngang nó
-nắm ở đâu nhé, cắm nhầm là căng thẳng đó. Trên hình bạn sẽ thấy cái ngạnh ngang nằm ở vị trí cổng số `18` và `19`.  Một lần nữa,
+nắm ở đâu nhé, cắm nhầm là căng thẳng đó. Trên hình bạn sẽ thấy cái ngàm ngang nằm ở vị trí cổng số `18` và `19`.  Một lần nữa,
 chú ý đừng có nhầm, bạn mà cắn nhầm sang cổng số `4` và `5` là toang đó nhé,  5 volt chạy thẳng vào ground. Cực mạnh.
 
 Anh em thầy thợ có rất nhiều cách thú vị. Đôi khi là đấu dây trực tiếp 2 cổng này, hoặc xịn xò hơn thì sẽ dùng một cái chấu
