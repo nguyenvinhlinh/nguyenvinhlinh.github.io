@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cách khởi động nguôn máy tính tự động mỗi khi có điện?"
+title: "Cách khởi động nguồn máy tính tự động mỗi khi có điện?"
 date: 2021-12-18 00:19:50
 tags:
 - Mining Rig
