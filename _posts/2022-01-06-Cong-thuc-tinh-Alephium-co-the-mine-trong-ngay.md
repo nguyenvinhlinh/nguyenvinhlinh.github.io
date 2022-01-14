@@ -3,10 +3,10 @@ layout: post
 title: "Công thức tính số Alephium (ALPH) có để đào solo trong ngày"
 date: 2022-01-06 23:41:47
 tags:
-- mining
+- mining rig
 - alph
 categories:
-- mining
+- Mining Rig
 seo_description: Công thức tính số Alephium (ALPH) có để đào solo trong ngày
 seo_image: /image/posts/2022-01-06-Cong-thuc-tinh-Alephium-co-the-mine-trong-ngay/1.png
 comments: true
