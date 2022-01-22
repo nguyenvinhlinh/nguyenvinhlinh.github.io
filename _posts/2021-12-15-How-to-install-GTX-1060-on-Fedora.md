@@ -113,7 +113,7 @@ dracut /boot/initramfs-$(uname -r).img $(uname -r);
 Boots OS on `level 3` and reboot
 {% highlight bash %}
 sudo systemctl set-default multi-user.target;
-sudo systemctl -r now;
+sudo shutdown -r now;
 {% endhighlight %}
 
 After login, go to `VGA-1060-key` directory and execute `install.sh`. At this step, just keep accepting and the driver will be installed.
@@ -126,7 +126,7 @@ sudo ./install.sh;
 After installing vga driver, you will need reboot OS on `level 5 - graphical`
 {% highlight sh %}
 systemctl set-default graphical.target;
-systemctl -r now;
+shutdown -r now;
 {% endhighlight %}
 
 Next time, if you update your kernel, you can run this step (`Step 8`) again, it should be fine. In addition, you should encrypt your `private-key` with `gpg`,
