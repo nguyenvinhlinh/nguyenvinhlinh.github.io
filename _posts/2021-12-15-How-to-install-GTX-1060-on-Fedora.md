@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install GTX 1060 on Fedora with Secure Boot enabled?"
+title: "How to install VGA - GTX 1060 on Fedora with Secure Boot enabled?"
 date: 2021-12-15 14:55:51
 tags:
 - Linux
@@ -125,7 +125,7 @@ sudo ./install.sh;
 
 After installing vga driver, you will need reboot OS on `level 5 - graphical`
 {% highlight sh %}
-systemctl set-default multi-user.target;
+systemctl set-default graphical.target;
 systemctl -r now;
 {% endhighlight %}
 
