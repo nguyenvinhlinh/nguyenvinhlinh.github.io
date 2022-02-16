@@ -10,7 +10,7 @@ categories: Projects
 comments: true
 ---
 
-# Alephium Miner Bot - [https://github.com/nguyenvinhlinh/alephium-miner-bot](Github)
+# Alephium Miner Bot - [Github](https://github.com/nguyenvinhlinh/alephium-miner-bot)
 
 **Alephium Miner Bot is a telegram bot that sends the following messages**
 - Global network hashrate
