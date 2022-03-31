@@ -51,6 +51,7 @@ Tiếp theo, vào **Setting > Network** , chọn tùy chỉnh kết nối VPN. L
 - Address (192.168.1.200)
 - Netmask (255.255.255.255)
 - Gateway (192.168.1.1)
+- Tick chọn **use this connection only for resources on its network**
 
 Sau khi tinh chỉnh xong, tắt và mở lại VPN. Cuối cùng là tận hưởng thành quả.
 
