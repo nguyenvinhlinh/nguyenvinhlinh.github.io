@@ -13,7 +13,7 @@ Bài viết này miêu tả vấn đề về cường độ dòng điện (`A`) 
 
 Bấy giờ, tôi đang làm việc với hai dàn đào là **Chu Tước** và **Huyền Vũ** , hai cỗ máy này là hai cỗ máy đào tiền ảo với linh kiện mạnh
 nhất nhì thời điểm đó. Khoe khoang một chút thì **Chu Tước** sở hửu cho mình là **4 card 3080**, và **Huyền Vũ** là **170HX**.
-Thời điểm viết bài này là **12/4/2022**, Hiện tại ở Việt Nam, gần như ko có bài viết hình ảnh nào nói về card `170HX` và cũng như chủ sở
+Thời điểm viết bài này là **12/4/2022**, Hiện tại ở Việt Nam, gần như không có bài viết hình ảnh nào nói về card `170HX` và cũng như chủ sở
 hữu, dân sưu tập đang khai thác. So sánh một chút với những người đào tiền mã hóa khác bên Châu Âu cũng như Mỹ, dàn **Huyền Vũ** có thể thua
 dàn khác là vì số lượng card `170HX` chứ không phải là vì chất lượng linh kiện bên trong nó, `170HX` thuộc nhóm linh kiện mạnh nhất thời
 điểm hiện tại, có lẽ chỉ thua `220HX`  một con quái vật có cực kì ít người sử dụng cũng như sưu tập. Và giờ thì hãy quay lại vấn đề chính.
