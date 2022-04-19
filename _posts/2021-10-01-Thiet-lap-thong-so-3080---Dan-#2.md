@@ -36,12 +36,12 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 
 ## b. Tinh chỉnh MSI Afterburner
 
-| No. VGA                         | Power Limit | Temp. Limit | Core Clock | Mem Clock |
-|---------------------------------|-------------|-------------|------------|-----------|
-| [1] MSI 3080 VENTUS             | 77%         | 65C         | -502MHz    | +900Mhz   |
-| [2] MSI 3080 VENTUS             | 77%         | 65C         | -502MHz    | +900Mhz   |
-| [3] MSI 3080 GAMING X TRIO      | 106%        | 65C         | -502MHz    | +900Mhz   |
-| [4] GIGABYTE 3080 GAMING OC 10G | 64%         | 65C         | -502MHz    | +900Mhz   |
+| No. VGA                         | Power Limit   | Temp. Limit | Core Clock | Mem Clock |
+|---------------------------------|---------------|-------------|------------|-----------|
+| [1] MSI 3080 VENTUS             | 77%  priority | 65C         | -502MHz    | +900Mhz   |
+| [2] MSI 3080 VENTUS             | 77%  priority | 65C         | -502MHz    | +900Mhz   |
+| [3] MSI 3080 GAMING X TRIO      | 106% priority | 65C         | -502MHz    | +825Mhz   |
+| [4] GIGABYTE 3080 GAMING OC 10G | 64%  priority | 65C         | -502MHz    | +900Mhz   |
 
 ## c. Kết quả thu được
 
@@ -49,5 +49,5 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 |---------------------------------|-------------------|-----------|-----------------|--------------------|
 | [1] MSI 3080 VENTUS             | 246W              | 96.50Mh/s | 61C             | 90C                |
 | [2] MSI 3080 VENTUS             | 246W              | 96.01Mh/s | 64C             | 90C                |
-| [3] MSI 3080 GAMING X TRIO      | 229W              | 94.70MH/s | 62C             | 106C               |
+| [3] MSI 3080 GAMING X TRIO      | 229W              | 95.02MH/s | 62C             | 106C               |
 | [4] GIGABYTE 3080 GAMING OC 10G | 236W              | 95.51Mh/s | 65C             | 90C                |
