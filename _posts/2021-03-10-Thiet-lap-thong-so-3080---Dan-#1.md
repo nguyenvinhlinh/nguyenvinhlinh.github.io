@@ -32,8 +32,7 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 {% include image.html url="/image/posts/2021-03-10-Thiet-lap-thong-so-3080---Dan-1/2.png" description="[2] Tinh chỉnh tốc độ quạt" %}
 
 
-## b. Tinh Chinh MSI Afterburner
-
+## b. Tinh chỉnh MSI Afterburner
 
 | No. VGA                           | Power Limit | Temp. Limit | Core Clock | Mem Clock |
 |-----------------------------------|-------------|-------------|------------|-----------|
