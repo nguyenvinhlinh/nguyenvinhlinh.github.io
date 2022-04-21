@@ -43,12 +43,14 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 
 ## c. Kết quả thu được
 
-| No. VGA                           | Power Consumption | Hashrate   | GPU Temperature | Memory Temperature |
-|-----------------------------------|-------------------|------------|-----------------|--------------------|
-| [1] MSI 3080 GAMING X TRIO        | 235 Walt          | 95.436MH/s | 58C             | 98C                |
-| [2] ASUS 3080 ROG STRIX GAMING OC | 248 Walt          | 95.474MH/s | 58C             | 96C                |
-| [3] MSI 3080 VENTUS 10G OC        | 246 Walt          | 95.443MH/s | 62C             | 94C                |
-| [4] MSI 3080 GAMING X TRIO        | 235 Walt          | 95.436MH/s | 58C             | 98C                |
+| No. VGA                           | Power Consumption | Hashrate        | GPU Temperature | Memory Temperature |
+|-----------------------------------|-------------------|-----------------|-----------------|--------------------|
+| [1] MSI 3080 GAMING X TRIO        | 235 Walt          | 95.436MH/s      | 58C             | 98C                |
+| [2] ASUS 3080 ROG STRIX GAMING OC | 248 Walt          | 95.474MH/s      | 58C             | 96C                |
+| [3] MSI 3080 VENTUS 10G OC        | 246 Walt          | 95.443MH/s      | 62C             | 94C                |
+| [4] MSI 3080 GAMING X TRIO        | 235 Walt          | 95.436MH/s      | 58C             | 98C                |
+|                                   |                   |                 |                 |                    |
+| **Total**                         | **964 Walt**      | **381.789MH/s** | --              | --                 |
 
 # II. Mức thiết lập - Kaspa - 95MH/s
 Tinh chỉnh quạt sẽ giống như cho Ethereum
