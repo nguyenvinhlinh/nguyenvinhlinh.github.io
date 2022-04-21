@@ -6,8 +6,8 @@ layout: default
   <div class="post">
     <h1><a href="{{post.url}}">{{post.title}}</a></h1>
     <div class="date-address-category">{{post.date | date: "%d/%m/%Y"}}
-      {% if post.address %}
-      - {{post.address}}
+      {% if post.location %}
+      @ {{post.location}}
       {% endif %}
       <span class="category-icon"></span>
       <a href="#">{{post.categories}}</a>
