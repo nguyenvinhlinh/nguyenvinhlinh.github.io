@@ -2,6 +2,7 @@
 layout: post
 title: "Tại sao mắc thêm tải mà cường độ dòng điện lại tăng lên?"
 date: 2022-04-13 00:21:23
+location: Saigon
 tags: physics, electronic
 categories:
 - Math & Physic
