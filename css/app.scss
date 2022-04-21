@@ -141,7 +141,7 @@ div.post {
     }
   }
 
-  h2{
+  h1{
     color: $heading-color;
     font-size: 2em;
     padding-top: 20px;
@@ -150,8 +150,15 @@ div.post {
       color: $heading-color;
     }
   }
-  h2 ~ h2{
-    color: $paragraph-color;
+
+  h2{
+    color: $heading-color;
+    font-size: 1.5em;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    a {
+      color: $heading-color;
+    }
   }
 
   div.date-address-category{

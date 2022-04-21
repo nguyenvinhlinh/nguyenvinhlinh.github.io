@@ -3,8 +3,8 @@ layout: default
 ---
 
 <div class="post">
-  <h2>Archive</h2>
-  
+  <h1>Archive</h1>
+
   {% for post in site.posts%}
   {%   capture pyear %}{{ post.previous.date | date: '%Y' }}{% endcapture %}
   {%   capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
@@ -15,10 +15,10 @@ layout: default
   {% endif %}
 
   <a href="{{post.url}}">{{post.title}} - {{post.date | date: '%d/%m/%Y'}} </a> <br/>
-    
+
   {% if year != pyear %}
   </p>
   {% endif %}
-  
+
   {% endfor%}
 </div>

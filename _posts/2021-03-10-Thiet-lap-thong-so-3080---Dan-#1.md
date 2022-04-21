@@ -52,7 +52,7 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 |                                   |                   |                 |                 |                    |
 | **Total**                         | **964 Walt**      | **381.789MH/s** | --              | --                 |
 
-# II. Mức thiết lập - Kaspa - 95MH/s
+# II. Mức thiết lập - Kaspa - 835MH/s
 Tinh chỉnh quạt sẽ giống như cho Ethereum
 
 ## a. Tinh chỉnh **MSI Afterburner**
