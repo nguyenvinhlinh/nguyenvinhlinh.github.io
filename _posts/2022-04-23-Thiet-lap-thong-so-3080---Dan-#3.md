@@ -13,7 +13,8 @@ comments: false
 ---
 
 # I. Lời mở đầu
-Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi lỡ tay xóa mấy profile trên MSI Afterburner, Minerstat. Tôi sẽ quay lại đây xem. Hiện tại đây là 4 VGA trực thuộc dàn #3 Chu Tước. Cả 4 VGA này đều là dòng Lite Hash Rate (LHR).
+Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi lỡ tay xóa mấy profile trên **MSI Afterburner**, **Minerstat**.
+Tôi sẽ quay lại đây xem. Hiện tại đây là 4 VGA trực thuộc dàn **#3 Chu Tước**. Cả 4 VGA này đều là dòng Lite Hash Rate (LHR).
 
 | No | VGA                          |
 |----|------------------------------|
@@ -22,9 +23,11 @@ Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi l�
 | 3  | MSI 3080 VENTUS 10G OC (LHR) |
 | 4  | MSI 3080 VENTUS 10G OC (LHR) |
 
+{% include image.html url="/image/posts/2022-04-23-Thiet-lap-thong-so-3080---Dan-3/1.png" description="[1] Chu Tước" %}
+
 # II. Mức thiết lập - Ethereum - 70MH/s
 
-{% include image.html url="/image/posts/2022-04-23-Thiet-lap-thong-so-3080---Dan-3/1.png" description="T-rex miner" %}
+{% include image.html url="/image/posts/2022-04-23-Thiet-lap-thong-so-3080---Dan-3/2.png" description="[2] T-rex miner" %}
 
 
 ## a. T-rex config.json
