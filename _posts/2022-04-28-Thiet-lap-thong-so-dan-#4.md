@@ -3,12 +3,13 @@ layout: post
 title: "Thiết lập thông số dàn số 4 - Huyền Vũ"
 date: 2022-04-28 00:41:00
 update:
-location:
+location: Saigon
 tags:
 categories:
+- Mining Rig
 seo_description:
 seo_image:
-comments: true
+comments: false
 ---
 # I. Lời mở đầu
 Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi lỡ tay xóa mấy profile trên **MSI Afterburner**, **Minerstat**.
@@ -38,5 +39,3 @@ tuy nhiên là chưa đủ. Để làm hoàn thiện sẽ cần đầu tư nhi�
 | 2  | LEADTEK WinFast RTX 3080 AI BLOWER 10G | 221 Walt          | 86.10 MH/s      | 63C       | 104C         |
 |    |                                        |                   |                 |           |              |
 |    | **Total**                              | **421 Walt**      | **231.82 MH/s** | --        | --           |
-
-{% include image.html url="/image/posts/2022-04-28-Thiet-lap-thong-so-dan-4.md/1.png" description="" %}
