@@ -26,5 +26,5 @@ exclude:
   - Gemfile.lock
 future: true
 incremental: true
-port: 3000
+port: 3001
 verbose: true
