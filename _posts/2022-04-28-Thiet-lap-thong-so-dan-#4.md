@@ -18,12 +18,16 @@ Tôi sẽ quay lại đây xem.
 Trong những thiết bị đào tôi đã từng có cơ hội thử qua, hai thiết bị này cực kì nhạy cảm với nhiệt độ, tôi đã mod,
 tuy nhiên là chưa đủ. Để làm hoàn thiện sẽ cần đầu tư nhiều hơn.
 
+{% include image.html url="/image/posts/2022-04-28-Thiet-lap-thong-so-dan-4.md/1.jpg" description="Dàn Huyền Vũ" %}
+
 | No | VGA                                    |
 |----|----------------------------------------|
 | 1  | 170HX                                  |
 | 2  | LEADTEK WinFast RTX 3080 AI BLOWER 10G |
 
 # II. Mức thiết lập - Ethereum - 234MH/s
+Lưu ý là nhiệt độ phòng hiện tại là 27C.
+
 ## a. Thiết lập với MSI Afterburner
 
 | No | VGA                                    | Power Limit | Temp. Limit | +/- Core Clock | +/- Mem Clock |
