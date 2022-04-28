@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Thiết lập thông số dàn số 4 - Huyền Vũ"
+title: "Thiết lập thông số 170HX - Dàn #4 Huyền Vũ"
 date: 2022-04-28 00:41:00
 update:
 location: Saigon
