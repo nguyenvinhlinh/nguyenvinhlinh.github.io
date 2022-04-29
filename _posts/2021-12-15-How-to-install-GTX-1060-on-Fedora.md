@@ -2,6 +2,7 @@
 layout: post
 title: "How to install VGA - GTX 1060 on Fedora with Secure Boot enabled?"
 date: 2021-12-15 14:55:51
+update: 2022-04-29 12:00:00
 tags:
 - Linux
 - VGA
@@ -33,8 +34,8 @@ Example output:
 
 {% include image.html url="/image/posts/2021-12-15-How-to-install-GTX-1060-on-Fedora/1.png" description="[1] NVIDIA Driver Downloads" %}
 
-In this post, I would like to pick the latest stable version `470.94` which was released on December 13, 2021. After your downloading finished, remember to make the file
-executable with `chmod +x NVIDIA-Linux-x86_64-470.94.run`, and copy it to `$HOME/Software/VGA-1060-key`, you will need to execute this file each time your update your kernels.
+In this post, I would like to pick the latest stable version `510.68.02` which was released on April 26, 2022. After your downloading finished, remember to make the file
+executable with `chmod +x NVIDIA-Linux-x86_64-510.68.02.run`, and copy it to `$HOME/Software/VGA-1060-key`, you will need to execute this file each time your update your kernels.
 
 {% highlight sh %}
 mkdir -p $HOME/Software/VGA-1060-key;
@@ -44,7 +45,6 @@ chmod +x NVIDIA-Linux-x86_64-470.94.run;
 {% endhighlight %}
 
 ## Step 3: Generate new pair `private-key` and `public-key`
-
 
 {% highlight sh %}
 mkdir -p $HOME/Software/VGA-1060-key/key;
@@ -66,8 +66,8 @@ sudo mokutil --import $HOME/Software/VGA-1060-key/key/vga-1060.der;
 This is `install.sh` content:
 {% highlight sh %}
 #!/bin/bash
-./NVIDIA-Linux-x86_64-470.94.run --module-signing-secret-key=/home/YOUR_USERNAME/Software/VGA-1060-key/key/vga-1060.key \
-                                 --module-signing-public-key=/home/YOUR_USERNAME/Software/VGA-1060-key/key/vga-1060.der
+./NVIDIA-Linux-x86_64-510.68.02.run --module-signing-secret-key=/home/YOUR_USERNAME/Software/VGA-1060-key/key/vga-1060.key \
+                                    --module-signing-public-key=/home/YOUR_USERNAME/Software/VGA-1060-key/key/vga-1060.der
 {% endhighlight %}
 
 Each time you update your kernel, you need to go boots OS with `level 3` and run this script `install.sh`.
