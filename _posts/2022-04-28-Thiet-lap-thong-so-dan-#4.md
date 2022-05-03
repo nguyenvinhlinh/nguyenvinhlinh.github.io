@@ -29,10 +29,12 @@ Ngoài ra thì `[2] MSI 3080 VENTUS 10G OC (FHR)` đã được tôi thay pad t�
 
 # II. Mức thiết lập - Ethereum - 333 MH/s
 Thiết lập này sử dụng với phần mềm [Phoenix Miner 6.1b](https://bitcointalk.org/index.php?topic=2647654.0). Đánh giá
-sơ bộ của tôi về **phoenix miner** đó là phần mềm này chưa khai thác hết khả năng của `170hx`, **t-rex 0.25.12** nhanh hơn. Tuy nhiên,
-**t-rex** lại gặp vấn đề trong việc giao tiếp vơí vga `[3]LEADTEK WinFast RTX 3080 AI BLOWER 10G` qua chân riser, sau một thời gian
+sơ bộ của tôi về **phoenix miner** đó là phần mềm này chưa khai thác hết khả năng của `170hx`, [T-Rex 0.25.12](https://github.com/trexminer/T-Rex/releases/tag/0.25.12)
+nhanh hơn.
+
+Tuy nhiên, **t-rex** lại gặp vấn đề trong việc giao tiếp với vga `[3]LEADTEK WinFast RTX 3080 AI BLOWER 10G` qua chân riser, sau một thời gian
 đào, vga này sẽ bị lỗi `undefined` khi kiểm tra trên website `127.0.0.1:4068/trex` và không đào được, thậm chí lỗi này còn nặng đến mức,
-tinh chỉnh trên **MSI Afterburner**  không có tác dụng.
+tinh chỉnh trên **MSI Afterburner**  không có tác dụng, buộc phải restart lại cả máy đào.
 
 
 ## a. Thiết lập với MSI Afterburner
