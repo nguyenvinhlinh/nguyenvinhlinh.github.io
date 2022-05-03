@@ -68,16 +68,16 @@ tinh chỉnh ở mức thấp hơn mức cho phép trên **MSI Afterburner** (nh
 - Mode: Built-in (Default)
 - Power Limit (%): skip
 - Core Clock (-/+ MHz): skip
-- Memory Clock (-/+ MHz): skip
+- Locked Memory Clock (MHz): skip
 - Force P2 State: skip
 - ClockTune delay: 30
 
-| No | VGA                           | Power Limit (Walt) | Locked Core Clock (MHz) | Locked Memory Clock (MHz) |
-|----|-------------------------------|--------------------|-------------------------|---------------------------|
-| 1  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 825                       |
-| 2  | ASUS 3080 ROG STRIX GAMING OC | 240                | 1170                    | 800                       |
-| 3  | MSI 3080 VENTUS 10G OC        | 240                | 1170                    | 800                       |
-| 4  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 825                       |
+| No | VGA                           | Power Limit (Walt) | Locked Core Clock (MHz) | Memory Clock (-/+ MHz) |
+|----|-------------------------------|--------------------|-------------------------|------------------------|
+| 1  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 825                    |
+| 2  | ASUS 3080 ROG STRIX GAMING OC | 240                | 1170                    | 800                    |
+| 3  | MSI 3080 VENTUS 10G OC        | 240                | 1170                    | 800                    |
+| 4  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 825                    |
 
 ## b. Triggers trong Minerstat
 - IF GPU temperature OF Any IS >=40°C THEN Set fans TO 60%
