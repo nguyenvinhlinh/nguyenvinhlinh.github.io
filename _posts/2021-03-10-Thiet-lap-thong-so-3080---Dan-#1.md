@@ -74,10 +74,10 @@ tinh chỉnh ở mức thấp hơn mức cho phép trên **MSI Afterburner** (nh
 
 | No | VGA                           | Power Limit (Walt) | Locked Core Clock (MHz) | Memory Clock (-/+ MHz) |
 |----|-------------------------------|--------------------|-------------------------|------------------------|
-| 1  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 825                    |
+| 1  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 850                    |
 | 2  | ASUS 3080 ROG STRIX GAMING OC | 240                | 1170                    | 800                    |
-| 3  | MSI 3080 VENTUS 10G OC        | 240                | 1170                    | 800                    |
-| 4  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 825                    |
+| 3  | MSI 3080 VENTUS 10G OC        | 240                | 1170                    | 950                    |
+| 4  | MSI 3080 GAMING X TRIO        | 392                | 1170                    | 850                    |
 
 ## b. Triggers trong Minerstat
 - IF GPU temperature OF Any IS >=40°C THEN Set fans TO 60%
@@ -90,12 +90,12 @@ tinh chỉnh ở mức thấp hơn mức cho phép trên **MSI Afterburner** (nh
 
 | No. VGA                           | Power Consumption | Hashrate         | GPU Temperature | Memory Temperature |
 |-----------------------------------|-------------------|------------------|-----------------|--------------------|
-| [1] MSI 3080 GAMING X TRIO        | 224 Walt          | 96.128 MH/s      | 51C             | 98C                |
-| [2] ASUS 3080 ROG STRIX GAMING OC | 239 Walt          | 95.574 MH/s      | 52C             | 96C                |
-| [3] MSI 3080 VENTUS 10G OC        | 228 Walt          | 95.878 MH/s      | 55C             | 96C                |
-| [4] MSI 3080 GAMING X TRIO        | 224 Walt          | 96.096 MH/s      | 48C             | 90C                |
+| [1] MSI 3080 GAMING X TRIO        | 223 Walt          | 96.310 MH/s      | 52C             | 98C                |
+| [2] ASUS 3080 ROG STRIX GAMING OC | 239 Walt          | 95.426 MH/s      | 52C             | 96C                |
+| [3] MSI 3080 VENTUS 10G OC        | 233 Walt          | 97.450 MH/s      | 55C             | 96C                |
+| [4] MSI 3080 GAMING X TRIO        | 224 Walt          | 96.257 MH/s      | 48C             | 92C                |
 |                                   |                   |                  |                 |                    |
-| **Total**                         | **915 Walt**      | **383.676 MH/s** | --              | --                 |
+| **Total**                         | **919 Walt**      | **385.443 MH/s** | --              | --                 |
 
 {% include image.html url="/image/posts/2021-03-10-Thiet-lap-thong-so-3080---Dan-1/3.png" description="[3] MinerStat" %}
 
