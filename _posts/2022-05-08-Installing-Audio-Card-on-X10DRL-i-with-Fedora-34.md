@@ -46,7 +46,7 @@ $ lspci -nnk | grep -A3 Audio
         Kernel modules: snd_cmipci
 {% endhighlight %}
 
-Other failed tests lead to an unknown conflict with Graphic Card. A dark blank screen with flashing cursor.
+**Other failed tests lead to an unknown conflict with Graphic Card. A dark blank screen with flashing cursor.**
 
 After installing the audio card on `PCH SLOT 1 PCI-E 2.0`. I have tested the `Pink Socket - Mic In` and
 `Green Socket - Front Out`. They all works flawlessly.
