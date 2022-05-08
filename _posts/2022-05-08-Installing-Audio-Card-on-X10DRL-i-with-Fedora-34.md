@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Installing an Audio Card Cmedia CMI8738 on X10DRL-i with Fedora 34"
+title: "Installing an Audio Card - CMI8738 on X10DRL-i with Fedora 34"
 date: 2022-05-08 12:30:17
 update:
 location: Saigon
 tags:
 - Linux
 - Audio Card
+- X10DRL-i
+- CMI8738
 categories: Linux
 seo_description:
 seo_image:
