@@ -13,20 +13,27 @@ seo_image:
 comments: true
 ---
 
-I am the owner of  a motherboard named **X10DRL-i** from **Supermicro**. Regarding its specification, there is no audio component on this motherboard which means that I cannot listen to music or do voice call.
+I am the owner of  a motherboard named **X10DRL-i** from **Supermicro**. Regarding its specification,
+there is no audio component on this motherboard which means that I cannot listen to music or do voice
+call.
 
-Of course, there is a tweak to output audio via USB devices however it’s not a method that I would like to use in long term. I really don’t want to waste an USB socket on this motherboard.
+Of course, there are few tricks to output/input audio via USB components however it’s not a method
+that I would like to use in long term.
+
+I really don’t want to waste an USB socket on this motherboard.
 
 First of all, this is the motherboard layout that I rererence from [Supermicro](https://www.supermicro.com/en/products/motherboard/X10DRL-i).
 
 {% include image.html url="/image/posts/2022-05-08-Installing-Audio-Card-on-X10DRL-i-with-Fedora-34/1.png" description="[1] Supermicro X10DRL-i" %}
 
-And this is the the audio card [**Cmedia CMI8738**](https://www.cmedia.com.tw/products/EOL_PRODUCTS/CMI8738-MX), this audio card has reached its end of life. I bought it from [Shopee](https://shopee.vn/CARD-%C3%82M-THANH-CARD-SOUND-PCI-EXPRESS-1X-PC(PCI-Express-to-Sound-5.1)-i.10383705.4577157409).
+And this is the the audio card [**Cmedia CMI8738**](https://www.cmedia.com.tw/products/EOL_PRODUCTS/CMI8738-MX),
+this audio card has reached its end of life. I bought it from [Shopee](https://shopee.vn/CARD-%C3%82M-THANH-CARD-SOUND-PCI-EXPRESS-1X-PC(PCI-Express-to-Sound-5.1)-i.10383705.4577157409).
 
 {% include image.html url="/image/posts/2022-05-08-Installing-Audio-Card-on-X10DRL-i-with-Fedora-34/2.jpg" description="[2] Audio Card - Cmedia CMI8738" %}
 
 Right now, I am using a **NVIDIA GeForce GTX 1060 6GB**, as a consequence, I cannot test `CPU 1 SLOT 5 PCI-E 3.0 X16`
-socket on the motherboard. Meanwhile, after testing all available sockets, there is only one socket which works, it’s `PCH SLOT 1 PCI-E 2.0`.
+socket on the motherboard. Meanwhile, after testing all available sockets, there is only one socket
+which works, it’s `PCH SLOT 1 PCI-E 2.0`.
 
 `lspci` gives more information.
 
@@ -41,7 +48,8 @@ $ lspci -nnk | grep -A3 Audio
 
 Other failed tests lead to an unknown conflict with Graphic Card. A dark blank screen with flashing cursor.
 
-After installing the audio card on `PCH SLOT 1 PCI-E 2.0`. I have tested the `Pink Socket - Mic In` and `Green Socket - Front Out`. They all works flawlessly.
+After installing the audio card on `PCH SLOT 1 PCI-E 2.0`. I have tested the `Pink Socket - Mic In` and
+`Green Socket - Front Out`. They all works flawlessly.
 Of course, it’s a must to configure an audio setting on Fedora 34, this is my audio setting.
 
 {% include image.html url="/image/posts/2022-05-08-Installing-Audio-Card-on-X10DRL-i-with-Fedora-34/3.png" description="[3] Audio Settings " %}
