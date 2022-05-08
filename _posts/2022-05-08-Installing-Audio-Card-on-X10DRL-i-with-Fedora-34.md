@@ -32,8 +32,8 @@ this audio card has reached its end of life. I bought it from [Shopee](https://s
 {% include image.html url="/image/posts/2022-05-08-Installing-Audio-Card-on-X10DRL-i-with-Fedora-34/2.jpg" description="[2] Audio Card - Cmedia CMI8738" %}
 
 Right now, I am using a **NVIDIA GeForce GTX 1060 6GB**, as a consequence, I cannot test `CPU 1 SLOT 5 PCI-E 3.0 X16`
-socket on the motherboard. Meanwhile, after testing all available sockets, there is only one socket
-which works, it’s `PCH SLOT 1 PCI-E 2.0`.
+socket on the motherboard. Meanwhile, after testing all available sockets, **there is only one socket
+which works, it’s** `PCH SLOT 1 PCI-E 2.0`.
 
 `lspci` gives more information.
 
