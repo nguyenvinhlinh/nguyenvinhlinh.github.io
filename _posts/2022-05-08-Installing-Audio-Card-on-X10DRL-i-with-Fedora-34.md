@@ -41,8 +41,8 @@ $ lspci -nnk | grep -A3 Audio
 
 Other failed tests lead to an unknown conflict with Graphic Card. A dark blank screen with flashing cursor.
 
-After installing the audio card. I have tested the `Pink Socket - Mic In` and `Green Socket - Front Out`. They all works flawlessly.
-Of course, it’s a must to configure audio setting, this is my audio setting.
+After installing the audio card on `PCH SLOT 1 PCI-E 2.0`. I have tested the `Pink Socket - Mic In` and `Green Socket - Front Out`. They all works flawlessly.
+Of course, it’s a must to configure an audio setting on Fedora 34, this is my audio setting.
 
 {% include image.html url="/image/posts/2022-05-08-Installing-Audio-Card-on-X10DRL-i-with-Fedora-34/3.png" description="[3] Audio Settings " %}
 
