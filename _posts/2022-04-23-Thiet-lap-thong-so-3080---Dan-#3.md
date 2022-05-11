@@ -2,7 +2,7 @@
 layout: post
 title: "Thiết lập thông số 3080 - Dàn #3 Chu Tước"
 date: 2022-04-23 00:57:47
-update:
+update: 2022-05-11 20:25:00
 location: Saigon
 tags:
 categories:
@@ -16,6 +16,7 @@ comments: false
 Bài viết này phục vụ mục đích duy nhất là đó là nếu tôi lỡ tay xóa mấy profile trên **MSI Afterburner**, **Minerstat**.
 Tôi sẽ quay lại đây xem. Hiện tại đây là 4 VGA trực thuộc dàn **#3 Chu Tước**. Cả 4 VGA này đều là dòng Lite Hash Rate (LHR).
 
+
 | No | VGA                          |
 |----|------------------------------|
 | 1  | MSI 3080 VENTUS 10G OC (LHR) |
@@ -25,72 +26,33 @@ Tôi sẽ quay lại đây xem. Hiện tại đây là 4 VGA trực thuộc dàn
 
 {% include image.html url="/image/posts/2022-04-23-Thiet-lap-thong-so-3080---Dan-3/1.png" description="[1] Chu Tước" %}
 
-# II. Mức thiết lập - Ethereum - 70MH/s
-
+# II. Mức thiết lập - Ethereum - 95MH/s
+Dàn đào Chu Tước sử dụng phần mềm [NBMiner](https://github.com/NebuTech/NBMiner).
 {% include image.html url="/image/posts/2022-04-23-Thiet-lap-thong-so-3080---Dan-3/2.png" description="[2] T-rex miner" %}
 
+## a. Thiết lập với Minerstat
 
-## a. T-rex config.json
-Config này hoàn toàn có thể sử dụng trong **minerstat**
+- Power limit (Watt): 280 Walt
+- Power limit (%): skip
+- Core Clock (-/+ MHz): skip
+- Locked Memory Clock (MHz): skip
+- Force P2 State: skip
+- ClockTune delay: 0
 
-{% highlight json %}
+| No | VGA                          | Locked Core | -/+ Memory Clock |
+|----|------------------------------|-------------|------------------|
+| 1  | MSI 3080 VENTUS 10G OC (LHR) | 1200 MH/s   | +1100 MH/s       |
+| 2  | MSI 3080 VENTUS 10G OC (LHR) | 1200 MH/s   | +1100 MH/s       |
+| 3  | MSI 3080 VENTUS 10G OC (LHR) | 1200 MH/s   | +1100 MH/s       |
+| 4  | MSI 3080 VENTUS 10G OC (LHR) | 1200 MH/s   | +1100 MH/s       |
 
-{
-    "pools": [
-        {
-        "user": "(WALLET:ETH)⁣",
-        "worker": "(WORKER)⁣",
-        "url": "(POOL:ETH)⁣",
-        "pass": "x"
-    }
-    ],
-    "no-nvml": false,
-    "api-bind-http": "127.0.0.1:4068",
-    "json-response": true,
-    "pci-indexing": true,
-    "retries": 3,
-    "retry-pause": 5,
-    "timeout": 500,
-    "no-watchdog": true,
-    "algo": "ethash",
-    "exit-on-cuda-error": true,
-    "exit-on-connection-lost": false,
-    "coin" : "Ethash",
-    "gpu-report-interval": 5,
-    "lhr-tune": -1,
-    "lhr-autotune-mode": "full",
-    "lhr-autotune-step-size": 0.2
-}
-{% endhighlight %}
+## b. Kết quả thu được
 
-## b. Thiết lập với Minerstat
-
-| No | VGA                          | Core Clock | Mem Clock  |
-|----|------------------------------|------------|------------|
-| 1  | MSI 3080 VENTUS 10G OC (LHR) | 1150 MH/s  | 10041 MH/s |
-| 2  | MSI 3080 VENTUS 10G OC (LHR) | 1150 MH/s  | 10041 MH/s |
-| 3  | MSI 3080 VENTUS 10G OC (LHR) | 1150 MH/s  | 10041 MH/s |
-| 4  | MSI 3080 VENTUS 10G OC (LHR) | 1150 MH/s  | 10041 MH/s |
-
-
-## c. Thiết lập với MSI Afterburner
-Lưu ý chỉ dùng **MSI Afterburner** để debug.
-
-| No | VGA                          | Power Limit | Temp. Limit | +/- Core Clock | +/- Mem Clock |
-|----|------------------------------|-------------|-------------|----------------|---------------|
-| 1  | MSI 3080 VENTUS 10G OC (LHR) | 75%         | 65C         | -502 MH/s      | +800 MH/s     |
-| 2  | MSI 3080 VENTUS 10G OC (LHR) | 75%         | 65C         | -502 MH/s      | +800 MH/s     |
-| 3  | MSI 3080 VENTUS 10G OC (LHR) | 75%         | 65C         | -502 MH/s      | +800 MH/s     |
-| 4  | MSI 3080 VENTUS 10G OC (LHR) | 75%         | 65C         | -502 MH/s      | +800 MH/s     |
-
-
-## d. Kết quả thu được
-
-| No | VGA                          | Power Consumption | Hashrate       | GPU Temp. | Memory Temp. |
-|----|------------------------------|-------------------|----------------|-----------|--------------|
-| 1  | MSI 3080 VENTUS 10G OC (LHR) | 231 Walt          | 73.24 MH/s     | 61C       | 106C         |
-| 2  | MSI 3080 VENTUS 10G OC (LHR) | 237 Walt          | 72.56 MH/s     | 58C       | 102C         |
-| 3  | MSI 3080 VENTUS 10G OC (LHR) | 236 Walt          | 73.22 MH/s     | 59C       | 104C         |
-| 4  | MSI 3080 VENTUS 10G OC (LHR) | 237 Walt          | 72.78 MH/s     | 56C       | 100C         |
-|    |                              |                   |                |           |              |
-|    | **Total**                    | **941 Walt**      | **291.8 MH/s** | --        | --           |
+| No | VGA                          | Power Consumption | Hashrate     | GPU Temp. | Memory Temp. |
+|----|------------------------------|-------------------|--------------|-----------|--------------|
+| 1  | MSI 3080 VENTUS 10G OC (LHR) | 226 Walt          | 98.28 MH/s   | 62C       | 90C          |
+| 2  | MSI 3080 VENTUS 10G OC (LHR) | 243 Walt          | 97.12 MH/s   | 59C       | 88C          |
+| 3  | MSI 3080 VENTUS 10G OC (LHR) | 231 Walt          | 98.25 MH/s   | 58C       | 86C          |
+| 4  | MSI 3080 VENTUS 10G OC (LHR) | 233 Walt          | 98.36 MH/s   | 56C       | 84C          |
+|    |                              |                   |              |           |              |
+|    | **Total**                    | **933 Walt**      | **392 MH/s** | --        | --           |
