@@ -39,4 +39,4 @@ grub2-mkconfig -o /boot/grub2/grub.cfg
 
 Finally, run your `xmrig` with sudo and enjoy!
 
-{% include image.html url="/image/posts/2022-05-30-xmrig-support-1GB-Page-on-Fedora/2.png" description="[1] XMRig with 1GB pages supported." %}
+{% include image.html url="/image/posts/2022-05-30-xmrig-support-1GB-Page-on-Fedora/2.png" description="[2] XMRig with 1GB pages supported." %}
