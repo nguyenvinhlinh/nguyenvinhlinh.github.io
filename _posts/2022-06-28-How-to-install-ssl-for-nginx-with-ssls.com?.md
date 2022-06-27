@@ -53,11 +53,17 @@ After this time, there are two file that you need to bring to the nginx server.
 2. Certificate file (`ssl-bundle.crt`) which is a  concat version of `your_domain.ca-bundle` and `your_domain.crt` in order.
 
 ## Step 6: Install private key and certificate file to nginx
+Before configure `nginx.conf` file at `/etc/nginx`, it's a need to copy private key file and certificate file to `/etc/ssl`.
+
+You can choose different directory, but you need to make it up to date in the `nginx.conf` file.
+
 This is an example of nginx config file, the most important attribute are:
 - `listen 443;`
 - `ssl on;`
 - `ssl_certificate /etc/ssl/ssl-bundle.crt;`
 - `ssl_certificate_key /etc/ssl/your_domain.pem;`
+
+
 
 {% highlight nginx %}
 server {
