@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install ssl for nginx with ssls.com?"
+title: "How to install ssl certificate for nginx with SSLs.com?"
 date: 2022-06-28 01:30:46
 update:
 location: Saigon
@@ -8,11 +8,11 @@ tags:
 - SSL
 - Nginx
 categories: SSL
-seo_description:
+seo_description: Installing SSL certificate with SSLs.com
 seo_image:
-comments: false
+comments: true
 ---
-In this post, I would like to introduce a way to quickly setup SSL certificate for any website with `ssls.com`.
+In this post, I would like to introduce a way to quickly setup SSL certificate for any website with [https://www.ssls.com/](https://www.ssls.com/)
 
 ## Step 1: Generate private key and certificate signing request (csr).
 
