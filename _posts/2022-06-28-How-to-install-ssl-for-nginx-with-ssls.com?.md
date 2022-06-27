@@ -49,8 +49,8 @@ when concating, becareful of the missing new line error. This is an example of m
 We can name concated file as `ssl-bundle.crt`.
 
 After this time, there are two file that you need to bring to the nginx server.
-1. Private key file from **Step 1**
-2. Certificate file (`ssl-bundle.crt`) which has been concated from `your_domain.ca-bundle` and `your_domain.crt` in order.
+1. Private key file from **Step 1**, for example: `your_domain.pem`
+2. Certificate file (`ssl-bundle.crt`) which is a  concat version of `your_domain.ca-bundle` and `your_domain.crt` in order.
 
 ## Step 6: Install private key and certificate file to nginx
 This is an example of nginx config file, the most important attribute are:
