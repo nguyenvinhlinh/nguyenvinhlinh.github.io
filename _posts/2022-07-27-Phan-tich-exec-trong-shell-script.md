@@ -10,7 +10,7 @@ tags:
 - Exec
 categories: Linux
 seo_description: Phân tích exec trong shell script
-seo_image:
+seo_image: /image/posts/2022-07-27-Phan-tich-exec-trong-shell-script/1.png
 comments: true
 ---
 ## 1. Giới thiệu `exec`
