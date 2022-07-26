@@ -12,7 +12,7 @@ seo_image: /image/posts/2022-07-19-Cach-sua-loi-Microsoft-Teams/1.png
 comments: true
 ---
 
-Tôi gặp vấn đề khó chịu này khi sử dụng cùng lúc 2 tài khoản Microsoft Teams trên Window 10. Lỗi này xảy ra khi tôi
+Tôi gặp vấn đề khó chịu này khi sử dụng cùng lúc 2 tài khoản **Microsoft Teams** trên Window 10. Lỗi này xảy ra khi tôi
 chuyển đổi giữa hai account. Để khắc phục vấn đề này các bạn hãy làm như sau.
 
 {% include image.html url="/image/posts/2022-07-19-Cach-sua-loi-Microsoft-Teams/1.png" description="[1] We're sorry—we've run into an issue." %}.
@@ -33,4 +33,4 @@ Tùy vào tên username mà giá trị này có thể thay đổi. Tuy nhiên kh
 
 {% include image.html url="/image/posts/2022-07-19-Cach-sua-loi-Microsoft-Teams/3.png" description="[3] Teams.exe Properties" %}
 
-Đã xong, và tận hưởng.
+Đã xong, bạn có thể vào lại **Microsoft Team** và tận hưởng thành quả!
