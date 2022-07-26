@@ -106,6 +106,6 @@ Và tiếp theo, khi thêm `exec` vào trước `./child_script.sh` trong file `
 
 {% include image.html url="/image/posts/2022-07-27-Phan-tich-exec-trong-shell-script/2.png" description="[2] Sử dụng exec" %}
 
-Bài phân tích này kết thúc ở đây, chúc các bạn tìm được cách tiếp cận hợp lý khi viết script trong từng trường hợp thực tế cụ thể.
+Bài phân tích này kết thúc ở đây, chúc các bạn tìm được cách tiếp cận hợp lý khi viết script trong từng trường hợp cụ thể.
 
 Cảm ơn đồng nghiệp của tôi là anh Duy đã dành thời gian quý báu của mình để giúp tôi hiểu thêm về exec.
