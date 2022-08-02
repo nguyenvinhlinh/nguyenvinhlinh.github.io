@@ -13,8 +13,8 @@ seo_image:
 comments: true
 ---
 
-Bài viết này được viết để hỗ trợ cho các dàn đào sử dụng hệ điều hành Window 10. Ý kiến cá nhân, tôi không thích
-sử dụng các hệ điều hành chuyên dụng ví dụ như Minerstat OS, tôi thích sử dụng Minerstat Window hơn.
+Bài viết này được viết để hỗ trợ cho các dàn đào sử dụng hệ điều hành **Window 10**. Ý kiến cá nhân, tôi không thích
+sử dụng các hệ điều hành chuyên dụng ví dụ như Minerstat OS, tôi thích sử dụng **Minerstat Window** hơn.
 
 {% include image.html url="/image/posts/2022-08-02-Checklist-chuan-bi-dan-dao/1.png" description="Dàn Đào" %}
 
@@ -48,7 +48,7 @@ sử dụng các hệ điều hành chuyên dụng ví dụ như Minerstat OS, t
 - Power Option: `High Performance`
     - Turn off the display: `Never`
     - Put the computer to sleep: `Never`
-- Virtual Memory: mỗi VGA là 8,000 MB, ví dụ cài đặt cho 4 x 3080, tổng cộng là 32,000 MB.
+- Virtual Memory: mỗi VGA là **8,000 MB**, ví dụ cài đặt cho 4 x 3080, tổng cộng là **32,000 MB**.
     - Initial size (MB): `32,000` MB
     - Maximum size (MB): `32,000` MB
 - Visual Effects: `Adjust for best performance`
