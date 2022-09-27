@@ -5,6 +5,8 @@ date: 2022-09-27 21:03:32
 update:
 location: Saigon
 tags:
+- Etica
+- Mining Rig
 categories:
 - Mining Rig
 seo_description:
