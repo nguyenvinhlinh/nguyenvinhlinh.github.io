@@ -12,6 +12,7 @@ seo_image:
 comments: false
 ---
 ## Step 1: Download miner & extract - [lwYeo/SoliditySHA3Miner](https://github.com/lwYeo/SoliditySHA3Miner/releases)
+In addition, install [.NET Core 2.2 Runtime (v2.2.1)](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-2.2.1-windows-x64-installer).
 ## Step 2: Make a file name `01-mine-etica.bat`
 
 {% highlight bat %}
