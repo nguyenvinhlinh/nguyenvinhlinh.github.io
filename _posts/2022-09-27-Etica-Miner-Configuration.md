@@ -58,6 +58,7 @@ pause
 {% highlight bat %}
 nvidia-smi -lgc 1850
 nvidia-smi -lmc 810
+nvidia-smi -pl 220
 pause
 {% endhighlight %}
 
