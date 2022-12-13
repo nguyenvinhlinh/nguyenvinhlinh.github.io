@@ -2,6 +2,7 @@
 layout: post
 title: "Personal Note: Installing an Alephium full node"
 date: 2021-11-10 23:56:14
+update: 2022-12-14 00:05:56
 tags:
 - Cryptocurrency Node
 - Alephium
@@ -49,17 +50,20 @@ WantedBy=multi-user.target
 ```
 
 # IV. Firewall-cmd service - /etc/firewalld/services/alephium.xml
+Port List:
+- 9973: p2p
+- 10973: miner
+- 12973: api (danger to expose to the internet.)
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <service>
   <short>Alephium node</short>
   <description>
-    This option allows Alephium node to use tcp port 9973, 10973, 12973
+    This option allows Alephium node to use tcp port 9973, 10973
   </description>
   <port protocol="tcp" port="9973"/>
   <port protocol="tcp" port="10973"/>
-  <port protocol="tcp" port="12973"/>
 </service>
 ```
 
