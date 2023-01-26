@@ -25,3 +25,5 @@ group :jekyll_plugins do
   gem 'octopress-debugger'
   gem 'jekyll-paginate'
 end
+
+gem "webrick", "~> 1.7"
