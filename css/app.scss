@@ -160,6 +160,11 @@ div.post {
       color: $heading-color;
     }
   }
+  hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   div.date-address-category{
     font-size: 1.2em;
