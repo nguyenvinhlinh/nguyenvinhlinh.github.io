@@ -26,6 +26,18 @@ goto loop
 :exitloop
 {% endhighlight %}
 
+Example:
+{% highlight bat %}
+:loop
+C:\Users\LacLongQuan\Desktop\Software\dynexsolve_windows2.2.5\DynexSolveVS.225.exe ^
+  -mallob-endpoint https://dnx.sg.ekapool.com ^
+  -mining-address XwnTnXV7cSEQszHqM3xihWZp6MiP6n8vqggLFH15VMEBDnpkBKnv1Cz7wn5L18uVrwMDFhdhB2fV3fSTZ7MexKDJ1ZgGx9ZCC ^
+  -stratum-url dnx.sg.ekapool.com -stratum-port 19666 -no-cpu -multi-gpu ^
+  -stratum-password LAC-LONG-QUAN -adj 1.0898 -sync
+goto loop
+:exitloop
+{% endhighlight %}
+
 ## Nvidia Overclock script - `oc.bat`
 - Locked GPU Clock: 1760MHz
 - Locked Memory Clock: 5000MHz
