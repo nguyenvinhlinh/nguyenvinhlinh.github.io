@@ -18,6 +18,7 @@ comments: true
 {% highlight bat %}
 :loop
 C:\Users\CHANGE_ME\Desktop\Software\dynexsolve_windows2.2.5\DynexSolveVS.225.exe ^
+  -mallob-endpoint https://dnx.sg.ekapool.com ^
   -mining-address WALLET_ADDRESS ^
   -stratum-url POOL_URL -stratum-port POOL_PORT -no-cpu -multi-gpu ^
   -stratum-password WORKER_NAME -adj 1.0898 -sync
