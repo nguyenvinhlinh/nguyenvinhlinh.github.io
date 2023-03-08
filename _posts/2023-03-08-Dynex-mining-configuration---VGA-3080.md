@@ -40,6 +40,6 @@ nvidia-smi -pl 135
 - Hashrate for a 3080 GPU: 240H/s
 - Power Consumption: 115W
 - Temperature: 46C
-
+- Dynex chips: 334
 
 {% include image.html url="/image/posts/2023-03-08-Dynex-mining-configuration---VGA-3080/1.png" description="Dynex Solver 2.2.5" %}
