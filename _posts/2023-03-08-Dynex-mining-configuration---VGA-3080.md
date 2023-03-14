@@ -14,7 +14,7 @@ seo_image:
 comments: true
 ---
 
-## Running bat script - `run.bat`
+## 1. Running bat script - `run.bat`
 ### a. Dynex Solver 2.2.5
 {% highlight bat %}
 :loop
@@ -74,7 +74,7 @@ SRBMiner-MULTI.exe ^
 pause
 {% endhighlight %}
 
-## Nvidia Overclock script - `oc.bat`
+## 2. Nvidia Overclock script - `oc.bat`
 - Locked GPU Clock: 1760MHz
 - Locked Memory Clock: 5000MHz
 - Power Limit: 135W
@@ -86,7 +86,7 @@ nvidia-smi -pl 135
 {% endhighlight %}
 
 
-## Result
+## 3. Result
 - Hashrate for a 3080 GPU: 240H/s
 - Power Consumption: 115W
 - Temperature: 46C
