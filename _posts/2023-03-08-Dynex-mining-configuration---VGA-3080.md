@@ -44,12 +44,11 @@ goto loop
 SRBMiner-MULTI.exe ^
   --algorithm dynex ^
   --disable-cpu ^
-  --gpu-id 0 ^
+  --gpu-id 0 ^ :: enable/disable gpu
   --mallob-endpoint https://dnx.sg.ekapool.com ^
   --pool dnx.sg.ekapool.com:19666 ^
   --wallet WALLET-ADDRESS
-  ⁣--password WORKER-NAME ^
-  --gpu-intensity 1
+  ⁣--password WORKER-NAME
 {% endhighlight %}
 
 Example:
@@ -71,8 +70,7 @@ SRBMiner-MULTI.exe ^
 --mallob-endpoint mallob.neuropool.net:8081,https://dnx.eu.ekapool.com ^
 --pool dnx.sg.ekapool.com:19666 ^
 --wallet XwnTnXV7cSEQszHqM3xihWZp6MiP6n8vqggLFH15VMEBDnpkBKnv1Cz7wn5L18uVrwMDFhdhB2fV3fSTZ7MexKDJ1ZgGx9ZCC ^
-⁣--password AU-CO ^
---gpu-intensity 1
+⁣--password AU-CO
 pause
 {% endhighlight %}
 
