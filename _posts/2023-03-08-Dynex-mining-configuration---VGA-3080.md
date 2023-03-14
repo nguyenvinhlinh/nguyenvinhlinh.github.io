@@ -15,6 +15,7 @@ comments: true
 ---
 
 ## Running bat script - `run.bat`
+### a. Dynex Solver 2.2.5
 {% highlight bat %}
 :loop
 C:\Users\CHANGE_ME\Desktop\Software\dynexsolve_windows2.2.5\DynexSolveVS.225.exe ^
@@ -38,6 +39,43 @@ goto loop
 :exitloop
 {% endhighlight %}
 
+### b. SRBMiner 2.2.1
+{% highlight bat %}
+SRBMiner-MULTI.exe ^
+  --algorithm dynex ^
+  --disable-cpu ^
+  --gpu-id 0 ^
+  --mallob-endpoint https://dnx.sg.ekapool.com ^
+  --pool dnx.sg.ekapool.com:19666 ^
+  --wallet WALLET-ADDRESS
+  ⁣--password WORKER-NAME ^
+  --gpu-intensity 1
+{% endhighlight %}
+
+Example:
+{% highlight bat %}
+setx GPU_MAX_HEAP_SIZE 100
+setx GPU_MAX_USE_SYNC_OBJECTS 1
+setx GPU_SINGLE_ALLOC_PERCENT 100
+setx GPU_MAX_ALLOC_PERCENT 100
+setx GPU_MAX_SINGLE_ALLOC_PERCENT 100
+
+@echo off
+cd %~dp0
+cls
+
+SRBMiner-MULTI.exe ^
+--algorithm dynex ^
+--disable-cpu ^
+--gpu-id 0 ^
+--mallob-endpoint mallob.neuropool.net:8081,https://dnx.eu.ekapool.com ^
+--pool dnx.sg.ekapool.com:19666 ^
+--wallet XwnTnXV7cSEQszHqM3xihWZp6MiP6n8vqggLFH15VMEBDnpkBKnv1Cz7wn5L18uVrwMDFhdhB2fV3fSTZ7MexKDJ1ZgGx9ZCC ^
+⁣--password AU-CO ^
+--gpu-intensity 1
+pause
+{% endhighlight %}
+
 ## Nvidia Overclock script - `oc.bat`
 - Locked GPU Clock: 1760MHz
 - Locked Memory Clock: 5000MHz
@@ -48,6 +86,7 @@ nvidia-smi -lgc 1760
 nvidia-smi -lmc 5000
 nvidia-smi -pl 135
 {% endhighlight %}
+
 
 ## Result
 - Hashrate for a 3080 GPU: 240H/s
