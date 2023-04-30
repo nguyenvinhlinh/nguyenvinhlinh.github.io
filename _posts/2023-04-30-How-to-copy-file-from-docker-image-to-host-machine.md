@@ -38,3 +38,5 @@ $ docker build -f Dockerfile  --target=release --output type=local,dest=/var/tmp
 In this step, the key point here is about to copy all files from stage named `release` to host directory at `/var/tmp/nguyenvinhlinh.github.io-dist`.
 
 Good luck, have fun!
+## References
+- Docker, Custom build outputs, [https://docs.docker.com/engine/reference/commandline/build/#output](https://docs.docker.com/engine/reference/commandline/build/#output)
