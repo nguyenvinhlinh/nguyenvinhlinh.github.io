@@ -6,3 +6,4 @@ _site
 .jekyll-cache/*
 /_includes/.jekyll-cache/
 /_posts/.jekyll-cache/
+.bundle
