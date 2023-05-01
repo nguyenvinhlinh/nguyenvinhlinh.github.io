@@ -2,13 +2,15 @@
 layout: post
 title: Tweak to ssh quickly any server
 date: 2016-01-24 23:39:50
-categories: tweak
-tag: ssh
---- 
+categories: Linux
+tag:
+- ssh
+- Linux
+---
 
-To ssh to server, I used to type `ssh --flags`, the command line too long and replication. Here is a solution reduce the pain.  
+To ssh to server, I used to type `ssh --flags`, the command line too long and replication. Here is a solution reduce the pain.
 
-Go to file `~/.ssh/config`, and add the following configuration. If the file is not exist, you can make a new one. 
+Go to file `~/.ssh/config`, and add the following configuration. If the file is not exist, you can make a new one.
 
 {% highlight text %}
 Host server-dev1
