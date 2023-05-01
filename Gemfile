@@ -4,6 +4,7 @@ ruby "3.2.0"
 
 gem "jekyll", "4.3.2"
 gem "webrick", "~> 1.8"
+gem 'rouge', '~> 4.1'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-paginate'

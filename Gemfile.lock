@@ -67,6 +67,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (= 4.3.2)
   jekyll-paginate
+  rouge (~> 4.1)
   webrick (~> 1.8)
 
 RUBY VERSION

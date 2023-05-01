@@ -18,6 +18,6 @@ Sometimes, playing CSGO on Fedora (Gnome) gives you this message.
 {% include image.html url="/image/posts/2023-05-01-csgo_linux64-has-stopped-working/1.png" description="csgo_linux64 has stopped working"  %}
 
 It's because GNOME detects `csgo_linux64` process unresponsive. You can fix this issue by setting the timeout to 0, by default, it's `5000` milliseconds.
-{% highlight sh %}
+{% highlight shell %}
 $ gsettings set org.gnome.mutter check-alive-timeout 0
 {% endhighlight %}
