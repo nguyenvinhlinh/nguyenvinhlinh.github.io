@@ -73,8 +73,9 @@ export JAVA_HOME="/usr/lib/jvm/java-11-openjdk-11.0.18.0.10-1.fc37.x86_64
 {% endhighlight %}
 
 # Step 4: Download, Extract and Execute **Talend Open Studio**
-After extraction, you gonna see a list of file & directory.
+After download **Talend Open Studio** `TOS_DI-20211109_1610-V8.0.1.zip`, and extract, you gonna see a list of file & directory.
 {% highlight sh %}
+
 $ ls -l
 total 280
 drwxr-xr-x. 1    136 Aug 26  2014 about_files
