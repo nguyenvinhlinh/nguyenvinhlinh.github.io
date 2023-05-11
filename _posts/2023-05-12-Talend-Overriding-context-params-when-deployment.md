@@ -9,7 +9,7 @@ tags:
 categories:
 - Talend
 seo_description: "Talend, Overriding context params when deployment"
-seo_image:
+seo_image: /image/posts/2023-05-12-Talend-Overriding-context-params-when-deployment/5-seo.png
 comments: true
 ---
 
