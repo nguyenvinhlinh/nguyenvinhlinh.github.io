@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install Talend Open Studio on Fedora 37, 38?"
+title: "How to install Talend Open Studio on Fedora 37?"
 date: 2023-05-08 16:29:58
 update:
 location: Saigon
@@ -9,14 +9,14 @@ tags:
 categories:
 - Talend Open Studio
 seo_description: How to install Talend Open Studio on Fedora 37?
-seo_image: /image/posts/2023-05-08-How-to-install-Talend-Open-Studio-on-Fedora-38/3.png
+seo_image: /image/posts/2023-05-08-How-to-install-Talend-Open-Studio-on-Fedora-37/3.png
 comments: true
 ---
 
 # Step 1: Install `java-11-openjdk`
 Due to Talend Open Studio prerequisites [link](https://help.talend.com/r/en-US/8.0/installation-guide-linux/compatible-java-environments), we need to install `OpenJDK 11 (recommended distribution: Zulu)` or `OracleJDK 11`.
 In this tutorial, I used `OpenJDK 11` provided by **Fedora package repository**.
-{% include image.html url="/image/posts/2023-05-08-How-to-install-Talend-Open-Studio-on-Fedora-38/1.png" description="[1] Talend Open Studio prerequisites" %}
+{% include image.html url="/image/posts/2023-05-08-How-to-install-Talend-Open-Studio-on-Fedora-37/1.png" description="[1] Talend Open Studio prerequisites" %}
 
 
 Package information:
@@ -99,4 +99,4 @@ drwxr-xr-x. 1     76 May  8 16:27 workspace
 {% endhighlight %}
 
 You need to execute this file named `TOS_DI-linux-gtk-x86_64` and done. Good luck.
-{% include image.html url="/image/posts/2023-05-08-How-to-install-Talend-Open-Studio-on-Fedora-38/2.png" description="[2] Open Talend Open Studio" %}
+{% include image.html url="/image/posts/2023-05-08-How-to-install-Talend-Open-Studio-on-Fedora-37/2.png" description="[2] Open Talend Open Studio" %}
