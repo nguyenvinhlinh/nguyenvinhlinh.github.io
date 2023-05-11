@@ -13,7 +13,7 @@ seo_image: /image/posts/2023-05-12-Talend-Overriding-context-params-when-deploym
 comments: true
 ---
 
-In this tutorial, I would like to introduce a new topic - How to override context params when deploy talend job.
+In this tutorial, I would like to introduce a new topic - **How to override context params when deploy talend job**.
 In general, there are two method
 
 - config via file.
