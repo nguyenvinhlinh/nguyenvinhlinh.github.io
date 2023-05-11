@@ -15,6 +15,7 @@ comments: true
 ---
 ## Step 1: Prepare dockerfile
 In this post, I would like to take an example building html file for jekyll blog.
+
 {% highlight dockerfile %}
 from ruby:3.2.0 as build
 
