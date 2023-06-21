@@ -4,10 +4,8 @@ title: "How to install Talend Open Studio on Fedora 37?"
 date: 2023-05-08 16:29:58
 update:
 location: Saigon
-tags:
-- Talend Open Studio
-categories:
-- Talend Open Studio
+tags: Talend
+categories: Talend
 seo_description: How to install Talend Open Studio on Fedora 37?
 seo_image: /image/posts/2023-05-08-How-to-install-Talend-Open-Studio-on-Fedora-37/3.png
 comments: true
