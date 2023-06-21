@@ -27,7 +27,7 @@ In the **Log4j template**, use the following template.
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout  >
         <pattern>
-          { 'timestamp':"%d{ISO8601}", 'level':"%level", 'category':"%c", 'message':"%enc{%m}{JSON}" }%n
+          {% raw %}{ 'timestamp':"%d{ISO8601}", 'level':"%level", 'category':"%c", 'message':"%enc{%m}{JSON}" }%n{% endraw %}
         </pattern>
       </PatternLayout>
     </Console>
