@@ -2,7 +2,7 @@
 layout: post
 title: "Talend, How to export log in JSON Format?"
 date: 2023-06-21 13:51:32
-update:
+update: 2023-06-21 15:56:30
 location: Saigon
 tags: Talend
 categories: Talend
@@ -27,7 +27,7 @@ In the **Log4j template**, use the following template.
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout  >
         <pattern>
-          {% raw %}{ 'timestamp':"%d{ISO8601}{GMT+0}", 'level':"%level", 'category':"%c", 'message':"%enc{%m}{JSON}" }%n{% endraw %}
+          {% raw %}{ "timestamp":"%d{ISO8601}{GMT+0}", "level":"%level", "category":"%c", "message":"%enc{%m}{JSON}" }%n{% endraw %}
         </pattern>
       </PatternLayout>
     </Console>
