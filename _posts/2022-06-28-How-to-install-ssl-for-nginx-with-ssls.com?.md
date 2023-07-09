@@ -2,7 +2,7 @@
 layout: post
 title: "How to install ssl certificate for nginx with SSLs.com?"
 date: 2022-06-28 01:30:46
-update:
+update: 2023-07-10 05:03:50
 location: Saigon
 tags:
 - SSL
@@ -40,11 +40,13 @@ After the download process, there gonna be three file
 
 {% include image.html url="/image/posts/2022-06-28-How-to-install-ssl-for-nginx-with-ssls.com/2.png" description="[2] Download Certificate from ssls.com" %}
 
-## Step 5: Concat bundle `your_domain.ca-bundle` and `your_domain.crt` in order with your favorite text editor
-when concating, becareful of the missing new line error. This is an example of missing new line.
+## Step 5: Concat bundle `your_domain.crt` and `your_domain.ca-bundle` in order with your favorite text editor.
+Please becareful while do concat
+- missing new line error. This is an example of missing new line.
 ```text
 -----END CERTIFICATE----------BEGIN CERTIFICATE-----
 ```
+- Incorrect order, `.crt` before `.ca-bundle`
 
 We can name concated file as `ssl-bundle.crt`.
 
@@ -53,15 +55,15 @@ After this time, there are two file that you need to bring to the nginx server.
 2. Certificate file (`ssl-bundle.crt`) which is a  concat version of `your_domain.ca-bundle` and `your_domain.crt` in order.
 
 ## Step 6: Install private key and certificate file to nginx
-Before configure `nginx.conf` file at `/etc/nginx`, it's a need to copy private key file and certificate file to `/etc/ssl`.
+Before configure `nginx.conf` file at `/etc/nginx`, it's a need to copy private key file and certificate file to `/etc/pki/nginx/`.
 
 You can choose different directory, but you need to make it up to date in the `nginx.conf` file.
 
 This is an example of nginx config file, the most important attribute are:
 - `listen 443;`
 - `ssl on;`
-- `ssl_certificate /etc/ssl/ssl-bundle.crt;`
-- `ssl_certificate_key /etc/ssl/your_domain.pem;`
+- `ssl_certificate /etc/pki/nginx/ssl-bundle.crt;`
+- `ssl_certificate_key /etc/pki/nginx/your_domain.pem;`
 
 
 
