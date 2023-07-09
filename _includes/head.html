@@ -12,9 +12,12 @@
 <meta property="og:description" content="{{ site.description }}">
 {% endif %}
 
-<!-- Cronitor RUM -->
-<script async src="https://rum.cronitor.io/script.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R76JBSLKQM"></script>
 <script>
-    window.cronitor = window.cronitor || function() { (window.cronitor.q = window.cronitor.q || []).push(arguments); };
-    cronitor('config', { clientKey: '4c23875e8d64ac4df73edea033745427' });
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R76JBSLKQM');
 </script>
