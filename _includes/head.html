@@ -1,16 +1,26 @@
 <meta property="og:site_name" content="{{ site.title }}">
+<meta name="google-site-verification" content="lk6dUU3hXt7uhO_t9Z-Mdl2yyXZtmBKAb67K4_j-zpY">
 
 {% if page.title %}
+<!-- Twitter -->
 <meta property="og:title"       content="{{ page.title }}">
 <meta property="og:type"        content="article">
 <meta property="og:description" content="{{ page.seo_description }}"/>
 <meta property="og:image"       content="{{site.url}}{{ page.seo_image }}"/>
 <meta name="twitter:image" content="{{site.url}}{{ page.seo_image }}"/>
+<!-- Google -->
+<title>{{ page.title }}</title>
+<meta name="description" content="{{page.seo_description}}" >
 {% else %}
+<!-- Twitter -->
 <meta property="og:title" content="{{ site.title }}">
 <meta property="og:type" content="website">
 <meta property="og:description" content="{{ site.description }}">
+<!-- Google -->
+<title>{{ site.title }}</title>
+<meta name="description" content="{{site.description}}" >
 {% endif %}
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-R76JBSLKQM"></script>
