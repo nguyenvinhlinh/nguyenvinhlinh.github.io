@@ -9,6 +9,7 @@ facebook_username: "https://www.facebook.com/LinkBall"
 steam_url: "https://steamcommunity.com/id/LinkVN/"
 timezone: Asia/Bangkok
 paginate: 10
+permalink: /:slugified_categories/:year/:month/:day/:title:output_ext
 
 # Build settings
 markdown: kramdown
