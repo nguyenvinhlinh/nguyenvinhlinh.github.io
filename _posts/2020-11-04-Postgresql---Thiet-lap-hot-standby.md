@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Postgresql - Thiết lập hot-standby"
-date: 2020-11-04 16:33:36
+date: 2020-11-04 16:33:36 +0700
 tags:
 categories:
 ---

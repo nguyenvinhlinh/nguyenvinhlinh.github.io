@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Phân tích exec trong shell script"
-date: 2022-07-27 02:03:38
+date: 2022-07-27 02:03:38 +0700
 update:
 location: Saigon
 tags:

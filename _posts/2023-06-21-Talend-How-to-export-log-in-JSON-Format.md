@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Talend, How to export log in JSON Format?"
-date: 2023-06-21 13:51:32
-update: 2023-06-21 15:56:30
+date:   2023-06-21 13:51:32 +0700
+update: 2023-06-21 15:56:30 +0700
 location: Saigon
 tags: Talend
 categories: Talend

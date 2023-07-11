@@ -1,13 +1,13 @@
 ---
-layout: default
+layout: post
 title: Phoenix and using multiple layouts
-date: 2016-01-26 15:30:00
+date: 2016-01-26 15:30:00 +0700
 categories: Phoenix
 tag: tweak, layouts, phoenix
---- 
+---
 
 ## 1. How to specify the layout when render() in controllers
-There is an option in `render/3` method, [source](http://hexdocs.pm/phoenix/Phoenix.Controller.html#render/3)  
+There is an option in `render/3` method, [source](http://hexdocs.pm/phoenix/Phoenix.Controller.html#render/3)
 In the below example, I did specify the layout, the layout will be located at `@conn.assigns[:layout]`, so as `:id`
 {% highlight elixir %}
 defmodule ImageQuickShare.ImageController do
@@ -32,12 +32,12 @@ templates
 {% endhighlight %}
 
 ## 2. Setup a default layout for all method within a controller
-We have to use `plug :put_layout`. 
+We have to use `plug :put_layout`.
 {% highlight elixir %}
 defmodule ImageQuickShare.ImageController do
   use ImageQuickShare.Web, :controller
   plug :put_layout, {ImageQuickShare.ImageView, "empty_layout.html"}  #<--- HERE
-  
+
   def show(conn, %{"id" => id}) do
     render(conn, "show.html", id: id)
   end
@@ -64,5 +64,3 @@ end
 
 #### REFERENCE
 - [How to set different layouts in Phoenix](http://www.cultivatehq.com/posts/how-to-set-different-layouts-in-phoenix/)
-
-

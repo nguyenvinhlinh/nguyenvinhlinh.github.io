@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Summary of block, process and lambda in Ruby
-date: 2015-08-17 13:36:42
+date: 2015-08-17 13:36:42 +0700
 categories: cheatsheet
 tag: ruby
---- 
+---
 
 There are three ways to group trunk of code in Ruby which are `block`,
 `process` and `lambda`. Each of them behave differently from others. This post
@@ -32,14 +32,14 @@ is all about the differences of them and its examples and use cases.
  def test_function(&a)
    a.call
  end
- 
+
  test_function {
    p "it's block"
  }
- # lambda  
+ # lambda
  lam = lambda{
    p "it's lambda"
- } 
+ }
  lam.call #OR#
  test_function(lam)
 
@@ -52,7 +52,7 @@ is all about the differences of them and its examples and use cases.
 {% endhighlight %}
 
 ## Object or not
-- `Block` is not an object, cannot execute directly, it need to be passed to a method 
+- `Block` is not an object, cannot execute directly, it need to be passed to a method
 - `Proc` and `Lambda` are objects, its instance can be execute directly
 
 ## Number of block, proc and lambda passed in parameter field
@@ -68,11 +68,11 @@ pass them as many as you want.
 
 ## Return behaviour
 - `Block`: `return` cannot be used within a block. Here is [an article](#) about
-  block `break` and `next` behaviours 
+  block `break` and `next` behaviours
 - `Lambda`: `return` instruction within a block only suspend instruction execute within
-the block. It ***does not suspend*** outer method. 
+the block. It ***does not suspend*** outer method.
 - `Process`: `return` instruction also affect the outer scope. It ***suspends*** the
-outer method directly. 
+outer method directly.
 
 ## Checking number of arguments passing to block, process, lambda
 {% highlight text %}
@@ -84,6 +84,6 @@ outer method directly.
 {% endhighlight %}
 
 ## Reference
-- Adam Waxman, [What Is the Difference Between a Block, a Proc, and a Lambda in Ruby?](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/)  
+- Adam Waxman, [What Is the Difference Between a Block, a Proc, and a Lambda in Ruby?](http://awaxman11.github.io/blog/2013/08/05/what-is-the-difference-between-a-block/)
 
 - StackOverFlow, [Return behavior in block](http://stackoverflow.com/questions/2325471/using-return-in-a-ruby-block)

@@ -1,10 +1,10 @@
 ---
 layout: post
 title: How to add new public directory in Phoenix framework
-date: 2015-12-15 22:39:59
+date: 2015-12-15 22:39:59 +0700
 categories: Phoenix
 tag: etc
---- 
+---
 
 In Phoenix web framework, there is a share directory `/priv`. By default, it
 will only public `css,js,images,fonts` directory. However, If you want to share
@@ -47,4 +47,3 @@ priv
     │   └── app.js.map
     └── robots.txt
 {% endhighlight %}
-

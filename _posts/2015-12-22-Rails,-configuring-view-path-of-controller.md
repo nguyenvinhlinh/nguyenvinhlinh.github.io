@@ -1,13 +1,13 @@
 ---
 layout: post
 title: Rails, configuring view path of controller
-date: 2015-12-22 18:00:14
+date: 2015-12-22 18:00:14 +0700
 categories: Rails
 tag: etc
---- 
+---
 
 This is a solution to configure the view path of any controller in Rails web
-framework. The only method you have to concern is `self.controller_path`  
+framework. The only method you have to concern is `self.controller_path`
 
 {% highlight ruby %}
 class User::HomeController < ApplicationController

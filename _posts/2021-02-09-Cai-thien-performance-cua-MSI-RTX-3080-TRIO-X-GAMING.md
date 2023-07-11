@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cải thiện performance của MSI RTX 3080 TRIO X GAMING"
-date: 2021-02-09 14:27:03
+date: 2021-02-09 14:27:03 +0700
 tags: overlock, msi3080, trio_x_gaming, mining
 categories:
 - Mining Rig

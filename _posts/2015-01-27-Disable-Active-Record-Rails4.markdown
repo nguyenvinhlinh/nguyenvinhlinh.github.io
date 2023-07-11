@@ -1,11 +1,11 @@
 ---
 layout: post
 title: "Disable active record (nodatabase uses) in Rails 4"
-date: 2015-01-27 12:24:00
+date: 2015-01-27 12:24:00 +0700
 categories:
 - Ruby on Rails 4
 tags: ruby, rails4, active-record
---- 
+---
 This article shows a quick tweak to unuse database gem, disable active record in Ruby on Rails 4.x
 
 ## 1. For new projects, run the following command to generate new project

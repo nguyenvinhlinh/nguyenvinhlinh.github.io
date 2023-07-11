@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "PhoenixMiner - config.txt Template"
-date: 2021-12-07 17:02:30
+date: 2021-12-07 17:02:30 +0700
 tags:
 - Mining Rig
 categories:

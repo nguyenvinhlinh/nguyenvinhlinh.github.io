@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to compile executable jar file from source code"
-date: 2014-07-14 23:00:00
+date: 2014-07-14 23:00:00 +0700
 categories:  etc
 tag: java, jar
 ---

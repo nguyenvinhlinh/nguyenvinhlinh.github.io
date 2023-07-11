@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Thiết lập thông số 3080 - Dàn #3 Chu Tước"
-date: 2022-04-23 00:57:47
-update: 2022-05-11 20:25:00
+date:   2022-04-23 00:57:47 +0700
+update: 2022-05-11 20:25:00 +0700
 location: Saigon
 tags:
 categories:

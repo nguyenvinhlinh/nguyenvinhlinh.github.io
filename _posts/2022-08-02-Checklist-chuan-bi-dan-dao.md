@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Checklist chuẩn bị dàn đào"
-date: 2022-08-02 13:26:03
+date: 2022-08-02 13:26:03 +0700
 update:
 location: Saigon
 tags:

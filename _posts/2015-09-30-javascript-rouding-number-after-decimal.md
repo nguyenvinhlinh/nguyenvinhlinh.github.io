@@ -1,10 +1,10 @@
 ---
 layout: post
 title: JavaScript, rounding number after decimal
-date: 2015-09-30 15:37:17
+date: 2015-09-30 15:37:17 +0700
 categories: etc
 tag: etc
---- 
+---
 
 Given that, you have to work with many decimal number for example: 0.335, 0.345,
 0.2, 96.6666. And then you want to round those number 2 digits after decimal.
@@ -12,7 +12,7 @@ The most general way is to used `toFix()`. However, the behavior of `toFix()` is
 not good. Let test with value `0.335` and `0.345`.
 
 {% highlight javascript %}
-0.335.toFix(2) --> 0.33, we expected 0.33 
+0.335.toFix(2) --> 0.33, we expected 0.33
 0.345.tiFix(2) --> 0.35, we expected 0.34 FAIL!!!
 {% endhighlight %}
 
@@ -24,7 +24,7 @@ var numX10000 = num * 10000;  --> 3350
 var Math.floor((numX10000 + 44) / 100) --> 3350 + 44 = 3394, floor of 3394/100 = 33
 
 var num = 0.345
-var numX10000 = num * 10000;  --> 3450 
+var numX10000 = num * 10000;  --> 3450
 var Math.floor((numX10000 + 44) / 100) --> 3450 + 44 = 3494, floor of 3494/100 = 34
 {% endhighlight %}
 

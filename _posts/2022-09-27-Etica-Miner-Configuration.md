@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Etica Miner Configuration"
-date: 2022-09-27 21:03:32
+date: 2022-09-27 21:03:32 +0700
 update:
 location: Saigon
 tags:

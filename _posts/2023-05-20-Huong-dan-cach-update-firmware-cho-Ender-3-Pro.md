@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hướng dẫn cách update firmware cho Ender-3 Pro"
-date: 2023-05-20 11:48:45
+date: 2023-05-20 11:48:45 +0700
 update:
 location: Saigon
 tags:

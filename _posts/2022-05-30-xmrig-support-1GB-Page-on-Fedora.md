@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "XMRig, Support 1GB Page on Fedora"
-date: 2022-05-30 21:08:02
+date: 2022-05-30 21:08:02 +0700
 update:
 location: Saigon
 tags:

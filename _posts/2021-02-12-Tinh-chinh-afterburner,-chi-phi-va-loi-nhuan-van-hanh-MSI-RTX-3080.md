@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tinh chỉnh Afterburner, chi phí & lợi nhuận vận hành MSI RTX 3080"
-date: 2021-02-12 00:21:58
+date: 2021-02-12 00:21:58 +0700
 tags: MSI, RTX3080, Mining
 categories:
 - Mining Rig

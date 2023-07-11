@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cải thiện MSI 3080 Ventus 10G OC"
-date: 2021-03-10 21:27:40
+date: 2021-03-10 21:27:40 +0700
 tags:
 - MSI3080
 - VENTUS 10G OC

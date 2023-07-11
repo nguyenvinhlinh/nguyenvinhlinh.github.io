@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Highchart, forcing dual yAxis to have common zero
-date: 2015-07-28 17:02:25
+date: 2015-07-28 17:02:25 +0700
 categories: etc
-tag: highchart.js 
---- 
+tag: highchart.js
+---
 
 Highchart is a common javascript library which use to display graph with many
 beautiful features, however, there is a small need in use of highchart.js. It's
-about having dual yAxis, and how to balance common zero between two yAxis.  
+about having dual yAxis, and how to balance common zero between two yAxis.
 
 There is no built-in feature that can help you deal with this solution but
-changing the min, max value via setExtremes() method.  
+changing the min, max value via setExtremes() method.
 
 I did write a small method which can help solve this problem, small but
 achievable.
@@ -58,7 +58,7 @@ chart: {
   events: {
     load: function (){
       balanceZeroRoot(YOUR_GRAPH_DOM_ELEMENT);
-    } 
+    }
   }
 }
 {% endhighlight %}
@@ -73,9 +73,3 @@ of highcharts, the plugin does not work perfectly.
   [link](http://highcharts.uservoice.com/forums/55896-general/suggestions/2554384-multiple-axis-alignment-control#{toggle_previous_statuses}),
   jsfiddle
   [link](http://jsfiddle.net/gh/get/jquery/1.7.2/highslide-software/highcharts.com/tree/master/samples/highcharts/studies/alignthresholds/)
-  
-
-
-
-
-

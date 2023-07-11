@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Python - learning"
-date: 2014-12-07 15:55:37
+date: 2014-12-07 15:55:37 +0700
 categories: cheatsheet
 tags: python
 ---
@@ -31,22 +31,22 @@ print("In global scope:", spam)
 
 The output is:
 {%highlight text%}
-After local assignment: test spam  
-After nonlocal assignment: nonlocal spam  
-After global assignment: nonlocal spam  
+After local assignment: test spam
+After nonlocal assignment: nonlocal spam
+After global assignment: nonlocal spam
 In global scope: global spam
 {%endhighlight%}
 
-Explaination:   
+Explaination:
 1. Local variable always is always used inside local scope. In the example, local variable
 `spam` has value is `local spam`, when do_local() invoked, `spam` only created inside a
-function, it has no use outside.  
-2. Non local variable has been declared and it affect within `scope_test` and only within `scope_test`.  
-3. Global variable only used in global scope.  
-4. In Python, a function can exist inside a function, in the example above,  `do_local` insides `scope_test`.  
+function, it has no use outside.
+2. Non local variable has been declared and it affect within `scope_test` and only within `scope_test`.
+3. Global variable only used in global scope.
+4. In Python, a function can exist inside a function, in the example above,  `do_local` insides `scope_test`.
 5. Functions make its own scope.
 
-##2. Class 
+##2. Class
 {%highlight python%}
 class Dog:
 
@@ -64,9 +64,9 @@ class Dog:
 >>> e.name                  # unique to e
 'Buddy'
 {%endhighlight%}
-Notes:  
-1. Class variables shared by all instances, `kind` is class variable.  
-2. Instance variables shared by each instance,`name` is instance variable.  
+Notes:
+1. Class variables shared by all instances, `kind` is class variable.
+2. Instance variables shared by each instance,`name` is instance variable.
 3. Function can be define outside class.
 {%highlight python%}
 # Function defined outside the class
@@ -102,9 +102,8 @@ Call baseclass method, base class must be in global scope:
 BaseClassName.methodname(self, arguments)
 {%endhighlight%}
 
-Check instance type:  
+Check instance type:
 {%highlight python%}
 isinstance(obj, int) #check if `obj` is instance of `int`
 issubclass(bool, int) #check if `bool` is subclass of `int`
 {%endhighlight%}
-

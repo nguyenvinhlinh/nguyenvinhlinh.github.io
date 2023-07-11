@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hướng dẫn sử dụng mũ bảo hiểm tích hợp tai nghe bluetooth"
-date: 2021-06-20 17:38:57
+date: 2021-06-20 17:38:57 +0700
 tags:
 - bluetooth
 - helmet

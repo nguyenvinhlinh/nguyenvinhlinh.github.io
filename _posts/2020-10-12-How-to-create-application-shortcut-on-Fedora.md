@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "How to create an application shortcut on Fedora?"
-date: 2020-10-12 15:35:39
-update: 2023-06-06 09:42:00
+date:   2020-10-12 15:35:39 +0700
+update: 2023-06-06 09:42:00 +0700
 tags: Linux, Gnome, Fedora
 categories: Linux
 ---

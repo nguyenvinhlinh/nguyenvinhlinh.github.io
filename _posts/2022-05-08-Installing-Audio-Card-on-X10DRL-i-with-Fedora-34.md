@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Installing an Audio Card - CMI8738 on X10DRL-i with Fedora 34"
-date: 2022-05-08 12:30:17
+date: 2022-05-08 12:30:17 +0700
 update:
 location: Saigon
 tags:

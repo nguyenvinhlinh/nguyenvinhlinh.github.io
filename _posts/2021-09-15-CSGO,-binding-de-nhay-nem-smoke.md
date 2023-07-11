@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "CSGO, binding để nhảy ném smoke"
-date: 2021-09-15 12:52:39
+date: 2021-09-15 12:52:39 +0700
 tags: csgo
 categories: CSGO
 ---

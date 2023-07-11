@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "ASDF, Dependencies Installation for Erlang"
-date: 2021-12-26 22:59:24
+date: 2021-12-26 22:59:24 +0700
 tags:
 - erlang
 - asdf

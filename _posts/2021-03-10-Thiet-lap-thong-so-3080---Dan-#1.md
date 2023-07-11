@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Thiết lập thông số 3080 - Dàn #1 Thanh Long"
-date: 2021-03-10 15:51:00
+date:   2021-03-10 15:51:00 +0700
+update: 2022-05-04 00:14:00 +0700
 tags: mining
-update: 2022-05-04 00:14:00
+
 location: Saigon
 categories:
 - Mining Rig

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to fix csgo_linux64 has stopped working"
-date: 2023-05-01 23:04:11
+date: 2023-05-01 23:04:11 +0700
 update:
 location: Saigon
 tags:

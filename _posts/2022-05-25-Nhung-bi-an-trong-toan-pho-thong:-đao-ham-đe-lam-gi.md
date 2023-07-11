@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Những 'bí ẩn' trong toán phổ thông: đạo hàm để làm gì?"
-date: 2022-05-25 23:31:38
+date: 2022-05-25 23:31:38 +0700
 update:
 location: Saigon
 tags:

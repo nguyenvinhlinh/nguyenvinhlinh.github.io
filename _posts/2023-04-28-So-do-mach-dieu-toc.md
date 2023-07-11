@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Sơ đồ điện của mạch điều tốc"
-date: 2023-04-28 23:37:55
+date: 2023-04-28 23:37:55 +0700
 update:
 location: Saigon
 tags:

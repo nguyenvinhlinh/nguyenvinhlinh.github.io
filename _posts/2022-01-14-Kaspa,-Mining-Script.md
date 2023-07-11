@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kaspa, Mining Script"
-date: 2022-01-14 22:15:44
+date: 2022-01-14 22:15:44 +0700
 tags:
 - mining rig
 - kaspa

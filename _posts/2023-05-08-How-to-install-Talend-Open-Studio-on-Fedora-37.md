@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to install Talend Open Studio on Fedora 37?"
-date: 2023-05-08 16:29:58
+date: 2023-05-08 16:29:58 +0700
 update:
 location: Saigon
 tags: Talend

@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Thiết lập thông số 170HX - Dàn #4 Huyền Vũ"
-date: 2022-04-28 00:41:00
-update: 2022-05-03 17:24:00
+date:   2022-04-28 00:41:00 +0700
+update: 2022-05-03 17:24:00 +0700
 location: Saigon
 tags:
 categories:

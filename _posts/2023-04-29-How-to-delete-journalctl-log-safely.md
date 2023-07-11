@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to delete journalctl log safely?"
-date: 2023-04-29 00:10:12
+date: 2023-04-29 00:10:12 +0700
 update:
 location: Saigon
 tags:

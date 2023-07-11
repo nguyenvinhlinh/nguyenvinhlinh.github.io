@@ -1,29 +1,29 @@
 ---
 layout: post
 title: "Ruby - learning"
-date: 2015-01-06 12:24:00
+date: 2015-01-06 12:24:00 +0700
 categories: cheatsheet
 tags: Ruby
 ---
-#1. Variable in ruby class  
+#1. Variable in ruby class
 - Local variable: defined inside a method, the usage of local variable in only
-inside a method. Prefix of local variable is `_` or `[a-z]`.  
+inside a method. Prefix of local variable is `_` or `[a-z]`.
 - Instance variable: instance variable is available accross methods and object,
 meanwhile, instance variable change from object to object. Prefix of instance
-variable is `@`. Instance variable is not shared among its descedants.  
+variable is `@`. Instance variable is not shared among its descedants.
 - Class variable: it belongs to a class and is a characteristic of this class.
-Prefix is `@@`. Class variable is share among its descedants(childs).  
+Prefix is `@@`. Class variable is share among its descedants(childs).
 - Global variable: class varaible is not across class, however, global variable
-does. The prefix of global variable is `$`.  
+does. The prefix of global variable is `$`.
 - Constant variable: it's similar to class variable but it's constant. Constant
-varaibles should be in upper case for all letters.  
+varaibles should be in upper case for all letters.
 
 #2. Commenting
 - Using `=begin` and `=end`
 {% highlight ruby %}
 =begin
 This is a multiline comment and con spwan as many lines as you
-like. But =begin and =end should come in the first line only. 
+like. But =begin and =end should come in the first line only.
 =end
 {% endhighlight %}
 - Using `#`
@@ -56,7 +56,7 @@ function_name{
 }
 {% endhighlight %}
 - It's also possible to insert parameters into a block. However, if a function has parameters, I don't know but there is a error and
-cannot use block with function which have parameters.  
+cannot use block with function which have parameters.
 {% highlight ruby %}
 def function_name
    yield a, b
@@ -116,7 +116,7 @@ end
 - Public method: is called by anyone. By default, all methods excepting
   initialize method are public methods.
 - Private method: only class methods can access private methods
-- Protected method: is called by class method and its subclass method.   
+- Protected method: is called by class method and its subclass method.
 {% highlight ruby %}
 private :functionA, :functionB
 protected :functionD, :functionD
@@ -150,7 +150,7 @@ end
 results, it's impossible to using overriding if depending on variable types. On
 the other hand, it uses number of parameters to differentiate methods.
 {% highlight ruby %}
-def function_name(a,b) #there is no type declaring, compiler does not know 
+def function_name(a,b) #there is no type declaring, compiler does not know
 end                    #how to override
 
 def function_name(a,b) #As a consequence, compiler uses number of parameters to
@@ -171,7 +171,7 @@ end
 {% endhighlight %}
 **b. For loop**
 {% highlight ruby %}
-  # range is [0-5]  
+  # range is [0-5]
 for counter in 0..5
   puts counter
 end
@@ -182,7 +182,7 @@ end
 {% endhighlight %}
 
 #9. Symbols
-**a. What is this**  
+**a. What is this**
 Symbols in ruby are immutable. Besides this point, it's a `string`. It's able to print put the value of a symbol in term of `string` or `integer`
 {% highlight ruby %}
 :age #this is a symbol named age
@@ -232,7 +232,7 @@ old_hash = {:var1 => "cat", :var2 => "dog"}
 new_hash = {var1 : "cat", var2 : "dog"}
 {% endhighlight %}
 
-**b. Access element**  
+**b. Access element**
 {% highlight ruby %}
 new_hash = {var1 : "cat", var2 : "dog"}
 puts new_hash[:var1]

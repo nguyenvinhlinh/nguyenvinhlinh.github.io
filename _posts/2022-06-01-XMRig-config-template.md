@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "XMRig - config.json Template"
-date: 2022-06-01 22:09:00
+date: 2022-06-01 22:09:00 +0700
 tags:
 - Mining Rig
 - Monero

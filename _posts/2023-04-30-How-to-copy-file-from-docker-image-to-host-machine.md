@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to copy files from docker image to host machine?"
-date: 2023-04-30 16:23:53
+date: 2023-04-30 16:23:53 +0700
 update:
 location: Saigon
 tags:

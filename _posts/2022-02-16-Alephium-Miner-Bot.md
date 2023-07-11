@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Alephium Miner Bot"
-date: 2022-02-16 10:16:43
+date: 2022-02-16 10:16:43 +0700
 tags:
 - Alephium
 - Kaspa

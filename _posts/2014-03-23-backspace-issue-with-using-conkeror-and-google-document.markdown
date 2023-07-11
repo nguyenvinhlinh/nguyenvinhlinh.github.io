@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Backspace issue with using google document by conkeror"
-date: 2014-03-23 15:55:37
+date: 2014-03-23 15:55:37 +0700
 tag: Conkeror, Google Document
 categories: Conkeror
 ---
@@ -10,5 +10,3 @@ By default, conkeror users may not use backspace to delete previous characters w
 {% highlight bash%}
 M-x quote-mode
 {% endhighlight%}
-
-

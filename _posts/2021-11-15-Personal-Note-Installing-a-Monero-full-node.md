@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Personal Note: Installing a Monero full node"
-date: 2021-11-15 23:44:58
+date: 2021-11-15 23:44:58 +0700
 tags:
 - Monero
 - Cryptocurrency Node

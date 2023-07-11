@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Conkeror, Deleting all history instantly"
-date: 2015-05-02 20:43:42
+date: 2015-05-02 20:43:42 +0700
 tags: Conkeror, history, delete
 categories: Conkeror
 ---
@@ -17,4 +17,3 @@ interactive("history-clear",
     "Clear the history.",
     history_clear);
 {% endhighlight %}
-

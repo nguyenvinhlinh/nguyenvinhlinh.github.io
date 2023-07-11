@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Đối mặt với SELinux"
-date: 2020-10-09 18:44:23
+date: 2020-10-09 18:44:23 +0700
 tags: Linux, SeLinux
 categories: Linux
 ---

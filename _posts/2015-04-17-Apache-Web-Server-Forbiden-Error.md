@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Apache Web Server, Forbidden Error
-date: 2015-04-17
+date: 2015-04-17 00:00:00 +0700
 categories: etc
 tag: Apache,Web Server, Forbidden Error, Index
 ---
-**Problem**: Apache Web Server announces that `Forbidden Error`, given that developers configure `Allow` and `Deny` directory with no mistake  
-**Reason**: A lack of `Indexes` for files in directory.  
+**Problem**: Apache Web Server announces that `Forbidden Error`, given that developers configure `Allow` and `Deny` directory with no mistake
+**Reason**: A lack of `Indexes` for files in directory.
 **Solution**: Add option `Indexes` in directory tag `<Directory>`
 
 **Example**: The following configuration causes forbidden error

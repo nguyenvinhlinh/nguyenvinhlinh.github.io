@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Generate entity relationship based on model, Ruby on rails
-date: 2015-08-07 23:55:27
+date: 2015-08-07 23:55:27 +0700
 categories:
 - Ruby on Rails 4
 tag: rails
@@ -9,10 +9,10 @@ tag: rails
 
 During this time, I am in an internship program. There is a big concern, I have
 to work with a very big project, and there is no documentation. The number of
-tables in project's database is more than 20, still no documentation.  
+tables in project's database is more than 20, still no documentation.
 
 A big nightmare for an intern one. It's important to make an entity relationship
-diagram, at least with a hope that I can get cope easily with the project.  
+diagram, at least with a hope that I can get cope easily with the project.
 
 Game on!, There is a gem named `erd` - [url](https://github.com/voormedia/rails-erd)
 

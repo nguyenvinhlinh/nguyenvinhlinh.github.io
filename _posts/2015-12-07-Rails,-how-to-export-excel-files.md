@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Rails, how to export excel files
-date: 2015-12-07 18:10:53
+date: 2015-12-07 18:10:53 +0700
 categories: etc
 tag: etc
---- 
+---
 
 On the front-end, instead of using Ajax(post, get). I uses `window.location`
 {% highlight javascript %}

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Công thức tính số Alephium (ALPH) có để đào solo trong ngày"
-date: 2022-01-06 23:41:47
+date: 2022-01-06 23:41:47 +0700
 tags:
 - mining rig
 - alph

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Run gnome-terminal and open new program"
-date: 2014-10-14 21:55:37
+date: 2014-10-14 21:55:37 +0700
 categories: Linux
 tags: gnome-terminal, linux
 ---

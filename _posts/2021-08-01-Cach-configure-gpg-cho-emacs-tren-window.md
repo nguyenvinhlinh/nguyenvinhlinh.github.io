@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cách thiết lập GPG cho Emacs trên Window"
-date: 2021-09-01 11:07:00
+date: 2021-09-01 11:07:00 +0700
 tags:
 - emacs
 - gpg

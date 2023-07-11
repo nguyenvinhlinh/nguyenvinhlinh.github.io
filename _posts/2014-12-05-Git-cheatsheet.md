@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git - cheatsheet"
-date: 2014-12-05 12:24:00
+date: 2014-12-05 12:24:00 +0700
 categories: cheatsheet
 tag: git
 ---
@@ -9,9 +9,9 @@ tag: git
 {%highlight bash%}
 git rm -r --cached folder_name
 {% endhighlight %}
--r : recursive  
+-r : recursive
 --cached: files or directories are only deleted on the git's index, not on local
-storage.  
+storage.
 
 ### 2. See all submodules ###
 {%highlight bash%}
@@ -38,6 +38,3 @@ git reset --hard HEAD
 {% highlight bash %}
 git clone git@github.com:whatever folder-name
 {% endhighlight %}
-
-
-

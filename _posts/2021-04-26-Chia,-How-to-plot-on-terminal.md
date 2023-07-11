@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Chia, How to plot on terminal?"
-date: 2021-04-26 15:50:34
+date: 2021-04-26 15:50:34 +0700
 tags: Chia
 categories:
 - Mining Rig

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Quản lý version của ngôn ngữ theo dự án với ASDF"
-date: 2020-10-28 17:55:24
+date: 2020-10-28 17:55:24 +0700
 tags: Linux, language, version-manager
 categories: Linux
 ---

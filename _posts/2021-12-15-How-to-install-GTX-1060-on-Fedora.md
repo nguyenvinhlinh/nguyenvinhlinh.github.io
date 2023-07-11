@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "How to install VGA - GTX 1060 on Fedora with Secure Boot enabled?"
-date: 2021-12-15 14:55:51
-update: 2022-04-29 12:00:00
+date:   2021-12-15 14:55:51 +0700
+update: 2022-04-29 12:00:00 +0700
 tags:
 - Linux
 - VGA

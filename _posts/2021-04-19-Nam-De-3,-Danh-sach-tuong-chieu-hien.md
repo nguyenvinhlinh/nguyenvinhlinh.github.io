@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Nam Đế 3, danh sách tướng chiêu hiền và thế lực"
-date: 2021-04-19 11:16:07
+date: 2021-04-19 11:16:07 +0700
 tags: namde3
 categories:
 - Nam Đế 3

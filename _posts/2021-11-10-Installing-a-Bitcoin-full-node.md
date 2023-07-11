@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Personal Note: Installing a Bitcoin full node"
-date: 2021-11-10 23:35:14
+date: 2021-11-10 23:35:14 +0700
 tags:
 - Cryptocurrency Node
 - Bitcoin

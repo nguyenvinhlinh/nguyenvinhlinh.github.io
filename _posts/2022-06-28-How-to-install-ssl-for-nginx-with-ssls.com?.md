@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to install ssl certificate for nginx with SSLs.com?"
-date: 2022-06-28 01:30:46
+date: 2022-06-28 01:30:46 +0700
 update: 2023-07-10 05:03:50
 location: Saigon
 tags:

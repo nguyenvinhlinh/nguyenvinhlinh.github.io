@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cách sửa lỗi Microsoft Teams: “We're sorry—we've run into an issue.”"
-date: 2022-07-19 12:04:00
+date: 2022-07-19 12:04:00 +0700
 tags:
 - Window 10
 - Microsoft Teams

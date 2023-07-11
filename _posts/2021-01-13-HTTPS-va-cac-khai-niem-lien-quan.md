@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "HTTPS và các khái niệm liên quan"
-date: 2021-01-13 10:06:22
+date: 2021-01-13 10:06:22 +0700
 tags: https
 categories: SSL
 ---

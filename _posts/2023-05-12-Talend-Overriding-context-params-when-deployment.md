@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Talend, Overriding context params when deployment"
-date: 2023-05-12 03:45:29
+date: 2023-05-12 03:45:29 +0700
 update:
 location: Saigon
 tags:

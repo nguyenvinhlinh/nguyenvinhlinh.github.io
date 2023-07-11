@@ -1,11 +1,11 @@
 ---
 layout: post
 title: Add new methods to exist resource routes as collection in Rails
-date: 2015-09-10 23:05:32
+date: 2015-09-10 23:05:32 +0700
 categories:
 - Ruby on Rails 4
 tag: ruby, rails
---- 
+---
 
 Rails does support built-in CRUD with RESTful. It provides default url for
 developers. However, there could be a time that developer want to add more
@@ -24,5 +24,3 @@ resources :pictures do
   end
 end
 {% endhighlight %}
-
-

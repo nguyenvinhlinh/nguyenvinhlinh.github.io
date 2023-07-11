@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to disable touchscreen temporary/permanent?"
-date: 2021-03-30 21:52:44
+date: 2021-03-30 21:52:44 +0700
 tags:
 - Linux
 - Tweak

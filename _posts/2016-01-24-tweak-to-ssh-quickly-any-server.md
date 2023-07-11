@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tweak to ssh quickly any server
-date: 2016-01-24 23:39:50
+date: 2016-01-24 23:39:50 +0700
 categories: Linux
 tag:
 - ssh

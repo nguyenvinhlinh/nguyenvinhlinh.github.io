@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to verify Hostinger domains for ZeroSSL certificate using DNS(CNAME)?"
-date: 2020-10-10 00:08:51
+date: 2020-10-10 00:08:51 +0700
 tags: ssl, zerossl, cname, hostinger
 categories: SSL
 ---

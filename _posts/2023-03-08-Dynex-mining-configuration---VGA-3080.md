@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Dynex mining configuration - VGA 3080"
-date: 2023-03-08 15:09:31
+date: 2023-03-08 15:09:31 +0700
 update:
 location: Saigon
 tags:

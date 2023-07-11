@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Single Sign On sử dụng SAML - Cách hoạt động"
-date: 2021-07-31 16:07:24
+date: 2021-07-31 16:07:24 +0700
 tags:
 - sso
 - saml

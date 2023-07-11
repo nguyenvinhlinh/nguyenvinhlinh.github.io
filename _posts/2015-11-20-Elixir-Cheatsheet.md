@@ -1,16 +1,16 @@
 ---
 layout: post
 title: Elixir Cheatsheet
-date: 2015-11-20 15:37:17
+date: 2015-11-20 15:37:17 +0700
 categories: cheatsheet
 tag: etc
---- 
+---
 
 This is cheatsheet for Elixir, it's a not a summary of this language, this
 article all about tweak, remember note for Elixir language.
 
 
-**1. For loop**  
+**1. For loop**
 Given that, we we a list of map
 {% highlight elixir %}
 people = [
@@ -33,13 +33,13 @@ for person = %{age: tuoi}<- people, tuoi < 20, do: (
 )
 {% endhighlight %}
 
-**2. Update a map**  
+**2. Update a map**
 {% highlight elixir %}
 old_map = %{attr1: 1, attr2: 2 }
 new_map = %{old_map | attr1:  3}
 {% endhighlight %}
 
-**3. Struct**  
+**3. Struct**
  Generate Struct
 {% highlight elixir %}
 defmodule Subscriber do

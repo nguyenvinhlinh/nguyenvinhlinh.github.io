@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Cách khởi động nguồn máy tính tự động mỗi khi có điện?"
-date: 2021-12-18 00:19:50
+date: 2021-12-18 00:19:50 +0700
 tags:
 - Mining Rig
 - PSU

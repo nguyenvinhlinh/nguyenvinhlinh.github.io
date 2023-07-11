@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tích hợp tai nghe bluetooth vào mũ bảo hiểm"
-date: 2021-06-12 23:35:14
+date: 2021-06-12 23:35:14 +0700
 tags:
 - bluetooth
 - helmet

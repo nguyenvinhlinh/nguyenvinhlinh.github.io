@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Making new table on an exist database - Android"
-date: 2014-07-18 21:55:37
+date: 2014-07-18 21:55:37 +0700
 categories: Android
 tag: Android, Java, SQLite
 ---

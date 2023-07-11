@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Using command 'sudo' without password"
-date: 2014-03-18 22:25:37
+date: 2014-03-18 22:25:37 +0700
 categories: Linux
 tag: Linux, Fedora, GNOME, sudores, UNIX
 ---
@@ -14,7 +14,7 @@ run command such as "yum", "apachectl" without passwor
 #1. Find the path of those commands by using command `which`
 in this case, those commands locates in `/usr/sbin/apachectl` and `/usr/bin/yum`.
 
-#2. Modify file `sudoers`  
+#2. Modify file `sudoers`
 
 {% highlight bash %}
 username ALL=(ALL) NOPASSWD = /usr/sbin/apachectl, /usr/bin/yum
@@ -27,5 +27,5 @@ Command Alias, this feature will help you save your time if you want to assign g
 {% highlight bash %}
 Cmmd_Alias CommandAliasName = /pathToCommand1, /pathToCommand2, /pathToCommand3
 username1 ALL=(ALL) NOPASSWD = CommandAliasName
-username2 ALL=(ALL) NOPASSWD = CommandAliasName 
+username2 ALL=(ALL) NOPASSWD = CommandAliasName
 {% endhighlight%}

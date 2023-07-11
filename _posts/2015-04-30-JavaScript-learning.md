@@ -1,7 +1,7 @@
 ---
 layout: post
 title: JavaScript learning
-date: 2015-04-30
+date: 2015-04-30 +0700
 categories: cheatsheet
 tag: JavaScript
 ---
@@ -59,19 +59,19 @@ var a = object[var_name]
 //type 2
 var a = object.var_name
 {% endhighlight %}
-**e. Private and public variables and function**  
+**e. Private and public variables and function**
 - `private variables` are declared with the `var` keyword inside the object, and
-  can only be accessed by private functions and privileged methods.  
+  can only be accessed by private functions and privileged methods.
 - `private functions` are declared inline inside the object's constructor (or
 	alternatively may be defined via var `functionName=function(){...})` and may
-	only be called by privileged methods (including the object's constructor).  	
+	only be called by privileged methods (including the object's constructor).
 - `privileged methods` are declared with `this.methodName=function(){...}` and
-	may invoked by code external to the object.  
+	may invoked by code external to the object.
 - `public properties` are declared with `this.variableName` and may be
-	read/written from outside the object.  
+	read/written from outside the object.
 - `public methods` are defined by `Classname.prototype.methodName =
-	function(){...}` and may be called from outside the object.  
-- `prototype properties` are defined by `Classname.prototype.propertyName = someValue`  
+	function(){...}` and may be called from outside the object.
+- `prototype properties` are defined by `Classname.prototype.propertyName = someValue`
 - `static properties` are defined by `Classname.propertyName = someValue`
 
 {% highlight javascript %}
@@ -85,10 +85,10 @@ var Person = function(job, age){
     this.printJob(){
 	    Console.log(this.job);
 	}
-	//sayHello() is private function	
+	//sayHello() is private function
 	var sayHello = function(){
 	    Console.log('Hello');
-	}	
+	}
 }
 Person.variable = 123; //variable is pointing to object named Person
 Person.prototype.variable = 345; //variable is pointing to the function of object named Person
@@ -96,7 +96,7 @@ Person.prototype.variable = 345; //variable is pointing to the function of objec
 #3. Inheritance
 **a.Inheritance object**
 {% highlight javascript %}
-var a = {a: 1}; 
+var a = {a: 1};
 // a ---> Object.prototype ---> null
 
 var b = Object.create(a);
@@ -108,10 +108,9 @@ var c = Object.create(b);
 
 var d = Object.create(null);
 // d ---> null
-console.log(d.hasOwnProperty); 
+console.log(d.hasOwnProperty);
 // undefined, because d doesn't inherit from Object.prototype
 {% endhighlight %}
 #4. Notes
 - Keyword `this`, within a function, this refers to object which call the
 function.
-
