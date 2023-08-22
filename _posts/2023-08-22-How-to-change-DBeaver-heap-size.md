@@ -18,6 +18,10 @@ Edit `/usr/share/dbeaver-ce/dbeaver.ini`, change the `-Xms` and `-Xmx`. In the e
 - `-Xms`: It is used for setting the initial and minimum heap size. I set to **1GB**.
 - `-Xmx`: It is used for setting the maximum heap size. I set to **6GB**.
 
+On Window, it's `C:\Users\user\AppData\Local\DBeaver\dbeaver.ini` or `C:\Program Files\DBeaver\dbeaver.ini`
+
+On Mac, it's `/Applications/DBeaver.app/Contents/Eclipse/dbeaver.ini`
+
 
 {% highlight sh linenos %}
 -vmargs
