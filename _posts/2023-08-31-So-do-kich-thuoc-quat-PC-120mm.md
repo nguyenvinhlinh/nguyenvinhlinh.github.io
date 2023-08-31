@@ -8,7 +8,7 @@ tags:
 - 120mm
 categories: etc
 seo_description: Sơ đồ kích thước fan máy tính 120mm
-seo_image:
+seo_image: /image/posts/2023-08-31-So-do-kich-thuoc-quat-PC-120mm/seo.png
 comments: true
 ---
 
