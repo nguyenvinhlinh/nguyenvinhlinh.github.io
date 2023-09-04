@@ -15,7 +15,7 @@ comments: true
 ---
 This is a repost from [https://xmrig.com/docs/miner/build/fedora](https://xmrig.com/docs/miner/build/fedora) which then I can save my time searching in future.
 
-# Basic build
+# I. Basic build
 Basic build is good for local machine, because it is easy, but if you need to run the miner on other machines please take a look at advanced build.
 {% highlight sh %}
 $ sudo dnf install -y git make cmake gcc gcc-c++ libstdc++-static libuv-static hwloc-devel openssl-devel
@@ -26,7 +26,7 @@ $ make -j$(nproc)
 {% endhighlight %}
 
 
-# Advanced build
+# II. Advanced build
 We use `build_deps.sh` script to build recent versions of `libuv`, `openssl` and `hwloc` as static libraries.
 
 {% highlight sh %}
@@ -40,5 +40,5 @@ $ make -j$(nproc)
 
 Use command `ldd xmrig` to verify binary dependencies.
 
-# Reference
+# III. Reference
 - XMRig build fedora, [https://xmrig.com/docs/miner/build/fedora](https://xmrig.com/docs/miner/build/fedora)
