@@ -2,9 +2,12 @@
 layout: post
 title: "How to fix redash saml's self-sign Certificate Authority?"
 date: 2023-09-11 21:28:01
-update:
+update: 2023-09-13
 location: Saigon
 tags:
+- Redash
+- SAML
+- CA
 categories:
 - Redash
 seo_description:
@@ -68,4 +71,4 @@ $ cat my-ca.crt >> /usr/local/lib/python3.7/site-packages/certifi/cacert.pem
 Good luck!
 
 # Reference
-- How to fix “certificate verify failed: self signed certificate in certificate chain”or “certificate verify failed: unable to get local issuer certificate” error while verifying certificates to SSL enabled website in python3 scripts, Sheng Jie Han, 2021, June 3, [https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/sheng-jie-han/2021/06/03/how-to-fix-certificate-verify-failed-self-signed-c](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/sheng-jie-han/2021/06/03/how-to-fix-certificate-verify-failed-self-signed-c)
+- Sheng JH (13 September 2021) *How to fix “certificate verify failed: self signed certificate in certificate chain”or “certificate verify failed: unable to get local issuer certificate” error while verifying certificates to SSL enabled website in python3 scripts*, IBM website, accessed on 13 September 2023. [https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/sheng-jie-han/2021/06/03/how-to-fix-certificate-verify-failed-self-signed-c](https://community.ibm.com/community/user/ibmz-and-linuxone/blogs/sheng-jie-han/2021/06/03/how-to-fix-certificate-verify-failed-self-signed-c)
