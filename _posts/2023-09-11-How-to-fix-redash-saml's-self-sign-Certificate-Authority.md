@@ -64,8 +64,15 @@ In this case, it's `/usr/local/lib/python3.7/site-packages/certifi/cacert.pem`.
 
 - Append your CA's certificate to `cacert.pem`.
 
-{% highlight she %}
+{% highlight sh %}
 $ cat my-ca.crt >> /usr/local/lib/python3.7/site-packages/certifi/cacert.pem
+{% endhighlight %}
+
+# How to test?
+In terminal, type `python` to access its interactive shell. Then, type the following command.
+{% highlight python %}
+>>> import requests
+>>> requests.request("GET", "https://YOUR_ADFS_DOMAIN/FederationMetadata/2007-06/FederationMetadata.xml")
 {% endhighlight %}
 
 Good luck!
