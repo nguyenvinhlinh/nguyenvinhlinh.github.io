@@ -13,22 +13,38 @@ categories:
 ```config
 # XMRig configuration file config.json
 {
+  "api": {
+    "worker-id": "worker-x"
+  },
+  "http": {
+    "enabled": true,
+    "host": "0.0.0.0",
+    "port": 8080,
+    "access-token": null,
+    "restricted": true
+  },
   "autosave": true,
-  "donate-level": 0,
-  "cpu": true,
   "opencl": false,
   "cuda": false,
   "pools": [
     {
-      "url": "sg.minexmr.com:443",
+      "coin": "monero",
+      "algo": "rx/0",
+      "url": "pool.hashvault.pro:443",
       "user": "MONERO_ADDRESS_HERE",
-      "rig-id": "2",
-      "pass": "x",
+      "pass": "worker-x",
+      "tls": true,
       "keepalive": true,
-      "tls": true
+      "nicehash": false
     }
-  ]
+  ],
+  "randomx": {
+    "1gb-pages": true
+  },
+  "cpu": {
+    "enabled": true,
+    "huge-pages": true
+  }
 }
-```
 
-After run the xmrig program, file named `config.json` will be updated with new attributes. Reopen `config.json` again and update attribute named `1gb-pages` to `true`.
+```
