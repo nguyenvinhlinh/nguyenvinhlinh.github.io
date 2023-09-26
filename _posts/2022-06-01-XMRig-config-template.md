@@ -23,7 +23,7 @@ categories:
     "access-token": null,
     "restricted": true
   },
-  "autosave": true,
+  "autosave": false,
   "opencl": false,
   "cuda": false,
   "pools": [
