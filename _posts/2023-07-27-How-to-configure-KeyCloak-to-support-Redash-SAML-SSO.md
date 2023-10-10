@@ -2,7 +2,7 @@
 layout: post
 title: "How to configure KeyCloak to support Redash SAML SSO?"
 date: 2023-07-27 10:38:57
-update:
+update: 2023-10-10 19:00:00
 location: Saigon
 tags:
 - Redash
@@ -112,4 +112,4 @@ After login using admin credential, go to Settings → General → Saml
 You are done! Enjoy!
 
 # III Reference
-- [saml] Signature missing for assertion,  rockxsj, 2018, [https://github.com/getredash/redash/issues/2977](url https://github.com/getredash/redash/issues/2977)
+- [saml] Signature missing for assertion,  rockxsj, 2018, [https://github.com/getredash/redash/issues/2977](https://github.com/getredash/redash/issues/2977)
