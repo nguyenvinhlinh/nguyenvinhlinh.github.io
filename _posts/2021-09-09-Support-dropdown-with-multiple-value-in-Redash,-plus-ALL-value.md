@@ -17,8 +17,8 @@ The dropdown configuration is in the following image.
 
 In the `where` section, condition statement should look like this one
 
-{% highlight text %}
-(column_name in (SELECT unnest(CONCAT('{', '{{ _redash_var_name_ }}', '}')::varchar[])) OR '{{ _redash_var_name_ }}' LIKE '%ALL%')
+{% highlight sql %}
+(column_name in (SELECT unnest(CONCAT('{', '{{ redash_var_name }}', '}')::varchar[])) OR '{{ redash_var_name }}' LIKE '%ALL%')
 {% endhighlight %}
 
 In the script above, it cast to `varchar[]`, if column typed `uuid`, change the casted type to `::uuid[]`
