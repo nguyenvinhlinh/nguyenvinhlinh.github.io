@@ -17,7 +17,7 @@ The dropdown configuration is in the following image.
 
 In the `where` section, condition statement should look like this one
 
-{% highlight sql %}
+{% highlight text %}
 (column_name in (SELECT unnest(CONCAT('{', '{{ _redash_var_name_ }}', '}')::varchar[])) OR '{{ _redash_var_name_ }}' LIKE '%ALL%')
 {% endhighlight %}
 
