@@ -2,7 +2,7 @@
 layout: post
 title: "How to compile xmrig on Fedora?"
 date: 2023-09-02 11:43:55
-update:
+update: 2023-11-07 19:08:00
 location: Saigon
 tags:
 - monero
@@ -30,7 +30,7 @@ $ make -j$(nproc)
 We use `build_deps.sh` script to build recent versions of `libuv`, `openssl` and `hwloc` as static libraries.
 
 {% highlight sh %}
-$ sudo dnf install -y git make cmake gcc gcc-c++ libstdc++-static automake libtool autoconf
+$ sudo dnf install -y git make cmake gcc gcc-c++ libstdc++-static automake libtool autoconf perl
 $ git clone https://github.com/xmrig/xmrig.git
 $ mkdir xmrig/build
 $ cd xmrig/scripts && ./build_deps.sh && cd ../build
