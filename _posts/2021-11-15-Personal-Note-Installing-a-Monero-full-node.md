@@ -10,36 +10,44 @@ categories:
 ---
 # I. Monero Node Config - monerod.conf
 ``` config
-# /opt/monero-gui-v0.17.2.3/monerod.conf
-
 # Data directory (blockchain db and indices)
-data-dir=/mnt/disk_2/Monero/  # Remember to create the monero user first
+data-dir=/mnt/disk_2/CryptoCurrency/Monero  # Remember to create the monero user first
 
 # Log file
-log-file=/mnt/disk_2/Monero/log/monerod.log
+log-file=/mnt/disk_2/CryptoCurrency/Monero/log/monerod.log
 max-log-file-size=0            # Prevent monerod from managing the log files; we want logrotate to take care of that
+log-level=0
 
 # P2P full node
 p2p-bind-ip=0.0.0.0            # Bind to all interfaces (the default)
 p2p-bind-port=18080            # Bind to default port
 
-# RPC open node
-rpc-bind-ip=0.0.0.0            # Bind to all interfaces
-rpc-bind-port=18081            # Bind on default port
+add-peer=nodes.hashvault.pro:18080
+
+# RPC Restricted IP/PORT
+rpc-restricted-bind-ip=0.0.0.0
+rpc-restricted-bind-port=18081
+
+# RPC Full Permission, local access only
+rpc-bind-ip=127.0.0.1          # Bind to all interfaces
+rpc-bind-port=18084            # Bind on default port
+
 confirm-external-bind=1        # Open node (confirm)
-restricted-rpc=1               # Prevent unsafe RPC calls
 no-igd=1                       # Disable UPnP port mapping
+
+zmq-pub=tcp://127.0.0.1:18083
 
 # Slow but reliable db writes
 db-sync-mode=safe:sync
-block-sync-size=100
+block-sync-size=10
+prep-blocks-threads=28
 
 # Emergency checkpoints set by MoneroPulse operators will be enforced to workaround potential consensus bugs
 # Check https://monerodocs.org/infrastructure/monero-pulse/ for explanation and trade-offs
 enforce-dns-checkpointing=1
 
-out-peers=64              # This will enable much faster sync and tx awareness; the default 8 is suboptimal nowadays
-in-peers=1024             # The default is unlimited; we prefer to put a cap on this
+out-peers=128              # This will enable much faster sync and tx awareness; the default 8 is suboptimal nowadays
+in-peers=128             # The default is unlimited; we prefer to put a cap on this
 
 limit-rate-up=1048576     # 1048576 kB/s == 1GB/s; a raise from default 2048 kB/s; contribute more to p2p network
 limit-rate-down=1048576   # 1048576 kB/s == 1GB/s; a raise from default 8192 kB/s; allow for faster initial sync
@@ -52,8 +60,8 @@ Description=Monero Full Node
 After=network.target  mnt-disk_2.mount
 
 [Service]
-WorkingDirectory=/opt/monero-gui-v0.17.2.3
-ExecStart=/opt/monero-gui-v0.17.2.3/monerod --config-file /opt/monero-gui-v0.17.2.3/monerod.conf --detach
+WorkingDirectory=/opt/monero-x86_64-linux-gnu-v0.18.3.1
+ExecStart=/opt/monero-x86_64-linux-gnu-v0.18.3.1/monerod --config-file /opt/monero-x86_64-linux-gnu-v0.18.3.1/monerod.conf --non-interactive
 User=nguyenvinhlinh
 RemainAfterExit=yes
 Restart=on-failure
