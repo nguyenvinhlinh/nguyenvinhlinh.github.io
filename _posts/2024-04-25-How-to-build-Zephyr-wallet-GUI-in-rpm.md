@@ -33,7 +33,7 @@ $ npm run build:desktop
 $ npm run copy-build
 {% endhighlight %}
 
-## 3. Build zephy wallet desktop app
+## 3. Build zephyr wallet desktop app
 Change directory to `zephyr-wallet/zephyr-desktop-app`, install package dependencies.
 
 {% highlight shell %}
