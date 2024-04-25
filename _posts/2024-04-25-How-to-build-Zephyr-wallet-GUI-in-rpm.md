@@ -9,7 +9,7 @@ tags:
 categories:
 - Mining Rig
 seo_description: Building rpm package for Zephyr Wallet GUI ealisy on Fedora 39
-seo_image:
+seo_image: /image/posts/2024-04-25-How-to-build-Zephyr-wallet-GUI-in-rpm/seo.png
 comments: true
 ---
 
