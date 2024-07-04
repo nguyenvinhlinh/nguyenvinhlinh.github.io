@@ -81,6 +81,7 @@ server {
     ssl_session_timeout  10m;
     ssl_ciphers PROFILE=SYSTEM;
     ssl_prefer_server_ciphers on;
+    charset UTF-8;
 
     # Load configuration files for the default server block.
     include /etc/nginx/default.d/*.conf;
