@@ -2,7 +2,7 @@
 layout: post
 title: "How to install ssl certificate for nginx with SSLs.com?"
 date: 2022-06-28 01:30:46 +0700
-update: 2023-07-10 05:03:50
+update: 2024-07-04 17:03:50
 location: Saigon
 tags:
 - SSL
@@ -69,30 +69,23 @@ This is an example of nginx config file, the most important attribute are:
 
 {% highlight nginx %}
 server {
+    listen       443 ssl;  <-----
+    listen       [::]:443 ssl; <-----
+    http2        on;
+    server_name  abc.xyz;  <-----
+    root         /usr/share/nginx/abc.xyz.html; <-----
 
-    listen 443; <----
+    ssl_certificate "/etc/pki/hexalink.xyz/www_abc_xyz.bundle.crt";   <-----
+    ssl_certificate_key "/etc/pki/hexalink.xyz/www_abc_xyz.pem";      <-----
+    ssl_session_cache shared:SSL:1m;
+    ssl_session_timeout  10m;
+    ssl_ciphers PROFILE=SYSTEM;
+    ssl_prefer_server_ciphers on;
 
-    ssl on;     <----
-
-    ssl_certificate /etc/ssl/ssl-bundle.crt;       <----
-
-    ssl_certificate_key /etc/ssl/your_domain.pem;  <----
-
-    server_name your_domain;
-
-    access_log /var/log/nginx/nginx.vhost.access.log;
-
-    error_log /var/log/nginx/nginx.vhost.error.log;
-
-    location / {
-
-        root /var/www/;
-
-        index index.html;
-
-    }
-
+    # Load configuration files for the default server block.
+    include /etc/nginx/default.d/*.conf;
 }
+
 {% endhighlight %}
 
 After finished editing, restart nginx server with `systemctl restart nginx` and enjoy.
