@@ -75,8 +75,8 @@ server {
     server_name  abc.xyz;  <-----
     root         /usr/share/nginx/abc.xyz.html; <-----
 
-    ssl_certificate "/etc/pki/hexalink.xyz/www_abc_xyz.bundle.crt";   <-----
-    ssl_certificate_key "/etc/pki/hexalink.xyz/www_abc_xyz.pem";      <-----
+    ssl_certificate "/etc/pki/abc.xyz/www_abc_xyz.bundle.crt";   <-----
+    ssl_certificate_key "/etc/pki/abc.xyz/www_abc_xyz.pem";      <-----
     ssl_session_cache shared:SSL:1m;
     ssl_session_timeout  10m;
     ssl_ciphers PROFILE=SYSTEM;
