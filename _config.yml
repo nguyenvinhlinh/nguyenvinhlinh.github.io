@@ -17,7 +17,7 @@ highlighter: rouge
 
 sass:
   sass_dir: _sass
-plugins:
+gems:
   - jekyll-feed
   - jekyll-paginate
   - octopress-debugger
