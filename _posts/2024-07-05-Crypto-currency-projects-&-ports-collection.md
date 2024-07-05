@@ -36,3 +36,5 @@ This post is all about crypto currency project and it's default ports. After a w
 | Spectre  | 18110 | RPC                | NO                              |
 |          | 18111 | P2P                | YES                             |
 |----------|-------|--------------------|---------------------------------|
+| Dynex    | 17333 | P2P                | YES                             |
+|----------|-------|--------------------|---------------------------------|
