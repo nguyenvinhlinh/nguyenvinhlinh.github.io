@@ -70,6 +70,8 @@ As a consequence, prior to run pipeline,
 - Then, I change user ownership to `jenkins`.
 
 # 3. Nginx
+## a. Nginx config for hexalink.xyz / www.hexalink.xyz
+
 
 {% highlight nginx %}
 server {
@@ -92,3 +94,6 @@ server {
 }
 
 {% endhighlight %}
+
+## b. Nginx config for jenkins
+I follow this tutorial [Reverse proxy - Nginx](https://www.jenkins.io/doc/book/system-administration/reverse-proxy-configuration-with-jenkins/reverse-proxy-configuration-nginx/).
