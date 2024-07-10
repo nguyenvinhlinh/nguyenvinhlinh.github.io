@@ -16,7 +16,7 @@ comments: true
 
 # I. Systemctl service - /etc/systemd/system/kaspa.service
 
-{% highlight service %}
+{% highlight systemd %}
 [Unit]
 Description=Kaspa Full Node
 After=network.target mnt-disk_2.mount
