@@ -49,7 +49,7 @@ $ curl 'http://192.168.1.XXX/user/userpanel' \
     "softver2": "ICM168_3_2_10_ks5L_bg",
     "firmtype": "Factory",
     "nic": "eth0",
-    "mac": "00:0a:52:30:04:ba",
+    "mac": "****:****:****:****:****:**",
     "ip": "192.168.1.XX",
     "netmask": "255.255.255.0",
     "host": "XJGXG_SSYYGB",
