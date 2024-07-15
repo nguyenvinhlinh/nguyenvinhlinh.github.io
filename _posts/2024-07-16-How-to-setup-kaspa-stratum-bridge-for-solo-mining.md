@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to setup kaspa stratum bridge for solo mining"
+title: "Setup kaspa stratum bridge for solo mining"
 date: 2024-07-16 00:37:01
 update:
 location: Saigon
