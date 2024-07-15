@@ -9,7 +9,7 @@ tags:
 categories:
 - Cryptocurrency Node
 seo_description:
-seo_image:
+seo_image: /image/posts/2024-07-16-How-to-setup-kaspa-stratum-bridge-for-solo-mining/1.png
 comments: true
 ---
 
@@ -64,3 +64,9 @@ TimeoutStopSec=180
 [Install]
 WantedBy=multi-user.target
 {% endhighlight %}
+
+# IV. Config ASIC's Mining Settings
+
+The pool address should be `stratum+tcp://192.168.1.XXX:5555` (your local stratum node ip)
+
+{% include image.html url="/image/posts/2024-07-16-How-to-setup-kaspa-stratum-bridge-for-solo-mining/1.png" description="ASIC's Mining setting" %}
