@@ -13,7 +13,7 @@ seo_image: /image/posts/2024-07-16-How-to-setup-kaspa-stratum-bridge-for-solo-mi
 comments: true
 ---
 
-# I. Clone repo [https://github.com/rdugan/kaspa-stratum-bridge](https://github.com/rdugan/kaspa-stratum-bridge).
+# I. Clone repo [https://github.com/rdugan/kaspa-stratum-bridge](https://github.com/rdugan/kaspa-stratum-bridge)
 
 Or copy relase to `/opt/kaspa-ks-bridge`
 {% highlight sh %}
