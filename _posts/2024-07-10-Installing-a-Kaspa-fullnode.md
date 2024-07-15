@@ -23,7 +23,7 @@ After=network.target mnt-disk_2.mount
 
 [Service]
 WorkingDirectory=/opt/rusty-kaspa-v0.14.1-linux-gnu-amd64
-ExecStart=/opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/bin/kaspad --appdir=/mnt/disk_2/CryptoCurrency/Kaspa --utxoindex --rpclisten=0.0.0.0:16110 --rpclisten-borsh=0.0.0.0:17110
+ExecStart=ExecStart=/opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/bin/kaspad --configfile /opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/bin/kaspad.conf
 User=nguyenvinhlinh
 RemainAfterExit=yes
 Restart=on-failure
@@ -32,6 +32,23 @@ RestartSec=10
 [Install]
 WantedBy=multi-user.target
 {% endhighlight %}
+
+
+# II. Kaspa config file - /opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/bin/kaspad.conf
+
+
+{% highlight config %}
+appdir="/opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/data"
+utxoindex=true
+outpeers=128
+maxinpeers=128
+rpclisten="0.0.0.0:16110"
+rpclisten-borsh="0.0.0.0:17110"
+listen="0.0.0.0:16111"
+{% endhighlight %}
+
+
+
 
 # II. Firewall-cmd - /etc/firewalld/services/kaspa.xml
 
