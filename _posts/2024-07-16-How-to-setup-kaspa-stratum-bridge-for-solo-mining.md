@@ -65,8 +65,13 @@ TimeoutStopSec=180
 WantedBy=multi-user.target
 {% endhighlight %}
 
+To check log, `journalctl -f -u kaspa_ks_bridge`
+
+{% include image.html url="/image/posts/2024-07-16-How-to-setup-kaspa-stratum-bridge-for-solo-mining/2.png" description="[1] KS bridge - Console log" %}
+
+
 # IV. Config ASIC's Mining Settings
 
 The pool address should be `stratum+tcp://192.168.1.XXX:5555` (your local stratum node ip)
 
-{% include image.html url="/image/posts/2024-07-16-How-to-setup-kaspa-stratum-bridge-for-solo-mining/1.png" description="ASIC's Mining setting" %}
+{% include image.html url="/image/posts/2024-07-16-How-to-setup-kaspa-stratum-bridge-for-solo-mining/1.png" description="[2] ASIC's Mining setting" %}
