@@ -35,14 +35,14 @@ WantedBy=multi-user.target
 
 # II. Firewall-cmd service - /etc/firewalld/services/spectre.xml
 
-|-------|-----------------------------------------|----------|
-| Port  | Description                             | Firewall |
-|-------|-----------------------------------------|----------|
-| 18110 | gRPC, miner/stratum bridge need it      | Closed   |
-| 18111 | P2P                                     | Open     |
-| 19110 | WebSocket-framed wRPC/Borsh protocol    | Closed   |
-| 20110 | WebSocket-framed wRPC/JSON-RPC protocol | Closed   |
-|-------|-----------------------------------------|----------|
+|-------|---------------------------------------------------------------------------|----------|
+| Port  | Description                                                               | Firewall |
+|-------|---------------------------------------------------------------------------|----------|
+| 18110 | gRPC, miner/stratum bridge/golang wallet need it                          | Closed   |
+| 18111 | P2P                                                                       | Open     |
+| 19110 | WebSocket-framed wRPC/Borsh protocol. It's used for (rust) spectre wallet | Closed   |
+| 20110 | WebSocket-framed wRPC/JSON-RPC protocol                                   | Closed   |
+|-------|---------------------------------------------------------------------------|----------|
 
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
