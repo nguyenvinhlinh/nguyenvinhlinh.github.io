@@ -17,10 +17,9 @@ highlighter: rouge
 
 sass:
   sass_dir: _sass
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
-  - octopress-debugger
   - jekyll-sitemap
 exclude:
   - Gemfile
