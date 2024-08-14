@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hexa's Blog</title>
+    {% if page.title %}
+    <title>{{site.title}} | {{page.title}} </title>
+    {% else %}
+    <title>{{site.title}}</title>
+    {% endif %}
     <link rel="icon" type="image/png" href="/image/favicon.ico"/>
     <meta name="viewport" content="width=device-width"/>
     <meta name="google-site-verification" content="NgnRvVMOAvhnMo4J-4PtjggfTaK0_i5DJR_v6xcTclg" />
