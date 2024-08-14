@@ -15,6 +15,5 @@ gem 'base64', '~> 0.2.0'
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-paginate'
-  gem 'jekyll-sitemap'
   gem 'jekyll-feed'
 end
