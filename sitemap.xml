@@ -6,15 +6,15 @@ layout: null
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  {% for post in site.posts %}
-  {%   if post.update == nil or post.update == ""  %}
-  {%     assign mod_date = post.date %}
-  {%   else %}
-  {%     assign mod_date = post.update %}
-  {%   endif %}
-  <url>
-    <loc>{{ site.url }}{{ post.url }}</loc>
-    <lastmod>{{ mod_date | date_to_xmlschema }}</lastmod>
-  </url>
-  {% endfor %}
+{% for post in site.posts %}
+{%   if post.update == nil or post.update == ""  %}
+{%     assign mod_date = post.date %}
+{%   else %}
+{%     assign mod_date = post.update %}
+{%   endif %}
+<url>
+  <loc>{{ site.url }}{{ post.url }}</loc>
+  <lastmod>{{ mod_date | date_to_xmlschema }}</lastmod>
+</url>
+{% endfor %}
 </urlset>
