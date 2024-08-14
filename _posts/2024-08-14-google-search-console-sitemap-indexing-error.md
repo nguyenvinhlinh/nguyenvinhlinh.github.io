@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Google Search Console - Sitemap Indexing Error"
+title: "Google Search Console - Sitemap Indexing Error!"
 date: 2024-08-14 22:35:19
 update:
 location: Saigon
