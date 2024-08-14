@@ -7,7 +7,7 @@ location: Saigon
 tags: etc
 categories: etc
 seo_description: Google Sitemap Indexing engine failed to analyze sitemap.xml
-seo_image: /image/posts/2024-08-14-google-search-console-sitemap-indexing-error/sep.png
+seo_image: /image/posts/2024-08-14-google-search-console-sitemap-indexing-error/seo.png
 comments: true
 ---
 
