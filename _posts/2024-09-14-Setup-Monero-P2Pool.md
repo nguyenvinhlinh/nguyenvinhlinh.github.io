@@ -45,3 +45,12 @@ TimeoutStopSec=180
 [Install]
 WantedBy=multi-user.target
 {% endhighlight %}
+
+# III. Port list
+
+|----------------|-------|-----------------|
+| Description    | Port  | Port forwarding |
+|----------------|-------|-----------------|
+| P2Pool p2p     | 37889 | YES             |
+| Stratum server | 3333  | YES             |
+|----------------|-------|-----------------|
