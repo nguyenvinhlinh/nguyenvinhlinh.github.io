@@ -11,7 +11,6 @@ seo_image:
 comments: true
 ---
 
-
 Tôi hiện tại đang sống trong một căn hộ mini mà phòng vệ sinh của nó không có hệ thống thoát khí. Thực sự là vấn đề này
 chả cần phải nói nhiều, nó rất bất tiện. Chủ căn hộ hoàn toàn không muốn đục tường hay sữa chữa gì cả.
 
