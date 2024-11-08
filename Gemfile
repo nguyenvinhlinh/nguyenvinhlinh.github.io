@@ -16,5 +16,4 @@ gem 'base64', '~> 0.2.0'
 group :jekyll_plugins do
   gem 'jekyll-paginate'
   gem 'jekyll-feed'
-  gem 'github-pages'
 end
