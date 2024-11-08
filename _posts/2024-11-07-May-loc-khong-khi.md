@@ -5,9 +5,10 @@ date: 2024-11-07 21:09:55
 update:
 location: Saigon
 tags:
+- diy
 categories: Projects
-seo_description:
-seo_image:
+seo_description: Tự làm máy lọc khí!
+seo_image: /image/posts/2024-11-07-May-loc-khong-khi/seo.png
 comments: true
 ---
 
@@ -16,16 +17,12 @@ chả cần phải nói nhiều, nó rất bất tiện. Chủ căn hộ hoàn t
 
 Tôi thì lại đang thất nghiệp và nghiện chế tạo. Sản phẩm tôi làm cũng chả có gì mới. **Đúng, nó là máy lọc khí. Sản phẩm chả có gì mới cả.**
 
-Nhưng tại sao tôi lại làm thay vì đi mua? Nếu tôi không chịu làm những cái đơn giản, thậm chí người khác đã làm rồi.
-Tôi sẽ không bao giờ có thể làm những cái phức tạp hơn, hay có tư duy sáng tạo hay thiết kế cũa những người đi trước.
-Và xa hơn, tôi cũng sẽ không thể làm ra những sản phẩm có tính phức tạp cao hơn.
+Nhưng tại sao tôi lại làm thay vì đi mua? Nếu tôi không chịu làm những cái đơn giản, thậm chí người khác đã làm rồi,
+tôi sẽ không bao giờ có tư duy sáng tạo hay thiết kế cũa những người đi trước. Và xa hơn, tôi cũng sẽ không thể làm
+ra những sản phẩm có tính phức tạp cao hơn.
 
 Nếu đặt vấn đề lợi nhuận lên hàng đầu, tìm cách tiết kiệm thời gian, tôi sẽ lên lazada, shopee! Và rồi tôi sẽ không thể
-mạnh hơn được, tôi sẽ không tạo ra những thứ khác có độ tinh xảo cao hơn được.
-
-Ở thời điểm tạo ra sản phẩm này, tôi ko có thiết bị đo đạc, kiểm tra nồng độ của methanol và amoniac, tôi hoàn toàn không
-thể kiểm tra xem sản phẩm tôi làm có thực sự giải quyết vấn đề hay không, hay nó chỉ là hiệu ứng palacebo! Tôi hi vọng là
-không, cảm nhận của tôi là chính xác!
+mạnh hơn được, tôi sẽ không thể tạo ra những thứ khác có độ tinh xảo cao hơn!
 
 Dưới đây là một vài hình ảnh sản phẩm. Nhân tiện, sản phẩm được tôi thiết kế và in 3D.
 
