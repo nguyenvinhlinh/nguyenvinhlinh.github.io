@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "OrcaSlider error, cannot interact with UI at startup"
+title: "OrcaSlicer error, cannot interact with UI at startup"
 date: 2024-11-21 23:17:21
 update:
 location: Saigon
@@ -8,9 +8,9 @@ tags:
 - 3D print
 - OrcaSlicer
 categories:
-- 3D print
+- 3D Print
 seo_description: OrcaSlicer error due to webkit composition mode!
-seo_image: /image/posts/2024-11-21-OrcaSlider-error-cannot-interact-with-UI-at-startup/seo.png
+seo_image: /image/posts/2024-11-21-OrcaSlicer-error-cannot-interact-with-UI-at-startup/seo.png
 comments: true
 ---
 
@@ -26,4 +26,4 @@ $ ./OrcaSlicer_Linux_V2.3.0-dev.AppImage
 
 This is a screenshot prove that this solution does work.
 
-{% include image.html url="/image/posts/2024-11-21-OrcaSlider-error-cannot-interact-with-UI-at-startup/1.png" description="OrcaSlicer is running on Fedora 39" %}
+{% include image.html url="/image/posts/2024-11-21-OrcaSlicer-error-cannot-interact-with-UI-at-startup/1.png" description="OrcaSlicer is running on Fedora 39" %}
