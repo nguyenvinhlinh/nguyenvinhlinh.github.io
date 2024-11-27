@@ -10,6 +10,7 @@ seo_description: My own Certificate Authority(CA)
 seo_image:
 comments: true
 ---
+Download it here: [nguyenvinhlinh-ca.pem](/nguyenvinhlinh-ca.pem)
 
 {% highlight text %}
 -----BEGIN CERTIFICATE-----
