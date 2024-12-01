@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install Woodpecker natively on Fedora 41"
+title: "Installing Woodpecker natively on Fedora 41"
 date: 2024-12-01 17:38:30
 update:
 location: Saigon
