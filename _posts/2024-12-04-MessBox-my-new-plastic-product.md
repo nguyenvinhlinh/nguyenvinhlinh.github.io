@@ -6,7 +6,8 @@ update:
 location: Saigon
 tags:
 categories:
-- 3d Print
+- 3D Print
+- Projects
 seo_description: MessBox, tidy up your KVM switch!
 seo_image: /image/posts/2024-12-04-MessBox-my-new-plastic-product/seo.jpeg
 comments: true
