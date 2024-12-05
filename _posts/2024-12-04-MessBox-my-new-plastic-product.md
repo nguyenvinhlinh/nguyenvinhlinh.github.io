@@ -7,8 +7,8 @@ location: Saigon
 tags:
 categories:
 - 3d Print
-seo_description:
-seo_image:
+seo_description: MessBox, tidy up your KVM switch!
+seo_image: /image/posts/2024-12-04-MessBox-my-new-plastic-product/seo.jpeg
 comments: true
 ---
 
@@ -26,10 +26,13 @@ This is my before image.
 
 There are two type of box
 
+|------|--------|--------|
 | Type | Width  | height |
 |------|--------|--------|
-| A    |   2 cm |   1 cm |
+| A    | 2 cm   | 1 cm   |
 | B    | 2.5 cm | 1.5 cm |
+|------|--------|--------|
+
 
 {% include image.html url="/image/posts/2024-12-04-MessBox-my-new-plastic-product/4.jpeg" description="[4] Type A" %}
 
