@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to install open-webui for llama model on Fedora"
+title: "How to install open-webui for llama model on Fedora?"
 date: 2024-12-30 21:39:33
 update:
 location: Saigon
