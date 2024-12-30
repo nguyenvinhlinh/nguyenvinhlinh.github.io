@@ -17,8 +17,8 @@ This guide is about installing [open-webui](https://github.com/open-webui/open-w
 
 ## 1. Update `python` & `pip`
 {% highlight shell %}
-dnf update python -y
-pip install --upgrade pip
+$ dnf update python -y
+$ pip install --upgrade pip
 {% endhighlight %}
 
 ## 2. Install open-webui [guide](https://github.com/open-webui/open-webui?tab=readme-ov-file#how-to-install-)
