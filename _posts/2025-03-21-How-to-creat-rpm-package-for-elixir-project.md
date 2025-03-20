@@ -25,6 +25,12 @@ $ mv asic-sentry asic-sentry-1.0.0
 $ tar -cJvf asic-sentry-1.0.0.tar.xz asic-sentry-1.0.0
 ```
 
+For `tar` command:
+- `-c`: create a new archive
+- `-J`: filter the archive through xz
+- `-v`: verbose
+- `-f`: use archive file or device ARCHIVE
+
 Now your source code tarball is ready for next step!
 
 ## Step 2. Setup `$HOME/rpmbuild` directory
@@ -166,3 +172,7 @@ Check out `RPMS` directory! RPM should be there!
 │   ├── asic-sentry-1.0.0.spec
 └── SRPMS
 ```
+
+## References
+- How to create a Linux RPM package? [https://www.redhat.com/en/blog/create-rpm-package](https://www.redhat.com/en/blog/create-rpm-package)
+- tar(1) - Linux man page, [https://linux.die.net/man/1/tar](https://linux.die.net/man/1/tar)
