@@ -31,7 +31,6 @@ Now your source code tarball is ready for next step!
 Use this command to create a directory structure for `rpmbuild`
 ```shell
 $ rpmdev-setuptree
-$ tree $HOME/rpmbuild
 
 $ tree $HOME/rpmbuild
 /home/nguyenvinhlinh/rpmbuild
