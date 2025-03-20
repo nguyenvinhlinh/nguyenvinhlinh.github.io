@@ -5,12 +5,17 @@ layout: default
   {% for post in paginator.posts %}
   <div class="post">
     <h1><a href="{{post.url}}">{{post.title}}</a></h1>
-    <div class="date-address-category">{{post.date | date: "%d/%m/%Y"}}
+    <div class="date-address-category">
+      {% if post.update %}
+      {{post.update | date: '%d/%m/%Y'}}
+      {% else %}
+      {{post.date | date: '%d/%m/%Y'}}
+      {% endif %}
+
       {% if post.location %}
       @ {{post.location}}
       {% endif %}
-      <span class="category-icon"></span>
-      <a href="#">{{post.categories}}</a>
+      <span class="category-icon"></span><a href="#">{{post.categories}}</a>
     </div>
     <p>
       {{post.content}}
