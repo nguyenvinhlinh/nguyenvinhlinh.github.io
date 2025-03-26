@@ -55,14 +55,10 @@ DOCKER_BUILDKIT=1 docker build -f  Dockerfile --target=release --output nginx-di
 .
 ├── Dockerfile
 ├── docs
-├── mining_rig_monitor_document
 ├── mkdocs.yml
 ├── nginx-dist      <<-- your files from docker build
 ├── readme.md
-├── release_tar.sh
 ├── requirements.txt
-├── site
-├── venv
 └── wireframe
 
 ```
