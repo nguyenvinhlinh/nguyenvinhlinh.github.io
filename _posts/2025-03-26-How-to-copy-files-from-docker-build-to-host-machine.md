@@ -7,7 +7,7 @@ location: Saigon
 tags:
 - docker
 categories: etc
-seo_description:
+seo_description: Using docker build and extract files to host machine
 seo_image:
 comments: true
 ---
