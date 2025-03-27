@@ -3,8 +3,9 @@ email: nguyenvinhlinh93@gmail.com
 description: The more you learn, the easier you learn more!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hexalink.xyz" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: "https://twitter.com/LinhNguyenV"
+linkedin_url: "https://www.linkedin.com/in/linh-nguyen-vinh-96185b6b/"
 github_username:  "https://github.com/nguyenvinhlinh"
+twitter_username: "https://twitter.com/LinhNguyenV"
 facebook_username: "https://www.facebook.com/LinkBall"
 steam_url: "https://steamcommunity.com/id/LinkVN/"
 timezone: Asia/Bangkok
