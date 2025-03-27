@@ -40,10 +40,10 @@ COPY --from=build /opt/mining_rig_monitor_document_src/site /
 `RUN mkdocs build -c` will create a directory named `site` which stores all html files. Then, from `scratch` image, we copy all thoses  html files to `/`
 
 # II. Docker build command
-This following command will copy all files from `release` stage to `nginx-dist`.
+This following command will copy all files from `release` stage to `nginx-dist`. The most important is environment variable `DOCKER_BUILDKIT=1`
 
 ```shell
-DOCKER_BUILDKIT=1 docker build -f  Dockerfile --target=release --output nginx-dist .
+$ DOCKER_BUILDKIT=1 docker build -f  Dockerfile --target=release --output nginx-dist .
 ```
 
 ```text
