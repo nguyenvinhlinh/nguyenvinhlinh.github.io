@@ -13,7 +13,7 @@ seo_description: Cheatsheet để nhớ cách archive‌‌/compress/extract fil
 seo_image:
 comments: true
 ---
-Xin chào, khi tôi quyết định viết bài này, tôi buộc lòng phải thừa nhận, tôi không thể nhớ command cũng như các tham số của tar. Bài viết này là dành cho tôi xem lại sử dụng lệnh `tar`.
+Xin chào, khi tôi quyết định viết bài này, tôi buộc lòng phải thừa nhận, tôi không thể nhớ command cũng như các tham số của tar. Bài viết này là dành cho tôi, xem lại sử dụng lệnh `tar`.
 
 # 1. Cách tạo lưu trữ (archive) và nén
 
@@ -23,8 +23,8 @@ $ tar -cJvf file_name.tar.xz directory_full_path
 
 Giải thích các tham số:
 - `-c`: tạo archive‌/lưu trữ
-- `-J`: nén với định dạng xz
-- `-v`: verbose, hiện thông tin chi tíết khi chạy lệnh
+- `-J`: nén với định dạng xz, mục đích của nó là giảm dung lượng file lưu trữ. Không có cũng được.
+- `-v`: verbose, hiện thông tin chi tíết khi chạy lệnh. Không có cũng được.
 - `-f`: tên file `file_name.tar.xz`
 
 
@@ -35,5 +35,8 @@ $ tar -xvf file_name.tar.xz
 ```
 Giải thích các tham số:
 - `-x`: extract, mở lưu trữ
-- `-v`: verbose, hiện thông tin chi tíết khi chạy lệnh
+- `-v`: verbose, hiện thông tin chi tíết khi chạy lệnh. Không có cũng được.
 - `-f`: tên file `file_name.tar.xz`
+
+# 3. References
+- tar(1) - Linux man page, [https://linux.die.net/man/1/tar](https://linux.die.net/man/1/tar)
