@@ -72,6 +72,6 @@ Và còn đây là kết quả, thực sự rất hài lòng.
 
 Lời kết: Cá nhân tôi, tôi nghĩ rằng sẽ tuyệt hơn nếu mà có hệ thống vệ sinh thụ động, ví dụ là hệ thống nước bao xung quanh sân.
 
-Ấn nút là nó xả nước đẩy sân. Tôi chỉ cần gạt nước đi là xong. Kết thúc câu chuyện
+Ấn nút là nó xả nước đẩy sân. Tôi chỉ cần gạt nước đi là xong. Kết thúc câu chuyện.
 
 Và, con đường **OVER ENGINEER** chả bao giờ kết thúc cả.
