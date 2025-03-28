@@ -9,7 +9,7 @@ tags:
 - sanvuon
 categories: Projects
 seo_description: Tôi lắp ráp hệ thống xịt rửa cho sân vườn với máy bơm đôi 12V 96W Sinleader TH2203
-seo_image:
+seo_image: /image/posts/2025-03-28-Lam-he-thong-xit-rua-cho-san-vuon/seo.jpg
 comments: true
 ---
 
