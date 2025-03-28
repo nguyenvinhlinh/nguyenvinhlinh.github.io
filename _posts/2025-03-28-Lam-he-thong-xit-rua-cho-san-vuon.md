@@ -16,7 +16,8 @@ comments: true
 Hey hey hey, chào buổi sáng Việt Nam.
 
 Tôi đã lên kế hoạch lắp ráp hệ thống xịt rửa cho sân thượng được một thời gian rồi. Tuy nhiên,
-mọi việc cứ trôi đi do bận rộn với dự án [quản lý dàn đào tiền mã hóa](https://github.com/nguyenvinhlinh/Mining-Rig-Monitor). Đến hôm nay, 28/3/2025 tôi mới có thể thực hiện được.
+mọi việc cứ trôi đi do bận rộn với dự án [quản lý dàn đào tiền mã hóa](https://github.com/nguyenvinhlinh/Mining-Rig-Monitor). Đến hôm nay, **27/3/2025** tôi mới có thể thực hiện được
+với sự giúp đỡ của hai người em trai.
 
 Cảm nhận đầu tiền sau khi sử dụng là nước hơi hơi yếu, cơ mà dùng một lúc thì nó cũng quen, bây giờ thì tôi thấy khá là ổn, vừa phải.
 Thực ra vệ sinh sân vườn với cái máy bơm tăng áp này là vừa phải, bên cạnh đó nó cũng góp phần tiết kiệm nước. Tôi thích điều đó.
