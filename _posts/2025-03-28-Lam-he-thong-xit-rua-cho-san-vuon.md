@@ -20,7 +20,7 @@ mọi việc cứ trôi đi do bận rộn với dự án [quản lý dàn đào
 với sự giúp đỡ của hai người em trai.
 
 Cảm nhận đầu tiền sau khi sử dụng là nước hơi hơi yếu, cơ mà dùng một lúc thì nó cũng quen, bây giờ thì tôi thấy khá là ổn, vừa phải.
-Thực ra vệ sinh sân vườn với cái máy bơm tăng áp này là vừa phải, bên cạnh đó nó cũng góp phần tiết kiệm nước. Tôi thích điều đó.
+Thực ra vệ sinh sân vườn với cái máy bơm tăng áp này là vừa phải, bên cạnh đó nó cũng góp phần tiết kiệm nước. Tôi thích điều này.
 
 **Còn gì thích hơn việc mình làm điều mình yêu, và yêu điều mình làm.**
 
