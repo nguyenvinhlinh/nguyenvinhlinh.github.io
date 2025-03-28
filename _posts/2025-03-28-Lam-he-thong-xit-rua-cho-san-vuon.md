@@ -64,7 +64,11 @@ Trò đời nó hay thế lắm, nhưng tội cái, tôi lại yêu một cái l
 
 Và còn đây là kết quả, thực sự rất hài lòng.
 
-{% include image.html url="/image/posts/2025-03-28-Lam-he-thong-xit-rua-cho-san-vuon/3.jpg" description="[3] Kết quả mỹ mãn" %}
+{% include image.html url="/image/posts/2025-03-28-Lam-he-thong-xit-rua-cho-san-vuon/3.jpg" description="[3] Thùng điện gắn ngoài trời" %}
+
+{% include image.html url="/image/posts/2025-03-28-Lam-he-thong-xit-rua-cho-san-vuon/4.jpg" description="[4] Vòi nước tăng áp này ổn phết. 7/10 điểm" %}
+
+Đặc biệt là `cái máy bơm này nó có cảm biến hay sao ý, khi mà tôi khóa nước ở vòi tăng áp, động cơ nó tự động ngắt`. Khá là thú vị. Tôi chắc chắn sẽ tìm hiểu cái này.
 
 Lời kết: Cá nhân tôi, tôi nghĩ rằng sẽ tuyệt hơn nếu mà có hệ thống vệ sinh thụ động, ví dụ là hệ thống nước bao xung quanh sân.
 
