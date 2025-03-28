@@ -61,3 +61,13 @@ Lúc đang chưa có việc làm, mấy thứ tốn tiền hay xảy ra!
 Trò đời nó hay thế lắm, nhưng tội cái, tôi lại yêu một cái lỗ hoàn hảo.
 
 {% include image.html url="/image/posts/2025-03-28-Lam-he-thong-xit-rua-cho-san-vuon/2.jpeg" description="[2] 3 mũi khoan tháp với giá 175,000" %}
+
+Và còn đây là kết quả, thực sự rất hài lòng.
+
+{% include image.html url="/image/posts/2025-03-28-Lam-he-thong-xit-rua-cho-san-vuon/3.jpg" description="[3] Kết quả mỹ mãn" %}
+
+Lời kết: Cá nhân tôi, tôi nghĩ rằng sẽ tuyệt hơn nếu mà có hệ thống vệ sinh thụ động, ví dụ là hệ thống nước bao xung quanh sân.
+
+Ấn nút là nó xả nước đẩy sân. Tôi chỉ cần gạt nước đi là xong. Kết thúc câu chuyện
+
+Và, con đường **OVER ENGINEER** chả bao giờ kết thúc cả.
