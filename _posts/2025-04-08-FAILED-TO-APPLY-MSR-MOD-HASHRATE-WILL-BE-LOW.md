@@ -7,7 +7,7 @@ location: Saigon
 tags:
 categories:
 - Mining Rig
-seo_description:
+seo_description: Fixing MSR MOD on Linux and Window
 seo_image: /image/posts/2025-04-08-FAILED-TO-APPLY-MSR-MOD-HASHRATE-WILL-BE-LOW/seo.jpg
 comments: true
 ---
