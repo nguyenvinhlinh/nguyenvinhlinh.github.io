@@ -5,12 +5,17 @@ date: 2025-04-17 21:36:11
 update:
 location: Saigon
 tags:
+- elixir
+- tiengviet
+- latin
 categories:
 - Elixir
 seo_description: "Tách dấu thanh (huyền, sắc, ngã, nặng, hỏi) và chữ cái có dấu (â, ă, ư) thành tiếng Latin"
-seo_image:
+seo_image: /image/posts/2025-04-17-Cach-tach-dau-thanh-tieng-Viet/seo.jpg
 comments: true
 ---
+
+{% include image.html url="/image/posts/2025-04-17-Cach-tach-dau-thanh-tieng-Viet/seo.jpg" %}
 
 Xin chào, ở bài viết này, trước tiên tôi muốn nói đến vấn đề của mình, Khi phát triển phần mềm [Mining Rig Monitor](https://github.com/nguyenvinhlinh/Mining-Rig-Monitor), tôi muốn sử dụng
 các tên tiếng Việt để đặt tên cho dàn đào. Ví dụ:
