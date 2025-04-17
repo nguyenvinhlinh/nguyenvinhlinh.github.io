@@ -7,7 +7,7 @@ location: Saigon
 tags:
 categories:
 - Elixir
-seo_description:
+seo_description: "Tách dấu thanh (huyền, sắc, ngã, nặng, hỏi) và chữ cái có dấu (â, ă, ư) thành tiếng Latin"
 seo_image:
 comments: true
 ---
