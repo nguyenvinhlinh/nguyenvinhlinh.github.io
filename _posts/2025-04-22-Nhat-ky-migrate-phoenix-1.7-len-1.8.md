@@ -14,9 +14,7 @@ seo_image:
 comments: true
 ---
 
-Bài viết này liệt kê lại quá trình tôi migrate phoenix 1.7 lên 1.8.
-
-## [22/4/2025]
+Bài viết này liệt kê lại quá trình cũng như dòng suy nghĩ của tôi khi migrate phoenix `1.7` lên `1.8`.
 
 Thay đổi `mix.exs` phần dependencíe `deps/0`
 - `{:phoenix, "~> 1.7.14"}` -> `{:phoenix, "1.8.0-rc.1", override: true}`
@@ -90,6 +88,34 @@ Tôi cần kiểm tra chéo 1 chút, thực sự là `app.html.heex` có đượ
 - Các liveview module, ví dụ module `MiningRigMonitorWeb.AsicMinerLive.Index`, sau khi tôi tách function `render/1` thành file `index.html.heex`. nếu tôi mà muốn sử dụng liveview layout có tên là `app`,
 tôi sẽ cần phải bọc nó lại với tag `<Layout.app> <‌/Layout.app>`
 
+Ví dụ file `mining_rig_monitor/lib/mining_rig_monitor_web/live/asic_miner_live/index.html.heex`
 
+{% highlight html %}
+<Layouts.app flash={@flash} >
+  <._index_top />
 
-<.flash_group flash={@flash} />
+  <._index_overall_figures aggregated_coin_hashrate_map={@aggregated_coin_hashrate_map}
+    aggregated_total_power={@aggregated_total_power}
+    aggregated_total_power_uom={@aggregated_total_power_uom}
+    aggregated_asic_miner_alive={@aggregated_asic_miner_alive} />
+
+  <._index_activated_asic_miner_table streams={@streams} />
+
+  <._index_not_activated_asic_miner_table streams={@streams} />
+
+</Layouts.app>
+{% endhighlight %}
+
+---
+
+Tiếp theo là về cái vụ [Scope](https://hexdocs.pm/phoenix/1.8.0-rc.0/scopes.html). Tôi tính toán là sẽ `mix phx.gen.auth` ở một dự án test khác, sau đó sẽ copy quá.
+Tuy nhiên, bị vướng `field :authenticated_at, :utc_datetime` trong `Accounts.UserToken`, ở phiên bản `1.7`,  không có field `authenticated_at`.
+
+Tôi có xem kỹ hơn cái field này, có vẻ là nó liên quan đến **sudo mode**. Thế tính năng **sudo mode** là gì?
+
+Tính năng cực kỳ thích hợp cho những tác vụ nhạy cảm. Nó sẽ yêu cầu người dùng phải đăng nhập lại trước khi đưa ra hành động nào đó.
+
+Tôi không có nhu cầu dùng `sudo mode`. Cụ thể là trong dự án [Mining Rig Monitor](https://github.com/nguyenvinhlinh/Mining-Rig-Monitor).
+Thực tế, app này chỉ có 1 user role là `admin`. Chả có nhu cầu đụng đến **Scope** luôn, thôi dẹp cho khỏe.
+
+Hahaha
