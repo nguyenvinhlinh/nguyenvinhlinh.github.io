@@ -16,12 +16,15 @@ comments: true
 
 Bài viết này liệt kê lại quá trình cũng như dòng suy nghĩ của tôi khi migrate phoenix `1.7` lên `1.8`.
 
-Thay đổi `mix.exs` phần dependencíe `deps/0`
+Thay đổi `mix.exs` phần dependencíe `deps/0`:
+
 - `{:phoenix, "~> 1.7.14"}` -> `{:phoenix, "1.8.0-rc.1", override: true}`
 - `{:phoenix_live_view, "~> 1.0.0", override: true}` -> `{:phoenix_live_view, "~> 1.0.9"}`
 
-Thay đổi `mining_rig_monitor_web.ex` , phần `live_view/0`
+Thay đổi `mining_rig_monitor_web.ex` , phần `live_view/0`:
+
 - `use Phoenix.LiveView, layout: {MiningRigMonitorWeb.Layouts, :app}` -> `use Phoenix.LiveView`
+
 Sau cùng, nó sẽ trông như thế này.
 
 {% highlight elixir %}

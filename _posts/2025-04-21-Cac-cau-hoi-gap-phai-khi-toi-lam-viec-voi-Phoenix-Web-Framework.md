@@ -80,3 +80,60 @@ Tôi chưa có câu trả lời cho câu hỏi này, tuy nhiên khi nào có th�
 - [Phoenix.Component.html](https://hexdocs.pm/phoenix_live_view/Phoenix.Component.html)
 - [Assigns and HEEx templates](https://hexdocs.pm/phoenix_live_view/assigns-eex.html)
 - [The assigns variable](https://hexdocs.pm/phoenix_live_view/assigns-eex.html#the-assigns-variable)
+
+
+## 004. Khi viết controller test, tôi hay thấy test không được viết trực tiếp mà được gói lại trong `describe`, lợi thế của nó là gì?
+Lợi thế của nó là khi nhóm test này cùng cần cách `setup` giống nhau. Ví dụ rõ nhất là khi `test update entity` nào đó. Từ `entity` này tôi lấy từ `Java Spring`.
+
+Dịch qua tiếng việt là thực thể, nhưng bạn cứ hiểu là record trong database. Khi ta muốn làm test liên quan đến update record trong database, chúng ta cần có record đó
+được tạo từ trước.
+
+Lúc này có 2 test chúng ta quan tâm:
+
+- test update với các tham số hợp lệ
+- test update với tham số không hợp lệ
+
+Cả 2 test này sẽ cùng cần được tạo trước record `CpuGpuMinerLog`. Dưới dây là ví dụ test cho `Controller` của `CpuGpuLog`
+
+{% highlight elixir linenos %}
+defmodule MiningRigMonitorWeb.CpuGpuMinerLogControllerTest do
+  use MiningRigMonitorWeb.ConnCase
+  import MiningRigMonitor.CpuGpuMinerLogsFixtures
+  alias MiningRigMonitor.CpuGpuMinerLogs.CpuGpuMinerLog
+
+  @update_attrs %{}
+  @invalid_attrs %{}
+
+  setup %{conn: conn} do
+    {:ok, conn: put_req_header(conn, "accept", "application/json")}
+  end
+
+  describe "update cpu_gpu_miner_log" do
+    setup [:create_cpu_gpu_miner_log]
+
+    test "renders cpu_gpu_miner_log when data is valid", %{conn: conn, cpu_gpu_miner_log: %CpuGpuMinerLog{id: id} = cpu_gpu_miner_log} do
+      conn = put(conn, ~p"/api/cpu_gpu_miner_logs/#{cpu_gpu_miner_log}", cpu_gpu_miner_log: @update_attrs)
+      assert %{"id" => ^id} = json_response(conn, 200)["data"]
+
+      conn = get(conn, ~p"/api/cpu_gpu_miner_logs/#{id}")
+
+      assert %{
+               "id" => ^id
+             } = json_response(conn, 200)["data"]
+    end
+
+    test "renders errors when data is invalid", %{conn: conn, cpu_gpu_miner_log: cpu_gpu_miner_log} do
+      conn = put(conn, ~p"/api/cpu_gpu_miner_logs/#{cpu_gpu_miner_log}", cpu_gpu_miner_log: @invalid_attrs)
+      assert json_response(conn, 422)["errors"] != %{}
+    end
+  end
+
+  defp create_cpu_gpu_miner_log(_) do
+    cpu_gpu_miner_log = cpu_gpu_miner_log_fixture()
+    %{cpu_gpu_miner_log: cpu_gpu_miner_log}
+  end
+end
+{% endhighlight %}
+
+Sau khi `create_cpu_gpu_miner_log/1` được kích hoạt, nó trả 1 lại cái map `%{}`. Cái map này sẽ được nhồi tiếp vào `test "xxx", %{map} do end`.
+Hãy chú ý dòng số `14`, `16` và `27`.
