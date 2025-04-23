@@ -7,6 +7,10 @@ $background-image-content: url("../image/stardust.png");
 $paragraph-color: white;
 $code-highlight-color: #333;
 
+html {
+  font-size: 16px;
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -14,6 +18,7 @@ body {
   font-family: Arial;
   color: $heading-color;
 }
+
 nav {
   a {
     display: block;
@@ -21,12 +26,13 @@ nav {
     text-align: center;
     text-decoration: none;
     margin: 0px 20px 3px 20px;
-    font-size: 25px;
+    font-size: 1.6rem;
     &:hover {
       background-color: $paragraph-color;
     }
   }
 }
+
 div.sidebar{
   overflow-y: auto;
   background-image: $background-image-sidebar;
@@ -36,11 +42,11 @@ div.sidebar{
   float: left;
   h1{
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     margin-top: 34px;
   }
   p {
-    font-size: 30px;
+    font-size: 1.8rem;
     text-align: left;
     padding: 5px 15px;
     color: $paragraph-color;
@@ -70,7 +76,7 @@ div.sidebar{
         color: $sidebar-href-color;
         text-decoration: none;
         display: block;
-        font-size: 22px;
+        font-size: 1.4rem;
         text-align: center;
         &:hover {
           background-color: $paragraph-color;
@@ -143,7 +149,7 @@ div.post {
 
   h1{
     color: $heading-color;
-    font-size: 2em;
+    font-size: 2rem;
     padding-top: 20px;
     margin-bottom: 10px;
     overflow-wrap: break-word !important;
@@ -154,7 +160,7 @@ div.post {
 
   h2{
     color: $heading-color;
-    font-size: 1.75em;
+    font-size: 1.75rem;
     padding-top: 20px;
     margin-bottom: 10px;
     overflow-wrap: break-word !important;
@@ -165,7 +171,7 @@ div.post {
 
   h3{
     color: $heading-color;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding-top: 20px;
     margin-bottom: 10px;
     overflow-wrap: break-word !important;
@@ -180,7 +186,7 @@ div.post {
   }
 
   div.date-address-category{
-    font-size: 1.2em;
+    font-size: 1.2rem;
     span.category-icon {
       content: url("../image/tags.svg");
       max-width: 1em;
@@ -195,27 +201,40 @@ div.post {
   p {
     color: $paragraph-color;
     max-width: 100ch;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 
     a {
       color: $sidebar-href-color;
+    }
+
+    code.highlighter-rouge {
+      color: $code-highlight-color;
+      background-color: rgba(241, 250, 140, 0.9);
+      border-radius: 3px;
     }
   }
 
   li {
     color: $paragraph-color;
     max-width: 90ch;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin: 0.25rem 0 0 0;
-  }
 
+    code.highlighter-rouge {
+      color: $code-highlight-color;
+      background-color: rgba(241, 250, 140, 0.9);
+      font-size: inherit;
+      border-radius: 3px;
+
+    }
+  }
 
   div.category-tree {
     padding: 20px 30px;
     ul.parent, ul.parent ul {
       list-style-type: none;
       color: $paragraph-color;
-      font-size: 1.2em;
+      font-size: 1.2rem;
       background: url("../image/vline.png") repeat-y;
       margin: 0;
       padding: 0;
@@ -259,7 +278,7 @@ div.pagination {
     float: left;
     width: 40%;
     padding: 10px 10px;
-    font-size: 20px;
+    font-size: 1.3rem;
     color: $heading-color;
     text-decoration: none;
     border: 1px;
@@ -276,11 +295,7 @@ div.highlight {
   }
 }
 
-code.highlighter-rouge {
-  color: $code-highlight-color;
-  background-color: rgba(241, 250, 140, 0.9);
-  border-radius: 3px;
-}
+
 
 figure {
   margin-left: 5px;
