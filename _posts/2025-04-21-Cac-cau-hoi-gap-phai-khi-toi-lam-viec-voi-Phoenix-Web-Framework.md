@@ -137,3 +137,68 @@ end
 
 Sau khi `create_cpu_gpu_miner_log/1` được kích hoạt, nó trả 1 lại cái map `%{}`. Cái map này sẽ được nhồi tiếp vào `test "xxx", %{map} do end`.
 Hãy chú ý dòng số `14`, `16` và `27`.
+
+## 005. Ở trong form, tôi hay thấy `:let={f}`, cái này là gì thế, kỹ thuật alias từ `@form` thành `f` với `let` là như thế nào?
+## 006. Luồng chạy khi tạo ``form` với `core_component.ex` generate mặc định là như thế nào?
+## 007. `@from[field]` hoạt động như thế nào?
+## 008. `phx-update="ignore"` dùng để làm gì, thấy nó sử dụng ở login form.
+## 009. Khi chạy function trong `html.heex` thì cần dấu `.` trước tên funciton, tuy nhiên tại sao điều này lại không cần khi chạy function với module.
+Cụ thể ở đây là `Layout.app/1`
+{% highlight elixir linenos %}
+<Layouts.app flash={@flash}>
+  <div class="grid grid-cols-1 px-4 pt-6 xl:grid-cols-2 xl:gap-4 dark:bg-gray-900">
+    <div class="mb-4 col-span-full xl:mb-2">
+      <._breadcrumb />
+    </div>
+    <!-- Right Content -->
+    <div class="col-span-1">
+      <._email_information email_form={ @email_form } email_form_current_password={@email_form_current_password} />
+    </div>
+
+    <div class="col-span-1">
+      <._password_information password_form={ @password_form} trigger_submit={ @trigger_submit }
+        current_email={@current_email} current_password={@current_password}/>
+    </div>
+  </div>
+</Layouts.app>
+
+{% endhighlight %}
+
+## 010. Tại sao `UserLoginLive.mount/3` (mix phx.gen.auth) , function này return {} tuple 3 phần tử. Có cả `temporary_assigns`.
+{% highlight elixir  %}
+defmodule MiningRigMonitorWeb.UserLoginLive do
+  use MiningRigMonitorWeb, :live_view
+
+  def mount(_params, _session, socket) do
+    email = Phoenix.Flash.get(socket.assigns.flash, :email)
+    form = to_form(%{"email" => email}, as: "user")
+    {:ok, assign(socket, form: form), temporary_assigns: [form: form]}
+  end
+end
+{% endhighlight %}
+
+
+## 011. Để tiện trong việc migrate lên version Phoenix mới, tôi không muốn dụng vào `core_component.ex`, tôi tạo ra file mới `nexus_component.ex`. Trong `_web.ex`, sẽ xuất hiện tình trạng `import` 2 module , và cả 2 module đó có function tên giống nhau. Bên cạnh việc tôi có thể đổi tên function, ngoài ra, tôi có thể gài quyền ưu tiên như thế nào.
+
+chú ý dòng `6` và `7`.
+{% highlight elixir linenos %}
+  defp html_helpers do
+    quote do
+      # HTML escaping functionality
+      import Phoenix.HTML
+      # Core UI components and translation
+      import MiningRigMonitorWeb.CoreComponents
+      import MiningRigMonitorWeb.NexusComponents
+      import MiningRigMonitorWeb.Gettext
+
+      # Shortcut for generating JS commands
+      alias Phoenix.LiveView.JS
+      alias MiningRigMonitorWeb.Layouts
+
+      # Routes generation with the ~p sigil
+      unquote(verified_routes())
+    end
+  end
+{% endhighlight %}
+
+## 012. Nguyên lý thay đổi theme light/dark là gì
