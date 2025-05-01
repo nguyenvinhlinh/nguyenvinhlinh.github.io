@@ -9,8 +9,8 @@ tags:
 - linux
 - extension
 categories: Linux
-seo_description:
-seo_image:
+seo_description: Installing gnome extension manually on Fedora
+seo_image: /image/posts/2025-05-01-How-to-install-gnome-extension-manually/seo.png
 comments: true
 ---
 if you want to install automatically with `gnome-browser-connector`, you can visit this guide: [https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html](https://gnome.pages.gitlab.gnome.org/gnome-browser-integration/pages/installation-guide.html)
