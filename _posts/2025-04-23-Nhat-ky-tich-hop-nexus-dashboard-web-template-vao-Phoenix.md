@@ -196,3 +196,8 @@ Tôi dùng trực tiếp luôn, không cần bọc với `<span>`. Kết quả v
 ```
 
 {% include image.html url="/image/posts/2025-04-23-Nhat-ky-tich-hop-nexus-dashboard-web-template-vao-Phoenix/2.png" description="[2] Lucide svg config." %}
+
+## 25/4/2025
+Tôi đi tập lái xe tải...
+## 26/4/2025
+- Giải quyết vấn đề footer bị sai vị trí khi div ở trên nó quá ngắn.

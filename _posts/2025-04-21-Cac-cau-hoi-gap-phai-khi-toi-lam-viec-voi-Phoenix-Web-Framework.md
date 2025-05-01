@@ -202,3 +202,6 @@ chú ý dòng `6` và `7`.
 {% endhighlight %}
 
 ## 012. Nguyên lý thay đổi theme light/dark là gì
+## 013. Tôi không hiểu cơ cấu làm việc của `JS.navigate/3`, `JS.patch/3`
+- [JS.navigate/3](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.JS.html#navigate/3)
+- [JS.patch/3](https://hexdocs.pm/phoenix_live_view/Phoenix.LiveView.JS.html#patch/3)
