@@ -54,7 +54,7 @@ As you can see, they use import another css in relative paths. When we integrate
 In phoenix web app, open directory `/assets/css/` and create a new sub-directory named `nexus_dashboard`.
 In this `assets/css/nexus_dashboard`, copy nexus css into this, except `app.css`.
 
-This is a directory tree after copy.
+This is a directory tree after copy for `assets/css/nexus_dashboard`
 ```text
 $ tree assets/css/nexus_dashboard
 
@@ -72,7 +72,9 @@ assets/css/nexus_dashboard
 ```
 
 # Step 3: Create `nexus_app.css` from `nexus app.css`
-Now, come back the `app.css`, I dotn want a conflict with the existing one `app.css`, so I named a new main css file as `nexus_app.css`. In addition, due to different relative paths, I must update these with `./nexus_dashboard`.
+Now, come back the `app.css`, I don't want a conflict with the existing one `app.css`, so I named a new main css file as `nexus_app.css`. In addition, due to different relative paths, I must update these with `./nexus_dashboard`.
+
+This is my content for `nexus_app.css`:
 
 {% highlight css %}
 /* Root Styling */
@@ -163,4 +165,4 @@ Done in 286ms
 
 ---
 A minor note for you, cause you need `lucide-icon` and rely on `npm install` to collect `@iconify, lucide and tailwind4` for `lucide-icon`. it's a good idea that you can ignore prebuild `vendor/daisyui.js and daisyui-theme.js`,
-just use `npm install` these two library. Remember to update your `nexus_dashboard/daisyui.css`'s relative paths.
+just use `npm install` these two libraries. Remember to update your `nexus_dashboard/daisyui.css`'s relative paths.
