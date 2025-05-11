@@ -115,7 +115,15 @@ config :tailwind,
   ]
 {% endhighlight %}
 
-# Step 5. Build and debug
+# Step 5. Modify `assets/css/nexus_dashboard/tailwind.css`
+This gonna help `tailwind` find used css class, then it build `nexus_app.css`
+
+{% highlight css %}
+@import "tailwindcss" source(none);
+@source "../../../lib/your_phoenix_web";
+{% endhighlight %}
+
+# Step 6. Build and debug
 You gonna see a lot of missing javascrip library from now on, but I will show you how to solve it. At first, run `mix tailwind _project_name`.
 
 
