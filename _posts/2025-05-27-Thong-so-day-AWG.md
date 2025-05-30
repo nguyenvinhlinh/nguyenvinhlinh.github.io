@@ -40,6 +40,7 @@ comments: true
 | 30       | 0.86   |
 
 # Câu hỏi và trả lời
+
 ## 1. Thông số Max(A) này là cột nào trong [https://www.powerstream.com/Wire_Size.htm](https://www.powerstream.com/Wire_Size.htm)?
 Tôi sử dụng cột `Maximum amps for chassis wiring`
 ## 2. Chassis Wiring là gì?
@@ -59,18 +60,18 @@ Tóm tắt lại sau cùng là vì vấn đề sinh nhiệt.
 ### Chassis Wiring – Dây trong thiết bị/bo mạch (nội bộ)
 Mức dòng (amps) cao hơn
 
-- Chiều dài dây thường rất ngắn, nên điện trở tổng thể thấp → tổn thất điện năng và sinh nhiệt ít.
+- Chiều dài dây thường rất ngắn, nên điện trở tổng thể thấp ==> tổn thất điện năng và sinh nhiệt ít.
 - Lắp đặt trong môi trường có thể kiểm soát, chẳng hạn như bên trong hộp kim loại, thiết bị điện tử, nơi đã được tính toán kỹ về tản nhiệt.
-- Tăng tính linh hoạt về thiết kế, vì các nhà sản xuất có thể cho phép dây chịu dòng cao hơn trong thời gian ngắn mà không gây cháy nổ.
+- Được thiết kế chịu tải trong thời gian ngắn, rất ngắn ==> không gây nguy cơ cháy nổ
 
 ### Power Transmission – Truyền tải điện (ngoài trời hoặc công nghiệp)
 Mức dòng (amps) thấp hơn do:
 
-- Chiều dài dây rất dài, tăng điện trở → tăng nhiệt → nguy cơ cháy hoặc hỏng cách điện.
+- Chiều dài dây rất dài, tăng điện trở ==> tăng nhiệt ==> nguy cơ cháy hoặc hỏng cách điện.
 - Dây thường được bó lại hoặc đi qua ống, làm giảm khả năng tản nhiệt.
 - Yêu cầu độ an toàn và ổn định cao, vì đây là hệ thống truyền tải điện liên tục.
 - Có thể đi qua môi trường khắc nghiệt, nên cần giới hạn dòng để đảm bảo độ bền dây lâu dài.
 
 # References
 - Wire Gauge and Current Limits Including Skin Depth and Tensile Strength, [https://www.powerstream.com/Wire_Size.htm](https://www.powerstream.com/Wire_Size.htm)
-- ChatGPT, [https://chatgpt.com/](https://chatgpt.com/)
+- Tại sao có sự khác biệt lớn đến như vậy giữa "Maximum amps for chassis wiring" và "Maximum amps for power transmission", ChatGPT, [https://chatgpt.com/](https://chatgpt.com/)
