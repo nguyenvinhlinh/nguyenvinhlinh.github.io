@@ -327,6 +327,11 @@ th, td {
   padding: 5px 10px 5px 10px;
 }
 
+tr:hover {
+  color: $code-highlight-color;
+  background-color: rgba(241, 250, 140, 0.9);
+}
+
 @media  (max-width: 768px) {
   div.sidebar{
     display: none;
