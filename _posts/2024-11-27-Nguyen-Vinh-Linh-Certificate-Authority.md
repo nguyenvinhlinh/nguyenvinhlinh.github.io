@@ -5,7 +5,7 @@ date: 2024-11-27 22:42:32
 update:
 location: Saigon
 tags:
-categories: etc
+categories: SSL
 seo_description: My own Certificate Authority(CA)
 seo_image:
 comments: true
