@@ -2,7 +2,7 @@
 layout: post
 title: "How to add Certificate Authority (CA) in Fedora to support chain certificate?"
 date: 2023-09-08 19:27:45
-update:
+update: 2025-06-02 12:36:00
 location: Saigon
 tags:
 - SSL
