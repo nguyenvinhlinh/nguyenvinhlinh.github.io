@@ -167,6 +167,12 @@ div.post {
     a {
       color: $heading-color;
     }
+
+    code.highlighter-rouge {
+      color: $code-highlight-color;
+      background-color: rgba(241, 250, 140, 0.9);
+      border-radius: 3px;
+    }
   }
 
   h3{
@@ -177,6 +183,12 @@ div.post {
     overflow-wrap: break-word !important;
     a {
       color: $heading-color;
+    }
+
+    code.highlighter-rouge {
+      color: $code-highlight-color;
+      background-color: rgba(241, 250, 140, 0.9);
+      border-radius: 3px;
     }
   }
   hr {
