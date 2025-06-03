@@ -2,7 +2,7 @@
 layout: post
 title: "Personal Node: Installing a Spectre fullnode"
 date: 2024-08-07 22:37:45
-update:
+update: 2025-06-03 20:17:48
 location: Saigon
 tags:
 - Cryptocurrency Node
@@ -13,27 +13,36 @@ seo_image:
 comments: true
 ---
 
-# I. Systemctl service - /etc/systemd/system/spectre.service
+# I. Systemctl service - `/etc/systemd/system/spectre.service`
 
 {% highlight systemd %}
 [Unit]
-Description=Spectre Network - Full Node
-After=network.target mnt-disk_2.mount
+Description=Spectre Node
+Requires=network.target
 
 [Service]
-WorkingDirectory=/opt/rusty-spectre-v0.3.14-linux-gnu-amd64
-ExecStart=/opt/rusty-spectre-v0.3.14-linux-gnu-amd64/bin/spectred  --appdir=/mnt/disk_2/CryptoCurrency/Spectre  --rpclisten=0.0.0.0:18110 --rpclisten-borsh=0.0.0.0:19110 --rpclisten-json=0.0.0.0:20110 --listen=0.0.0.0:18111 --outpeers=64>
+WorkingDirectory= /opt/rusty-spectre-v0.3.17-linux-gnu-amd64
+ExecStart=/opt/rusty-spectre-v0.3.17-linux-gnu-amd64/bin/spectred --configfile /opt/rusty-spectre-v0.3.17-linux-gnu-amd64/spectred.conf
 User=nguyenvinhlinh
 RemainAfterExit=yes
 Restart=on-failure
 RestartSec=10
+TimeoutStopSec=infinity
 
 [Install]
 WantedBy=multi-user.target
-
 {% endhighlight %}
 
-# II. Firewall-cmd service - /etc/firewalld/services/spectre.xml
+# II. Spectred.config - `/opt/rusty-spectre-v0.3.17-linux-gnu-amd64/spectred.conf`
+
+{% highlight conf %}
+appdir="/opt/spectre-blockchain-data"
+disable-upnp=true
+utxoindex=true
+outpeers=128
+{% endhighlight %}
+
+# III. Firewall-cmd service - `/etc/firewalld/services/spectre.xml`
 
 |-------|---------------------------------------------------------------------------|----------|
 | Port  | Description                                                               | Firewall |
