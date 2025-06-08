@@ -10,7 +10,7 @@ tags:
 - ssh
 categories: Linux
 seo_description: Sometime, VPN provider (cloudflare's warp vpn) blocks connection with port 22 including github.com. You can switch ssh connection to github at port 443 to work around.
-seo_image:
+seo_image: /image/posts/2025-06-08-how-to-fix-github-ssh-port-22-connection-timeout/seo.png
 comments: true
 ---
 
