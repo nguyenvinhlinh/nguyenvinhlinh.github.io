@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Firefox on Wayland, can't not do mouse click"
+title: "Firefox on Wayland, can't do mouse click"
 date: 2025-06-12 11:14:05
 update:
 location: Saigon
@@ -11,7 +11,7 @@ tags:
 - fedora
 categories: Linux
 seo_description: No mouse click on UI? This trick'll help you run Firefox smoothly with Wayland, Fedora.
-seo_image: /image/posts/2025-06-12-Firefox-on-Wayland-cant-not-do-mouse-click/seo.png
+seo_image: /image/posts/2025-06-12-Firefox-on-Wayland-cant-do-mouse-click/seo.png
 comments: true
 ---
 
