@@ -2,7 +2,7 @@
 layout: post
 title: "How to install VGA - GTX 1060 on Fedora with Secure Boot enabled?"
 date:   2021-12-15 14:55:51 +0700
-update: 2022-04-29 12:00:00 +0700
+update: 2025-06-19 11:41:00 +0700
 tags:
 - Linux
 - VGA
@@ -82,7 +82,7 @@ sudo dnf install kernel-devel kernel-headers gcc make dkms acpid libglvnd-glx li
 sudo dnf update;
 ```
 
-## Step 6: Disable `nouveau`
+## Step 6: Disable `nouveau kernel module`
 - Create or edit `/etc/modprobe.d/blacklist-nouveau.conf`
 {% highlight sh %}
 sudo echo "blacklist nouveau" >> /etc/modprobe.d/blacklist-nouveau.conf
@@ -96,6 +96,15 @@ Append following flag to the end of `GRUB_CMDLINE_LINUX`
 
 For example:
 {% include image.html url="/image/posts/2021-12-15-How-to-install-GTX-1060-on-Fedora/4.png" description="[4] /etc/default/grub" %}
+
+## Step 7: Configure `nvidia kernel module`
+- Create file `/etc/modprobe.d/nvidia.conf` with content
+
+```conf
+# File content: /etc/modprobe.d/nvidia.conf
+options nvidia NVreg_PreserveVideoMemoryAllocations=1
+options nvidia-drm modeset=1 fbdev=1
+```
 
 ## Step 7: Update grub2 config & generate new `initramfs`
 ```sh
@@ -135,5 +144,6 @@ it's not a good practice leave it unencrypted. You can check this guide [Mã hó
 
 
 ## Reference
+- Install NVIDIA proprietary drivers on Fedora 42/41/40 and disable the nouveau driver, 2025, Jun 19, [https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/#2-install-nvidia-proprietary-drivers-on-fedora-424140-and-disable-the-nouveau-driver](https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/#2-install-nvidia-proprietary-drivers-on-fedora-424140-and-disable-the-nouveau-driver)
 - Fedora 35/34/33 NVIDIA [495.46 / 470.94 / 390.144 / 340.108] Drivers Install Guide, JR, 2021, December 13, [https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/](https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/)
 - How to install nvidia driver with secure boot enabled?, Zanna, 2018, June 25, [https://askubuntu.com/questions/1023036/how-to-install-nvidia-driver-with-secure-boot-enabled](https://askubuntu.com/questions/1023036/how-to-install-nvidia-driver-with-secure-boot-enabled)
