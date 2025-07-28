@@ -9,7 +9,7 @@ tags:
 categories:
 - Cryptocurrency Node
 seo_description: Cryptocurrency node and ports collection
-seo_image:
+seo_image: /image/posts/2024-07-05-Crypto-currency-projects-ports-collection/seo.png
 comments: true
 ---
 
