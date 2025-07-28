@@ -2,7 +2,7 @@
 layout: post
 title: "Crypto currency projects & ports collection"
 date: 2024-07-05 08:20:36
-update:
+update: 2025-07-29 02:06:00
 location: Saigon
 tags:
 - Cryptocurrency Node
