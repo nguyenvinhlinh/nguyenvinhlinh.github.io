@@ -2,8 +2,8 @@
 layout: post
 title: "Installing a Kaspa fullnode"
 date: 2024-07-10 11:22:34
-update:
-location:
+update: 2025-08-14 14:37:20
+location: Saigon
 tags:
 - Cryptocurrency Node
 - Kaspa
@@ -14,7 +14,7 @@ seo_image:
 comments: true
 ---
 
-# I. Systemctl service - /etc/systemd/system/kaspa.service
+## I. Systemctl service - `/etc/systemd/system/kaspa.service`
 
 {% highlight systemd %}
 [Unit]
@@ -22,8 +22,8 @@ Description=Kaspa Full Node
 After=network.target mnt-disk_2.mount
 
 [Service]
-WorkingDirectory=/opt/rusty-kaspa-v0.14.1-linux-gnu-amd64
-ExecStart=ExecStart=/opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/bin/kaspad --configfile /opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/bin/kaspad.conf
+WorkingDirectory=/opt/rusty-kaspa-v1.0.1-linux-amd64
+ExecStart=/opt/rusty-kaspa-v1.0.1-linux-amd64/bin/kaspad --configfile /opt/rusty-kaspa-v1.0.1-linux-amd64/kaspad.conf
 User=nguyenvinhlinh
 RemainAfterExit=yes
 Restart=on-failure
@@ -34,11 +34,11 @@ WantedBy=multi-user.target
 {% endhighlight %}
 
 
-# II. Kaspa config file - /opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/bin/kaspad.conf
+## II. Kaspa config file - `/opt/rusty-kaspa-v1.0.1-linux-amd64/kaspad.conf`
 
 
 {% highlight config %}
-appdir="/opt/rusty-kaspa-v0.14.1-linux-gnu-amd64/data"
+appdir="/mnt/disk_2/CryptoCurrency/Kaspa"
 utxoindex=true
 outpeers=128
 maxinpeers=128
@@ -47,10 +47,7 @@ rpclisten-borsh="0.0.0.0:17110"
 listen="0.0.0.0:16111"
 {% endhighlight %}
 
-
-
-
-# II. Firewall-cmd - /etc/firewalld/services/kaspa.xml
+## II. Firewall-cmd - `/etc/firewalld/services/kaspa.xml`
 
 {% highlight xml %}
 <?xml version="1.0" encoding="utf-8"?>
@@ -68,7 +65,8 @@ listen="0.0.0.0:16111"
 </service>
 {% endhighlight %}
 
-# III. How to use kaspa-wallet?
+## III. How to use kaspa-wallet?
+
 {% highlight sh %}
 $ ./kaspa-wallet
 ####### You are in kaspa-wallet interactive console
