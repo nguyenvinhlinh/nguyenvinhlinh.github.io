@@ -2,7 +2,7 @@
 layout: post
 title: "Personal Note: Installing an Alephium full node"
 date:   2021-11-10 23:56:14 +0700
-update: 2022-12-14 00:05:56 +0700
+update: 2025-08-14 15:09:23 +0700
 tags:
 - Cryptocurrency Node
 - Alephium
@@ -12,21 +12,13 @@ comments: true
 ---
 # I. Alephium node config - $ALEPHIUM_HOME/user.conf
 ```config
-alephium.network.external-address="x.x.x.x:9973"
-alephium.api.network-interface = "0.0.0.0"
-alephium.mining.api-interface="0.0.0.0"
-
-alephium.mining.miner-addresses=[
- "miner_address_1",
- "miner_address_2",
- "miner_address_3",
- "miner_address_4",
-]
+alephium.network.max-outbound-connections-per-group = 48
+alephium.network.max-inbound-connections-per-group  = 256
 ```
 
 # II. Systemctl EnvironmentFile - /opt/alephium/alephium.env
 ``` config
-ALEPHIUM_HOME=/mnt/CaHeoNas/disk_3/Alephium
+ALEPHIUM_HOME=/mnt/disk_2/CryptoCurrency/Alephium
 ```
 
 # III. Systemctl service - /etc/systemd/system/alephium.service
@@ -34,12 +26,12 @@ ALEPHIUM_HOME=/mnt/CaHeoNas/disk_3/Alephium
 ```systemd
 [Unit]
 Description=Alphelium Full Node
-After=network.target mnt-CaHeoNas-disk_3.mount
+After=network.target mnt-disk_2.mount
 
 [Service]
 WorkingDirectory=/opt/alephium
-EnvironmentFile=/opt/alephium/alephium.env
-ExecStart=java -jar -Xms512m -Xmx1028m alephium-1.0.0.jar
+EnvironmentFile=/opt/alephium/.alephium.env
+ExecStart=java -jar -Xms512m -Xmx1028m alephium-4.2.1.jar
 User=nguyenvinhlinh
 RemainAfterExit=yes
 Restart=on-failure
