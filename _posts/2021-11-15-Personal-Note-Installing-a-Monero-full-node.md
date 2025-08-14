@@ -2,14 +2,15 @@
 layout: post
 title: "Personal Note: Installing a Monero full node"
 date: 2021-11-15 23:44:58 +0700
-update: 2024-04-08
+update: 2025-08-14 14:54:20
 tags:
 - Monero
 - Cryptocurrency Node
 categories:
 - Cryptocurrency Node
 ---
-# I. Monero Node Config - monerod.conf
+
+## I. Monero Node Config - `/opt/monero-x86_64-linux-gnu-v0.18.4.1/monerod.conf`
 ``` config
 # Data directory (blockchain db and indices)
 data-dir=/mnt/disk_2/CryptoCurrency/Monero  # Remember to create the monero user first
@@ -61,8 +62,8 @@ Description=Monero Full Node
 After=network.target  mnt-disk_2.mount
 
 [Service]
-WorkingDirectory=/opt/monero-x86_64-linux-gnu-v0.18.3.1
-ExecStart=/opt/monero-x86_64-linux-gnu-v0.18.3.1/monerod --config-file /opt/monero-x86_64-linux-gnu-v0.18.3.1/monerod.conf --non-interactive
+WorkingDirectory=/opt/monero-x86_64-linux-gnu-v0.18.4.1
+ExecStart=/opt/monero-x86_64-linux-gnu-v0.18.4.1/monerod --config-file /opt/monero-x86_64-linux-gnu-v0.18.4.1/monerod.conf --non-interactive
 User=nguyenvinhlinh
 RemainAfterExit=yes
 Restart=on-failure
