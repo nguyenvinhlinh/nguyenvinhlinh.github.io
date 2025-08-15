@@ -70,3 +70,6 @@ $ chmod +x 01-compress-images.sh
 <video controls width="600" >
   <source src="/image/posts/2025-08-15-Compressing-image-on-Fedora-with-GUI/1.webm" type="video/webm">
 </video>
+
+## IV. Credit
+Thank to [ChatGPT](https://chatgpt.com/), It helps me so much!
