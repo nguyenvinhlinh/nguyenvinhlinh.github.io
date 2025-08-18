@@ -3,7 +3,7 @@ layout: post
 title: "Discord setup script"
 date: 2025-08-18 13:39:11
 update:
-location:
+location: Saigon
 tags:
 - linux
 - discord
@@ -13,7 +13,7 @@ seo_image: /image/posts/2025-08-18-Discord-setup-script/seo.png
 comments: true
 ---
 
-I am tired downloading Discord `discord.tar.gz` and setup manually. This post is all about doing it automatically!
+I am tired downloading Discord `discord.tar.gz` and setup manually when it has new version! This post is all about doing it automatically!
 
 {% highlight sh %}
 #!/bin/zsh
