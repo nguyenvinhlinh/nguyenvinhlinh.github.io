@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SQL Join Visualized(repost)"
+title: "SQL Join Visualized (repost)"
 date: 2025-08-28 14:16:08
 update:
 location: Saigon
