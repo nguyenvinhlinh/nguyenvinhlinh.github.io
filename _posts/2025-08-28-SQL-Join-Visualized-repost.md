@@ -14,7 +14,7 @@ comments: true
 
 I write this post because:
 
-- The original blog hosting provider is error, I cannot enlarge the summary image. [link](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins).
+- The original blog hosting provider is having error, I cannot enlarge the summary image. [link](https://www.codeproject.com/Articles/33052/Visual-Representation-of-SQL-Joins).
 - It's super useful.
 
 ----
