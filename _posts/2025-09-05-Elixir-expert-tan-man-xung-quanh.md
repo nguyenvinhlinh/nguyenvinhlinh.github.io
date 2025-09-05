@@ -16,6 +16,7 @@ comments: true
 
 Hôm này ngày đẹp trời, tôi tò mò rất nhiều về [expert - language server](https://github.com/elixir-lang/expert) mới của
 elixir. Xem một hồi về cách build, tôi học thêm được nhiều cái mới.
+
 - Just [link](https://github.com/casey/just)
 - Zig [link](https://ziglang.org/)
 - Burrito [link](https://github.com/burrito-elixir/burrito)
@@ -39,8 +40,9 @@ deps project:
 - `cd apps/{{ project }}`
 - `mix deps.get`
 
-Điều này có nghĩa là nếu bạn siêng, bạn sẽ gõ 2 lệnh, còn nếu bạn dùng `just`, bạn sẽ chỉ cần chạy `just deps project`. Cá nhân
-tôi, lần đầu biết đến `just`, `mix project` của tôi thường nằm ngay `repo root /` thành ra chưa có nhu cầu. Tuy nhiên,
+Điều này có nghĩa là nếu bạn siêng, bạn sẽ gõ 2 lệnh, còn nếu bạn dùng `just`, bạn sẽ chỉ cần chạy `just deps project`.
+
+Cá nhân tôi, lần đầu biết đến `just`, `mix project` của tôi thường nằm ngay `repo root /` thành ra chưa có nhu cầu. Tuy nhiên,
 đáng để ghi nhớ. Trường hợp ở trên, `mix project` nằm ở trong `/apps‌/{{ project }}`, thành ra khá bất tiện.
 
 ## 2. Zig
@@ -67,5 +69,3 @@ Kết quả là với cùng một source code [expert - language server](https:/
 - `expert_darwin_amd64` (macos + chip kiến trúc amd64)
 
 Xem danh sách mới nhất ở đây: [Expert Releases](https://github.com/elixir-lang/expert/releases)
-
-
