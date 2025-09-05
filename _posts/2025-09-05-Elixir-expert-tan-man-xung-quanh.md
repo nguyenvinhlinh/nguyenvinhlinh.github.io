@@ -43,7 +43,9 @@ deps project:
 Điều này có nghĩa là nếu bạn siêng, bạn sẽ gõ 2 lệnh, còn nếu bạn dùng `just`, bạn sẽ chỉ cần chạy `just deps project`.
 
 Cá nhân tôi, lần đầu biết đến `just`, `mix project` của tôi thường nằm ngay `repo root /` thành ra chưa có nhu cầu. Tuy nhiên,
-đáng để ghi nhớ. Trường hợp ở trên, `mix project` nằm ở trong `/apps‌/{{ project }}`, thành ra khá bất tiện.
+đáng để ghi nhớ.
+
+Trường hợp ở trên, `mix project` nằm ở trong `/apps‌/{{ project }}`, thành ra khá bất tiện.
 
 ## 2. Zig
 `Zig` thì là một ngôn ngữ lập trình luôn! Tôi không hiểu tại sao cái repo 99% là viết bằng `elixir`, nhưng lại cần đến zig.
