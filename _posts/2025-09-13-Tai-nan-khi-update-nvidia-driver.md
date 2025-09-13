@@ -17,7 +17,7 @@ comments: true
 
 # I. Tình huống
 Tôi sẽ tóm tắt gọn lại tình huống xảy ra:
-- Mục tiêu: tìm cách update lên nvidia-driver phiên bản mới nhất `NVIDIA-Linux-x86_64-580.82.09` [link](https://www.nvidia.com/en-us/drivers/details/254126/)
+- Mục tiêu: tìm cách update lên nvidia-driver phiên bản mới nhất `NVIDIA-Linux-x86_64-580.82.09` [https://www.nvidia.com/en-us/drivers/details/254126/](https://www.nvidia.com/en-us/drivers/details/254126/)
 - Vào `multi-user.target` để chạy `NVIDIA-Linux-x86_64-580.82.09.run`
 - Ngay sau khi gỡ bỏ nvidia driver cũ, màn hình đen xì. Không thể tương tác với OS.
 - Giai đoạn này chỉ có 1 cách là giữ nút nguồn và reboot lại OS.
@@ -44,10 +44,11 @@ Tôi không biết tại sao nó như vậy, nhưng đây là quá trình xảy 
 Ở bước load initramfs lên ram, phiên bản tinh gọn này sẽ dùng `nouveau`, một khi đã load xong rồi, đến giai đoạn
 `switch_root`, lúc này sẽ disable `nouveau` đi và sử dụng `nvidia driver`.
 
-Nếu mà lý thuyết đúng, tôi nghĩ là hoàn toàn không cần phải vào `multi-user.target` khi `update` hoặc `install`
-nvidia driver, ta hoàn toàn có thể mở `gnome-terminal` và chạy command như bình thường.
+Tôi đã nghĩ là hoàn toàn không cần phải vào `multi-user.target` khi `update` hoặc `install`
+nvidia driver, ta hoàn toàn có thể mở `gnome-terminal` và chạy command như bình thường. Tuy nhiên, sau khi tôi test xong,
+hoàn toàn không được, buộc phải vào `multi-user.target`.
 
-# IV. Thực sự sẽ làm ra sao
+# IV. Thực sự sẽ phải làm thế nào làm ra sao
 Trước tiên đi sâu hơn, tôi muốn nói là để tinh gọn file `/boot/initramfs-*.img`. Tôi đã cố tình loại bỏ nvidia driver,
 kernel object `.ko` liên quan rồi. Nói cách khác thì trong `initramfs` hoàn toàn không có nvidia driver.
 
@@ -62,7 +63,7 @@ $ dracut --omit-drivers "nvidia-drm nvidia nvidia-modeset nvidia-peermem nvidia-
 ## 1. Chế độ dùng `nvidia` (mặc định, khi chạy OS)
 Cái này liên quan mật thiết đến `GRUB_CMDLINE_LINUX`, hãy xem `/etc/default/grub`
 
-```
+```config
 File: /etc/default/grub
 ~~~~
 GRUB_CMDLINE_LINUX="rhgb quiet rd.driver.blacklist=nouveau modprobe.blacklist=nouveau  nvidia-drm.modeset=1"
@@ -83,16 +84,19 @@ Lưu ý nhé, đây là giai đoạn 2, kernel module được load từ `/usr/l
 
 Khi mà bạn cần vào chế độ `nouveau`, thì ở màn hình grub, hãy ấn `e` để edit grub entry.
 
-```
+```config
 File: /etc/default/grub
 ~~~~
-GRUB_CMDLINE_LINUX="rhgb quiet nvidia-drm.modeset=0 nouveau.modeset=1"
+GRUB_CMDLINE_LINUX="rhgb quiet nvidia-drm.modeset=0 nouveau.modeset=1 3"
 ~~~~
 ~~~~
 ```
 
 - `nvidia-drm.modeset=0`: sau khi `switch_root` không load `nvidia-drm`
 - `nouveau.modeset=1`: còn `nouveau` thì sẽ load.
+- `3`: cái số này ám chỉ là sẽ sử dụng `multi-user.target`. Đây là chiêu rất hay nếu bạn không muốn dùng command
+  `$ systemctl set-default multi-user.target/graphical.target` trước khi reboot để install hay update nvidia driver.
+
 
 Sau đó ấn `F10` để boot vào.
 
