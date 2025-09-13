@@ -129,3 +129,7 @@ $ cat /proc/cmdline
 
 BOOT_IMAGE=(hd2,msdos2)/vmlinuz-6.16.5-200.fc42.x86_64 root=UUID=e33a7af8-24bf-4be0-b954-327da689e4fb ro rootflags=subvol=root rhgb quiet nouveau.modeset=1 nvidia-drm.modeset=0 hugepagesz=1G hugepages=3
 ```
+
+# VI. Credit
+Trong quá trình tìm hiểu, ChatGPT đã giúp tôi rất nhiều. Việc cài `nvidia driver` của tôi trước đây rất máy móc, làm
+theo [hướng dẫn](https://www.if-not-true-then-false.com/2015/fedora-nvidia-guide/). Nhờ ChatGPT mà tôi hiểu sâu hơn về Linux.
