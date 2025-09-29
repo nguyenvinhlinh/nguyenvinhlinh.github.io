@@ -49,7 +49,7 @@ function test_https_ip() {
 - `awk`: do parsing, extract IP from `nslookup` command
 - `${(f)ip_list_parsing}`: convert from nextline string to array list
 - `--max-time 3`: total amount of time for a request is 3 seconds (avoid hanging).
-- `&> /dev/null`: All info/error output from `curl` will go to `/dev/null**. Help beautifying TUI.
+- `&> /dev/null`: All info/error output from `curl` will go to `/dev/null`. Help beautifying TUI.
 
 **How to use it**:
 
