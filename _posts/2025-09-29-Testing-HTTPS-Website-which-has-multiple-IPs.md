@@ -18,7 +18,7 @@ comments: true
 - Web server is behind nginx as a reverse proxy, cannot call `curl` or `wget` directly to IP.
 - Due to ISP blacklist, even though DNS does return IP list `ex: nslookup example.com 1.1.1.1` (query IP for domain name
 `example.com` using dns server `1.1.1.1`), however, web browser cannot access it.
-- Dont want to fetch http body, just header **ONLY**.
+- Don't want to fetch http body, just header **ONLY**.
 
 # II. Solution
 Create a file named `test-https-ip.zsh` (I use z-shell `zsh`). After creating this file, please do `chmod +x` and source it before use.
