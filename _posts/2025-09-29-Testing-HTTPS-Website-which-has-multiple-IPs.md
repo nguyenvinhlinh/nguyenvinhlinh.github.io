@@ -16,7 +16,8 @@ comments: true
 # I. Problem
 - `A Domain` can link to multiple `IP`.
 - Web server is behind nginx as a reverse proxy, cannot call `curl` or `wget` directly to IP.
-- Due to ISP blacklist, DNS does return IP list `ex: nslookup example.com 1.1.1.1` (query IP for domain name `example.com` using dns server `1.1.1.1`).
+- Due to ISP blacklist, even though DNS does return IP list `ex: nslookup example.com 1.1.1.1` (query IP for domain name
+`example.com` using dns server `1.1.1.1`), however, web browser cannot access it.
 - Dont want to fetch http body, just header **ONLY**.
 
 # II. Solution
