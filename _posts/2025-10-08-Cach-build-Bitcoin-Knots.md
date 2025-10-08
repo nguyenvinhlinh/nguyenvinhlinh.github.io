@@ -36,18 +36,18 @@ Bên lề một chút, chúng ta cần hiểu là mục địch ban đầu là t
 
 ---
 
-Ơ, thế [Bitcoin Knots](https://github.com/bitcoinknots/bitcoin/) nó là gì?
+**Ơ, thế [Bitcoin Knots](https://github.com/bitcoinknots/bitcoin/) nó là gì?**
 
 - Bitcoin Knots là mã nguồn folk từ Bitcoin Core.
 - Bitcoin Knots sử dụng Bitcoin blockchain
 
-Nó giúp được gì?
+**Nó giúp được gì?**
 
 - Bitcoin Knots cho phép người vận hành node (như tôi) từ chối broadcast các giao dịch lạm dụng đến các node khác.
 - Tuy nhiên, nó sẽ vẫn cho phép các **Block** được xác thực từ miner, kể cả khi **Block** đó có các giao dịch lạm dụng, miễn là **Block** tuân theo cơ chế đồng thuận.
 - Bằng việc tôi hosting Bitcoin Knots, nó như là một phiếu bầu của tôi cho việc phản đối các giao dịch có tính lạm dung trên mạng lưới.
 
-Nó không làm được gì?
+**Nó không làm được gì?**
 - Kể cả **Block** có toàn là giao dịch lạm dụng, miễn là thỏa mãn cơ chế đồng thuận. Tôi vẫn phải chấp nhận **Block** này.
 
 # II. Cách build
