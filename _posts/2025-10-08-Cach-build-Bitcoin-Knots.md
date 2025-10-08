@@ -110,7 +110,8 @@ Lúc trước, giai đoạn build sẽ dùng `./configure` rồi chèn tham số
 
 # 3. Cách sử dụng `bitcoind`
 Mặc định phiên bản `bitcoind` được tạo ra từ mã nguồn [Bitcoin Knots](https://github.com/bitcoinknots/bitcoin/) đã gài các tham số mặc định nhằm loại bỏ không
-broadcast các tx lạm dụng rồi. Tôi chỉ đơn giản là thay thế file `bitcoind` khi chạy node mà thôi.
+broadcast các tx lạm dụng rồi. Tôi chỉ đơn giản là thay thế file `bitcoind` khi chạy node mà thôi. Bên node của tôi chạy, tôi còn thêm `datacarrier=0` nhằm
+loại bỏ giao dịch có `OP_RETURN`, Bạn có thể giữ `OP_RETURN` kết hợp với giới hạn ô nhớ nhằm loại bỏ tx lạm dụng, tôi thì tắt luôn.
 
 Để tiện tham khao, đây là file `bitcoin.conf` mặc định, bạn có thể xem nó ở `bitcoin_knots/share/examples/bitcoin.conf`. Trong nhiều flag thì đây là cái quan trọng
 
