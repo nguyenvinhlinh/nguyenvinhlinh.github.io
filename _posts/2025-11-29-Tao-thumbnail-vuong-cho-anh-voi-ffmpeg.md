@@ -75,3 +75,11 @@ def run_ffmpeg_command_250x250px(image_directory, in_image_file_name, out_image_
     end
 end
 ```
+
+## 5. Reference
+- ffmpeg(1) - Linux man page, https://linux.die.net/man/1/ffmpeg
+
+## 6. Lời cảm ơn
+Cảm ơn chatgpt đã hỗ trợ tôi hiểu thêm về ffmpeg. Thực sự `ffmpeg` nó là một bộ công cụ không hề đơn giảnm Không có
+chatgpt tôi thậm chí không biết là ffmpeg có hỗ trợ `in_w`, `in_h`, với function `min/max`, Việc tạo ra thumbnail
+đã có thể phức tạp hơn rất rất là nhiều.
