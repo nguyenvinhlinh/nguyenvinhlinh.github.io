@@ -116,12 +116,20 @@ function ffmpeg_command() {
 
 typeset -a selected_file_path_array
 selected_file_path_array=(${(f)NAUTILUS_SCRIPT_SELECTED_FILE_PATHS})
+total=${#selected_file_path_array[@]}
+count=0
+(
 for image_file_path in $selected_file_path_array; do
     if is_file_valid $image_file_path; then
         thumbnail_file_path=$(create_thumbnail_file_path $image_file_path)
         ffmpeg_command $image_file_path $thumbnail_file_path
     fi
+    count=$((count+1))
+    print $((count*100/total))
+    print "# [$count/$total] ${thumbnail_file_path}"
 done
+) | zenity --progress --title "Create 500x500px thumbnails" --percentage=0 --auto-close
+
 ```
 
 ## 5. Reference
