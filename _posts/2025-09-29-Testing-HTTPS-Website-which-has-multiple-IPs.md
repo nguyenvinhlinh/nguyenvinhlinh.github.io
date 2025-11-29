@@ -58,4 +58,4 @@ function test_https_ip() {
 $ test_https_ip example.com
 ```
 
-<video src="/image/posts/2025-09-29-Testing-HTTPS-Website-which-has-multiple-IPs/1.webm" width="450" controls></video>
+<video src="/image/posts/2025-09-29-Testing-HTTPS-Website-which-has-multiple-IPs/1.webm" controls></video>

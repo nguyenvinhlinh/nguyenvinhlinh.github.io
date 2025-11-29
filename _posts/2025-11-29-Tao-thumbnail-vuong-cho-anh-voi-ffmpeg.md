@@ -12,7 +12,7 @@ seo_image: /image/posts/2025-11-29-Tao-thumbnail-vuong-cho-anh-voi-ffmpeg/1.png
 comments: true
 ---
 
-<video src="/image/posts/2025-11-29-Tao-thumbnail-vuong-cho-anh-voi-ffmpeg/4.webm" width="450" controls></video>
+<video src="/image/posts/2025-11-29-Tao-thumbnail-vuong-cho-anh-voi-ffmpeg/4.webm" controls></video>
 
 ## 1. Giới thiệu
 Xin chào, trước tiên tôi sẽ tóm tắt lại yêu cầu tạo thumbnail từ ảnh
