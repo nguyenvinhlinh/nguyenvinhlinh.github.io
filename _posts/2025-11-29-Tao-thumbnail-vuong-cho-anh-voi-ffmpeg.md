@@ -8,7 +8,7 @@ tags:
 - ffmpeg
 categories: etc
 seo_description:
-seo_image: /image/posts/2025-11-29-Tao-thumbnail-vuong-cho-anh-voi-ffmpeg/1.png
+seo_image: /image/posts/2025-11-29-Tao-thumbnail-vuong-cho-anh-voi-ffmpeg/seo.png
 comments: true
 ---
 
