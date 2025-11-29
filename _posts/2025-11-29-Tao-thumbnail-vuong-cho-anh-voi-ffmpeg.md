@@ -58,7 +58,7 @@ Bên cạnh đó, `ffmpeg` con cho phép sử dụng function `min/max` với th
 **Scale** nhận 2 tham số `chiều rộng kỳ vọng`, `chiều dài kỳ vọng`. Trong trường hợp này, ta muốn thumbnail kích cỡ là `250x250px`.
 
 
-## 4. Cái này là dùng ngôn ngữ elixir để gọi ffmpeg
+## 4. Sử dụng ngôn ngữ elixir để gọi ffmpeg
 ```elixir
 def run_ffmpeg_command_250x250px(image_directory, in_image_file_name, out_image_file_name) do
     in_file_path =  Path.join([image_directory, in_image_file_name])
@@ -74,6 +74,54 @@ def run_ffmpeg_command_250x250px(image_directory, in_image_file_name, out_image_
       _else -> {:error, :run_ffmpeg_command_250x250px}
     end
 end
+```
+
+## 5. Sử dụng nautilus script để gọi ffmpeg
+Lưu file tại: `.local/share/nautilus/scripts/03-ffmpeg-create-thumbnail-500px-for-files.zsh`. Để sử dụng, mở **File Explorer - Nautilus** chọn một hoặc
+nhiều ảnh cần tạo thumbnail, chọn `Scripts`, chọn `03-ffmpeg-create-thumbnail-500px-for-files.zsh`.
+
+```zsh
+#!/bin/zsh
+setopt EXTENDED_GLOB
+
+function is_file_valid() {
+    file_path=$1
+    file_path_extension=${file_path:e}
+    typeset -a allowed_file_extension_list=(png jpg)
+    pattern_allowed_file_extension_list="(${(j:|:)allowed_file_extension_list})"
+
+    if [[ $file_path_extension == ${~pattern_allowed_file_extension_list} ]]; then
+        return 0
+    else
+        return 1
+    fi
+}
+
+function create_thumbnail_file_path(){
+    input_image_file_path=$1
+    input_image_file_extension=${input_image_file_path:e}
+    input_image_file_path_directory=${input_image_file_path:h}
+    input_image_file_name=${input_image_file_path:t:r}
+    print "${input_image_file_path_directory}/${input_image_file_name}_500x500.${input_image_file_extension}"
+}
+
+function ffmpeg_command() {
+    input_image_file_path=$1
+    output_image_file_path=$2
+
+    ffmpeg -i $input_image_file_path \
+           -vf "crop=min(in_w\,in_h):min(in_w\,in_h):(in_w-min(in_w\,in_h))/2:(in_h-min(in_w\,in_h))/2,scale=500:500" \
+           -y -loglevel quiet $output_image_file_path
+}
+
+typeset -a selected_file_path_array
+selected_file_path_array=(${(f)NAUTILUS_SCRIPT_SELECTED_FILE_PATHS})
+for image_file_path in $selected_file_path_array; do
+    if is_file_valid $image_file_path; then
+        thumbnail_file_path=$(create_thumbnail_file_path $image_file_path)
+        ffmpeg_command $image_file_path $thumbnail_file_path
+    fi
+done
 ```
 
 ## 5. Reference
