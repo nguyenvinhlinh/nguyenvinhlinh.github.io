@@ -7,7 +7,7 @@ location: Saigon
 tags:
 - monero
 categories:
-- Crypto Currency
+- Cryptocurrency Node
 seo_description: BTRFS và LMDB, không ổn đâu. Phân mảnh rất nhiều (^,.,^)!
 seo_image: /image/posts/2026-01-03-Trai-nghiem-met-moi-khi-backup-restore-monero-blockchain/seo.png
 comments: true
