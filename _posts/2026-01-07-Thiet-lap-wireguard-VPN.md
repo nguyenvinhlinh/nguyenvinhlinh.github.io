@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Cài đặt Wireguard VPN Server cho phép ping 2 chiều LAN <-> VPN"
+title: "Cài đặt Wireguard VPN Server cho phép ping 2 chiều LAN <> VPN"
 date: 2026-01-07 12:13:36
 update:
 location: Saigon
