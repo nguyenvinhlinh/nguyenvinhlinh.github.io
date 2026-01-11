@@ -57,7 +57,7 @@ File size of data.mdb is 270078246912 (65937072 blocks of 4096 bytes)
    3:        3..       3:     379586..    379586:      1:     352486: shared
 ```
 
-- Thay đổi cách write của thư mục chứa blockchain Monero, không cho phép `copy-on-write` nữa. Comamnd `chattr` & `lsattr`
+- Thay đổi cách write của thư mục chứa blockchain Monero, không cho phép `copy-on-write` nữa. Command `chattr` & `lsattr`
 
 ```
 $ chattr +C /mnt/disk_2/CryptoCurrency/Monero/lmdb
@@ -78,9 +78,42 @@ $ rsync -a --info=progress2 lmdb/ lmdb_no_cow/
   694,190,080   0%    1.86MB/s   39:17:29
 ```
 
----
+Bạn không tin được đâu, việc copy - paste của tôi mất hơn 4 ngày đó.
 
-Sau khi giải phân mảnh xong, tôi sẽ dùng `monero-blockchain-export` và `tar`. Xem cách nào nhanh hơn!
-Phiền thật sự!
+Bây giờ tôi sẽ tạo lưu trữ với `tar` và `monero-blockchain-export để so sánh`.
 
-Còn tiếp ...
+## 2. Tạo lưu trữ với `tar`
+Command tạo lưu trữ:
+```sh
+$ tar -cvf lmdb.tar lmdb
+```
+Tuy nhiên, tôi muốn khai thác thêm thời gian chạy, tôi sẽ gài thêm `date`, trước và sau khi chạy `tar`.
+```sh
+$ date +'%d/%m/%Y %H:%M:%S'; tar -cvf lmdb.tar lmdb;date +'%d/%m/%Y %H:%M:%S'
+
+09/01/2026 17:27:56
+lmdb/
+lmdb/data.mdb
+lmdb/lock.mdb
+09/01/2026 19:45:32
+```
+
+Khoảng 2 giờ 18 phút.
+## 3. So sánh với thời gian tạo lưu trữ với `monero-blockchain-export`
+Command `monero-blockchain-export` sử dụng như sau:
+
+```sh
+./monero-blockchain-export --data-dir=/mnt/disk_2/CryptoCurrency/Monero --output-file /mnt/disk_2/CryptoCurrency/Monero/monero-blockchain.dump
+```
+
+Bọc thêm thời gian:
+```sh
+$ date +'%d/%m/%Y %H:%M:%S'; \
+  ./monero-blockchain-export --data-dir=/mnt/disk_2/CryptoCurrency/Monero --output-file /mnt/disk_2/CryptoCurrency/Monero/monero-blockchain.dump
+  date +'%d/%m/%Y %H:%M:%S'
+
+09/01/2026 21:01:26
+... ... ... ... ...
+
+11/1/2025 23:56:26 Hơn 2 ngày rồi vẫn chưa xong. Tôi sẽ hủy bỏ việc sử dụng monero-blockchain-export, cái này hoàn toàn không đáp ứng nhu cầu của tôi.
+```
