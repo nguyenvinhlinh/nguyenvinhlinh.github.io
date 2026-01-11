@@ -120,4 +120,4 @@ Tg Dịch Sư Thanh Quang
     - Sống tiết kiệm 😇
 
 ## Trích dẫn:
-QUÝ DẬU 1993 trong năm BÍNH NGỌ 2026, Pham Thanh Quang, 3/12/2025, [https://www.facebook.com/quangkyaz/posts/pfbid033suyeevb2LVM6bVVsgBNSDGkNTpu7FLkguwHRWFnzTfYeUjTGmBppqcjg6PwmFmwl](https://www.facebook.com/quangkyaz/posts/pfbid033suyeevb2LVM6bVVsgBNSDGkNTpu7FLkguwHRWFnzTfYeUjTGmBppqcjg6PwmFmwl)
+- QUÝ DẬU 1993 trong năm BÍNH NGỌ 2026, Phạm Thanh Quang, 3/12/2025, [link](https://www.facebook.com/quangkyaz/posts/pfbid033suyeevb2LVM6bVVsgBNSDGkNTpu7FLkguwHRWFnzTfYeUjTGmBppqcjg6PwmFmwl)
