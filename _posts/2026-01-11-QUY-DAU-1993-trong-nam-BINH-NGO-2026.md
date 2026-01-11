@@ -73,6 +73,8 @@ Quẻ hỗ Phong Hỏa Gia Nhân nhắc đến chuyện bên trong “nhà”: k
 
 Quẻ biến Trạch Địa Tụy - tụ lại, hội tụ, gom về, nâng đỡ. Tụy là cảnh mọi người tụ lại lo cho việc lớn, là sự lắng xuống, chín lại sau một thời gian khốn khó. Cuối năm 2026, nếu bạn đi qua được Khốn bằng cách không phản ứng cực đoan, không đập vỡ mọi thứ khi mệt, mà biết nương dựa, biết chia sẻ, biết chọn người để cùng đứng, bạn sẽ bước sang khí Tụy: mối quan hệ ổn hơn, tài chính tụ lại hơn, niềm tin với người và với chính mình sâu sắc hơn.
 
+---
+
 🔥 Bóng tối (shadow):
 
 Bóng tối của Quý Dậu trong năm nay mang hình bóng của “người bảo vệ kiệt sức” - một archetype thường gặp trong tính cách Kim: khi không biết cách dựa vào ai, người bảo vệ bắt đầu bảo vệ cả những người không cần, bảo vệ cả những thứ không thuộc trách nhiệm của mình, rồi tự trách mình vì không làm tròn mọi thứ.
@@ -101,6 +103,8 @@ Cuối năm, Tụy mở: cơ hội đầu tư, nhất là với đất cát, tí
 
 Đừng xả stress bằng cách tiêu tiền bốc đồng. Đừng chứng minh bản lĩnh bằng vài lần “vung tay” rồi lại lặng lẽ lo âu một mình nhé! <br>
 “Khốn cảnh không làm khó bạn. Nó chỉ hỏi bạn: giữa tất cả những được mất này, bạn còn giữ được trái tim của mình hay không.” <br>
+
+---
 
 Bạn thân mến, <br>
 Những gì tôi viết phản ánh khí vận chung của người tuổi Quý Dậu trong năm Bính Ngọ này. Số phận riêng của từng người chắc chắn sẽ có những khác biệt - bạn có thể khám phá thêm qua việc xem quẻ Kinh Dịch cho năm 2026 (nếu bạn cần có thể nh-ắ-n tôi)🙏
