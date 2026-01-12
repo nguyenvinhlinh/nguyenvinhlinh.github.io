@@ -117,3 +117,6 @@ $ date +'%d/%m/%Y %H:%M:%S'; \
 
 11/1/2025 23:56:26 Hơn 2 ngày rồi vẫn chưa xong. Tôi sẽ hủy bỏ việc sử dụng monero-blockchain-export, cái này hoàn toàn không đáp ứng nhu cầu của tôi.
 ```
+
+## 4. Kết luận
+- Backup sử dụng `tar` là nhanh nhất, đẹp, gọn gàng, đặc biệt là khi sử dụng ổ HDD như tôi.
