@@ -67,18 +67,18 @@ Tuyên ngôn ở đây là: `Ngoại trừ việc sinh tử, tất cả thứ kh
 
 Nếu dữ liệu chỉ được update bởi một hành động tại một thời điểm, không cần thêm queue.
 
-Thay vào đó, mình dùng một cơ chế đơn giản gọi là “Totem”:
+Thay vào đó, mình dùng một cơ chế đơn giản gọi là `Totem`(tín vật):
 
-- Muốn update đơn hàng -> phải có Totem
+- Muốn update đơn hàng -> phải có `Totem`
 - Không có -> không được update
 - Update xong -> trả lại Totem
 - Nếu lỗi -> hệ thống tự thu hồi sau 15s
 
-Nó giống như tín hiệu đường sắt: chỉ một người được đi qua tại một thời điểm.
+Nó giống như tín hiệu đường sắt: `Chỉ một tàu được chiếm dụng đường ray tại một thời điểm.`
 
 Với hệ thống nhỏ, cách này đủ dùng, đơn giản.
 
-**Tôi đã từng debug system sử dụng Kafka rồi, cảm ơn quá đủ rồi.**
+**❌ Tôi đã từng debug system sử dụng Kafka rồi, cảm ơn, quá đủ rồi ❌**
 
 ### 3‌. Không nên lạm dụng AI trong quá trình nhập dữ liệu.
 
@@ -87,18 +87,18 @@ Dữ liệu đúng ngay từ đầu tốt hơn là phải xử lý hậu kỳ. K
 Tôi sẽ nói sơ qua một chút về khó khăn
 
 Mỗi sản phẩm đều cần:
-- dán tem (QR code + mã định danh)
-- chụp ảnh
-- nhập dữ liệu
+- Dán tem (QR code + mã định danh)
+- Chụp ảnh
+- Nhập dữ liệu
 
-Yêu cầu QR phải máy đọc được làm tăng đáng kể thời gian nhập liệu.
+Yêu cầu `QR Code` phải quét từ làm tăng đáng kể thời gian nhập liệu.
 
 ---
 
 Giải pháp sau nhiều lần tối ưu đó là:
-- Phát triển app android khác có tên là Batch Shot, nhằm mục tiêu chụp ảnh sản phẩm và chia ảnh vào folder riêng.
-- Trong quá trình chụp ảnh, quét luôn mã QR Code, bỏ vào file `data.json` trong từng folder. Khai thác tối đa dữ liệu
-lúc chụp ảnh, không đợi phải xử lý hậu kỳ
+- Phát triển app Android khác có tên là `Batch Shot`, nhằm mục tiêu chụp ảnh sản phẩm và chia ảnh vào folder riêng.
+- Trong quá trình chụp ảnh, quét luôn mã `QR Code`, bỏ vào file `data.json` trong từng folder. Khai thác tối đa dữ liệu
+lúc chụp ảnh, không đợi phải xử lý hậu kỳ cho `QR Code`.
 - Sau một ngày chụp ảnh sản phẩm, zip toàn bộ thư mục ảnh, gửi lên server.
 - Server sau đó giải nén, có giao diện để nhập dữ liệu
 - Các field có tính lặp lại đều có cache, không cần chọn lại khi nhập dữ liệu mới.
