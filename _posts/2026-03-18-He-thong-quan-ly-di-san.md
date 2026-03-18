@@ -91,7 +91,7 @@ Mỗi sản phẩm đều cần:
 - Chụp ảnh
 - Nhập dữ liệu
 
-Yêu cầu `QR Code` phải quét từ làm tăng đáng kể thời gian nhập liệu.
+Yêu cầu phải quét `QR Code` làm tăng đáng kể thời gian nhập liệu.
 
 ---
 
