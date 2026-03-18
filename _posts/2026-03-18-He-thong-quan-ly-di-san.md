@@ -58,10 +58,10 @@ Có ba thứ mà tôi cực kỳ tâm đắc khi làm dự án này.
 
 ### 1. Luôn luôn cho phép con người sửa lỗi cho dù họ có làm điều ngu ngốc như thế nào chăng nữa
 
-Việc lưu lại lịch sử thay đổi, có giá trị `cũ` và
-`mới` giúp người dùng sửa sai nếu có nhầm lẫn. Tuyên ngôn là sai thì sửa, chửa thì đẻ.
+Việc lưu lại lịch sử thay đổi, có giá trị `cũ` và `mới` giúp người dùng sửa sai nếu có nhầm lẫn.
+Tuyên ngôn là sai thì sửa, chửa thì đẻ.
 
-Tuyên ngôn ở đây là: `Ngoại trừ việc sinh tử, tất cả thứ khác là chuyện nhỏ.`
+`Ngoại trừ việc sinh tử, tất cả thứ khác là chuyện nhỏ.`
 
 ### 2. Không phải lúc nào cũng cần message queue.
 
