@@ -27,8 +27,8 @@ Quay lại dự án này, nó sinh ra nhằm giải quyết các câu hỏi sau:
 - Lịch sử giá bán, số lượng ra sao, ai là người thay đổi?
 - Mỗi khách hàng lại cho giá khác nhau, làm sao để điều chỉnh giá cho từng người?
 - Từ khi hàng trong kho cho đến tay khách hàng, trải qua những bước gì, ai giảm sát?
-- Khách hàng không hài lòng, muốn trả hàng, quy ra sao, ai giảm sát? Trong số hàng hóa trả lại,
-có bao nhiêu cái có thể đưa lên kệ và bán tiếp?
+- Khách hàng không hài lòng, muốn trả hàng, quy trình ra sao, ai giảm sát?
+- Trong số hàng hóa trả lại, có bao nhiêu cái có thể đưa lên kệ và bán tiếp?
 - Hàng hóa bao nhiêu lâu rồi chưa có người đến kiểm tra, đối soát?
 
 ---
