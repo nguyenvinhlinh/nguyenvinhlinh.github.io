@@ -1,0 +1,7 @@
+FROM ruby:3.3.4 AS build
+
+WORKDIR /opt/nguyenvinhlinh.github.io
+COPY Gemfile Gemfile.lock /opt/nguyenvinhlinh.github.io/
+
+RUN bundle config set --local deployment true
+RUN bundle install
