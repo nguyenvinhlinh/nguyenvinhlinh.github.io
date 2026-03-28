@@ -16,14 +16,14 @@ comments: true
 ## 1. Kiểm tra tình trạng mount point - `df -h`
 
 ```sh
-$ df -h
+$ df -Th
 
-Filesystem                                  Size  Used Avail Use% Mounted on
-/dev/nvme0n1p3                              930G  919G  4.5G 100% /
-devtmpfs                                    4.0M     0  4.0M   0% /dev
-tmpfs                                        16G  1.1M   16G   1% /dev/shm
+Filesystem      Type    Size  Used Avail Use% Mounted on
+/dev/nvme0n1p3  btrfs   930G  919G  4.5G 100% /
+devtmpfs                4.0M     0  4.0M   0% /dev
+tmpfs                   16G  1.1M   16G   1% /dev/shm
 ...
-/dev/nvme0n1p3                              930G  919G  4.5G 100% /home
+/dev/nvme0n1p3  btrfs   930G  919G  4.5G 100% /home
 ```
 
 Dựa vào cột `Use%`, ta dễ dàng thấy được đâu là `mount point` cần quan tâm:
