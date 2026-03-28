@@ -10,7 +10,7 @@ tags:
 - unallocated
 categories: Linux
 seo_description:
-seo_image:
+seo_image: /image/posts/2026-03-28-Cach-lay-lai-unallocated-space-cho-btrfs/seo.jpg
 comments: true
 ---
 
