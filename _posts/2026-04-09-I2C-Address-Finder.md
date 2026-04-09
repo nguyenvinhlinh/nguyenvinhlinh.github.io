@@ -102,3 +102,6 @@ Found at 0x27
 ```
 
 Xem trên monitor, địa chỉ I2C `0x27` đã tìm được.
+
+### Credit
+Kiến thức này là tôi lấy được từ nhiều nguồn, bao gồm cả ChatGPT để hiểu I2C và Serial trong bài viết này. Cảm ơn ChatGPT.
