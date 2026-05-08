@@ -15,10 +15,10 @@ comments: true
 
 Bài viết này miêu tả những kỹ thuật và lưu ý mà tôi đã học được để sử dụng cảm biển `ZMPT101B`.
 
-- 1. Ngay khi mua cảm biến `ZMPT101B`, cần tinh chỉnh triết áp với `Serial Plotter`, xung không nên bị bè ở đầu, mất góc ở đỉnh.
-- 2. Sau khi làm xong bước một, lúc này sẽ tinh chỉnh tiếp đến giá trị `Sensitivity`.
-- 3. Mỗi cảm biến lại có những sai số khác nhau, hoàn toàn không thể sử dụng tinh chỉnh (`calibration`) của cảm biến này áp dụng cho cảm biển khác, mặc dù là cùng một model.
-
+1. Ngay khi mua cảm biến `ZMPT101B`, cần tinh chỉnh triết áp với `Serial Plotter`, xung không nên bị bè ở đầu, mất góc ở đỉnh.
+2. Tiếp theo, tìm giá trị tham chiếu `zero point` ở 0 voltage AC.
+3. Cuối cùng là tìm hệ số chuyển đổi `Scale`.
+4. Mỗi cảm biến lại có những sai số khác nhau, hoàn toàn không thể sử dụng hệ số chuyển đổi (`SCALE`)của cảm biến này áp dụng cho cảm biển khác, mặc dù là cùng một model.
 
 ## 1. Vặn triết áp và theo dõi trên Serial Plotter
 Trước khi điều chỉnh, bắt buộc phải cắm dây điện xoay chiều vào cảm biến `ZMPT101B`. Bên cạnh đó, phải có phần mềm **Arduino-IDE**, mở công cụ `Serial Plotter`. **Arduino-CLI** không có tính năng này.
