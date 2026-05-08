@@ -44,3 +44,6 @@ ffmpeg -i http://K1_MAX_IP:8080/?action=stream \
 - `-f segment -segment_time 3600`: For each one hour, create a video file.
 - `-reset_timestamps 1`: when create video, start timestamps at 1 (by default, it starts from the end timestamps of previous video)
 - `-strftime 1 "%Y-%m-%dT%H%M%S.webm"`: Output with filename format.
+
+## Credit
+ChatGPT helps me so much with `ffmpeg`, without it, I can't understand all the `ffmpeg` options quickyly.
