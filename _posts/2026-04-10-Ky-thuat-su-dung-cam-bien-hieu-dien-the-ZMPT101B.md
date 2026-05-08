@@ -3,11 +3,13 @@ layout: post
 title: "Kỹ thuật sử dụng cảm biến hiệu điện thế ZMPT101B"
 date: 2026-04-10 23:54:29
 update:
-location:
+location: Saigon
 tags:
+- ZMPT101B
+- Arduino
 categories: Arduino
-seo_description:
-seo_image:
+seo_description: Sử dụng ZMPT101B lần đầu khá mệt mỏi, bài viết này hi vọng giúp bạn bớt 10 phút cuộc đời
+seo_image: /image/posts/2026-04-10-Ky-thuat-su-dung-cam-bien-hieu-dien-the-ZMPT101B/seo.jpg
 comments: true
 ---
 
