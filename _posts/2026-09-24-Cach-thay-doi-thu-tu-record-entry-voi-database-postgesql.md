@@ -17,13 +17,13 @@ comments: true
 Tôi sẽ mở đầu bài viết này từ vấn đề tôi đã gặp phải!
 
 Trong dự án **Dolphin Shopkit**, mô hình dữ liệu bao gồm `Collection (Bộ sưu tập)` và
-`Product (Sản phẩm )`. Đây là mối quan hệ many-many, Một bộ sưu tập có nhiều sản phẩm, một sản phẩm
+`Product (Sản phẩm)`. Đây là mối quan hệ many-many, Một bộ sưu tập có nhiều sản phẩm, một sản phẩm
 thuộc nhiều bộ sưu tập.
 
 Nhu cầu của tôi là: **thay đổi thứ tự hiển thị các sản phẩm này trong bộ sưu tập**. Tâm sự một chút thì
-đây là lần đầu tiên tôi làm tính năng kiểu như thế này! Thậm chí tôi tin là trong tương lai tôi sẽ
-còn gặp lại vấn để tương tự như thế này nữa. Bài post như là cách để tôi tra cứu trong tương lai
-khi cần thiết.
+đây là lần đầu tiên tôi làm tính năng kiểu như thế này! Và tôi tin là trong tương lai tôi sẽ còn gặp lại nó.
+
+Bài post như là cách để tôi tra cứu trong tương lai khi cần thiết.
 
 Để dễ hình dung, đây là database schema!
 
@@ -33,7 +33,7 @@ Hãy chú ý cột `product_display_order` trong bảng `collections_products`.
 
 ---
 Cách làm sẽ là như sau, tôi sẽ chỉ phương hướng, chút nữa sẽ là mã nguồn để tham khảo.
-- Phía UI sao các thao tác `drag-n-drop` (kéo thả), client sẽ gửi lên server danh sách `collection_product_id_list`
+- Phía UI sẽ có các thao tác `drag-n-drop` (kéo thả), client sẽ gửi lên server danh sách `collection_product_id_list`
 với thứ tự mới.
   - ví dụ: `collection_product_id_list: 1004, 1003, 1002, 1001, 1000`.
 - Dưới database, sẽ chạy sql query cập nhật tất cả các `collections_products` entry record với giá trị cột `product_display_order`
@@ -173,7 +173,7 @@ Credit: để giải quyết bài toán này, tôi đã dùng ChatGPT để hỗ
 là tôi sẽ mở `database session`, sau đó `update từng dòng một`, rồi `commit session`. Phương pháp sẽ
 không thể nào gọn gàng như hiện tại nếu thiếu `ORDINALITY`.
 
-Nhân tiện thì từ khi tôi làm tính năng này đến thời điểm viết bài cũng cả tháng rồi, tuy nhiên, rất
+Nhân tiện, từ khi tôi triển khai tính năng này đến thời điểm viết bài cũng cả tháng rồi, tuy nhiên, rất
 khó nhớ. Tôi viết blog cũng vì lý do này, mỗi lần viết là lại thêm một lần nhớ, `ORDINALITY` này rất
 thú vị, để quên thì thật đáng tiếc.
 
