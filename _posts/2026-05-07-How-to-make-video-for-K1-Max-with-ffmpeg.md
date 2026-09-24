@@ -24,6 +24,8 @@ comments: true
 For more details, go to `http://K1_MAX_IP:8080`
 
 ## Step 2: Use ffmpeg command to take stream input (mjpg) and create video
+Find supportive encoder on your machine, `ffmpeg -encoders | grep 264`
+
 I use encoder `libvpx-vp9` to create
 
 ```sh
@@ -47,3 +49,14 @@ ffmpeg -i http://K1_MAX_IP:8080/?action=stream \
 
 ## Credit
 ChatGPT helps me so much with `ffmpeg`, without it, I can't understand all the `ffmpeg` options quickyly.
+
+
+
+```
+ffmpeg -i http://192.168.2.253:8080/\?action\=stream \
+       -c:v h264_nvenc -vf fps=12 -cq 28  -preset p5 -pix_fmt yuv420p \
+       -f segment -segment_time 3600 -reset_timestamps 1 \
+       -strftime 1 \
+       "%Y-%m-%dT%H%M%S.mp4"
+
+```
