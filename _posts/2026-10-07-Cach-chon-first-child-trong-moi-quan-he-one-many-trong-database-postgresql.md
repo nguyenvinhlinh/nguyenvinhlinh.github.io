@@ -59,7 +59,7 @@ Câu hỏi đã là rõ ràng, bây giờ là câu query, lưu ý là bạn sẽ
 - `order` nhằm giúp sắp xếp dữ liệu theo `display order`
 - `distinct on` là để loại trừ dữ liệu trùng lặp `product_id`
 - Các bươc sẽ như sau:
-    - [1] Chắn chắn là phải có `left join`
+    - [1] Chắc chắn là phải có `left join`
     - [2] Sắp xếp theo thứ tự `product_id asc` & `display_order asc`
     - [3] Dùng `distinct on (product_id)` để chỉ giữ lại row đầu tiên của mỗi `product_id`
 
