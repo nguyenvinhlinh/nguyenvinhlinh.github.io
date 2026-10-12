@@ -8,7 +8,7 @@ tags:
 - HDD
 categories: etc
 seo_description: Danh sách tất cả các loại HDD của Western Digital
-seo_image: /image/posts/2026-10-12-So-sanh-cac-loai-HDD-Western-Digital/seo.avif
+seo_image: /image/posts/2026-10-12-So-sanh-cac-loai-HDD-Western-Digital/seo_1200x630px.avif
 comments: true
 ---
 
