@@ -67,7 +67,7 @@ Connecting to host 192.168.1.3, port 5201
 [  5]   0.00-10.00  sec   934 MBytes   784 Mbits/sec         receiver
 ```
 
-Dựa vào command trên, ta thấy được tốc độ upload dữ liệu lên server là `785 Mbits/sec`, tương đương với `98 MBytes/sec`.
+Dựa vào command trên, ta thấy được tốc độ upload dữ liệu lên server là `785 Mbits/sec`, tương đương với `98MB/sec`.
 
 Bài viết kết thúc, hi vọng giúp ai đó tiết kiệm 2 phút cuộc đời!
 
