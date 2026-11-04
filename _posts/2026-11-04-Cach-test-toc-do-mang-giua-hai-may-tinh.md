@@ -11,7 +11,7 @@ tags:
 
 categories: Linux
 seo_description: Sử dụng iperf3 để test nhanh tốc độ truyền dữ liệu trong mạng nội bộ
-seo_image: /image/posts/2026-11-04-Cach-test-toc-do-mang-giua-hai-may-tinh/seo.jpg
+seo_image: /image/posts/2026-11-04-Cach-test-toc-do-mang-giua-hai-may-tinh/seo.png
 comments: true
 ---
 
