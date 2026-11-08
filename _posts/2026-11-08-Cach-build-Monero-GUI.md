@@ -36,6 +36,7 @@ $ sudo dnf install qt5-qtdeclarative-devel qt5-qtsvg-devel
 ```sh
 $ git clone --recursive git@github.com:monero-project/monero-gui.git
 $ git checkout v0.18.5.4
+$ git submodule update --init --recursive
 ```
 
 Ở lần build tới, để update các repository phụ, chạy command sau:
