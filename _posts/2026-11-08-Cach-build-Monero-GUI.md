@@ -58,10 +58,20 @@ build/release/bin
 └── monero-wallet-gui
 ```
 
-Khi bạn chạy `monero-wallet-gui`, mọi config của bạn bao gồm nơi chứa `wallet` và `node` nằm ở `~/.config/monero-project/monero-core.conf`. Mỗi khi chạy lại, `monero-wallet-gui` sẽ đọc file này.
+Khi bạn chạy `monero-wallet-gui`, mọi config của bạn bao gồm nơi chứa `wallet` và `node` nằm ở
+`~/.config/monero-project/monero-core.conf`. Mỗi khi chạy lại, `monero-wallet-gui` sẽ đọc file
+này.
 
-Bài viết đến đây là kết thúc! Nhân tiện thì giả sử bạn đang cần giao dịch ngay mà không muốn mất thời gian đồng bộ hóa giữ liệu. Bạn có thể sử dụng node của tôi: `monero.hexalink.xyz:18081`.
+Bài viết đến đây là kết thúc! Nhân tiện thì giả sử bạn đang cần giao dịch ngay mà không muốn mất
+thời gian đồng bộ hóa giữ liệu. Bạn có thể sử dụng node của tôi: `monero.hexalink.xyz:18081`.
 
 {% include image.html url="/image/posts/2026-11-08-Cach-build-Monero-GUI/1.png" description="Node: monero.hexalink.xyz || Port: 18081" %}
 
-Nếu bạn sử dụng node `monero.hexalink.xyz:18081` này, tôi khẳng định là tôi mới giúp bạn tiết kiệm được ít nhất là 3-5 ngày đồng bộ hóa dữ liệu rồi đó!
+Nếu bạn sử dụng node `monero.hexalink.xyz:18081` này, tôi khẳng định là tôi mới giúp bạn tiết
+kiệm được ít nhất là 3-5 ngày đồng bộ hóa dữ liệu rồi đó!
+
+## III. Lời cảm ơn
+Tôi đã gặp khó khăn trong lúc build `monero-gui`, trong release `v0.18.5.4`, source code sử dụng `QT5`, tuy nhiên hướng dẫn mà tôi đọc lại thuộc branch `master`, lại là dành cho `QT6`. Do đó mà thiếu `qt5-qtdeclarative-devel qt5-qtsvg-devel`. Mọi thứ đã có thể lâu hơn rất nhiều nếu không có sự hỗ trợ của ChatGPT. Cảm ơn rất nhiều!
+
+## IV. Trích dẫn
+- Monero GUI, [https://github.com/monero-project/monero-gui/tree/v0.18.5.4](https://github.com/monero-project/monero-gui/tree/v0.18.5.4)
