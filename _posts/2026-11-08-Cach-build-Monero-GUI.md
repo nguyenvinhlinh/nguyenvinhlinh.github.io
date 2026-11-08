@@ -9,7 +9,7 @@ tags:
 - Fedora
 - Monero
 categories:
-- CryptoCurrency Node
+- Cryptocurrency Node
 seo_description: Build Monero GUI với Fedora
 seo_image: /image/posts/2026-11-08-Cach-build-Monero-GUI/seo.png
 comments: true
@@ -57,8 +57,10 @@ build/release/bin
 └── monero-wallet-gui
 ```
 
+Khi bạn chạy `monero-wallet-gui`, mọi config của bạn bao gồm nơi chứa `wallet` và `node` nằm ở `~/.config/monero-project/monero-core.conf`. Mỗi khi chạy lại, `monero-wallet-gui` sẽ đọc file này.
+
 Bài viết đến đây là kết thúc! Nhân tiện thì giả sử bạn đang cần giao dịch ngay mà không muốn mất thời gian đồng bộ hóa giữ liệu. Bạn có thể sử dụng node của tôi: `monero.hexalink.xyz:18081`.
 
-{% include image.html url="/image/posts/2026-11-08-Cach-build-Monero-GUI/1.png" description="[1] monero.hexalink.xyz" %}
+{% include image.html url="/image/posts/2026-11-08-Cach-build-Monero-GUI/1.png" description="Node: monero.hexalink.xyz || Port: 18081" %}
 
-Nếu bạn sử dụng node `monero.hexalink.xyz:18081` này, tôi khẳng định là tôi mới giúp bạn tiết kiệm được ít nhất là 3 ngày đồng bộ hóa dữ liệu rồi đó!
+Nếu bạn sử dụng node `monero.hexalink.xyz:18081` này, tôi khẳng định là tôi mới giúp bạn tiết kiệm được ít nhất là 3-5 ngày đồng bộ hóa dữ liệu rồi đó!
