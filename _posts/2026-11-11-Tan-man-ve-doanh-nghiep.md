@@ -23,7 +23,7 @@ tát hơn là cả xả hội. Họ tìm cách giải quyết vấn đề đó. 
     - Tạo ra **giải pháp** khi này giải pháp không còn trên giấy, nó đã có tính thực tiễn
     - Nhận **phần thưởng**
 
-Tuy nhiên, ta cần phải làm rõ vấn đề sau:
+Tuy nhiên, ta cần phải làm rõ 5 điểm sau:
 - [1] Nhìn ra **vấn đề**, chưa chắc đã tìm ra **giải pháp**.
 
 - [2] Tìm ra **giải pháp** trên giấy rồi đó, nhưng chưa chắc đã tạo ra được **giải pháp**, hay làm nó trở nên thực
