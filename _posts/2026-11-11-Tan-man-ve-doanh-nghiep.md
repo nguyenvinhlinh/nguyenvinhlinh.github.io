@@ -36,9 +36,9 @@ tiễn hơn
 - [5] Sau cùng, đây là ý quan trọng nhất. Việc tạo ra **doanh nghiệp ‌/ công ty** `KHÔNG CÓ NGHĨA` là đi giải quyết vấn
 đề của **xã hội**. Có thể, nó rất đơn giản là đi kiếm tiền. Hoàn toàn chả có gì nhân bản, nhân loại hay cao siêu ở đây cả.
 
-  Họ kiếm tiền, mục đích tối thượng ở đây là kiếm tiền, tạo lợi nhuận.
+  `Họ kiếm tiền, mục đích tối thượng ở đây là kiếm tiền, tạo lợi nhuận, tối đa hóa lợi nhuận bằng mọi cách! Chấm hết!`
 
-  Chấm hết! Đây là mô hình mà cá nhân tôi chán ghét nhất.
+  Đây là mô hình mà cá nhân tôi chán ghét nhất.
 
 ---
 
