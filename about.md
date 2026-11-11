@@ -16,13 +16,16 @@ The more you learn, the easier you can learn more!
 
 ---
 If you want to give me a cup of coffee, this is my crypto addresses:
+
 - Bitcoin (SHA256): `bc1qkfy7dxaqh5ac7revvp0na6wlju35h0dsngtj8v`
 - Bitcoin (Blake2B): `1MXgVKYbw9ht5UdZJ3zF8SpMAeC6Rd5HBe`
 - XMR: `89pb5h5j5KGavSJvT9gCehaLi4GzEnKq9SicvTEw2Bwf36NcjqC6GKLjKGpj13qNqoTP7xkW77bcHJ6g3ma3cBkhB8ADuy9`
+
 ---
 
-Last but not least, there are people who trying to impersonate me, this is my public key.
-Please exchange my public key, and verify signed messages.
+Last but not least, there are people who trying to impersonate me, this is my `public key`.
+
+Please exchange my public key, and verify my signed messages.
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
