@@ -12,12 +12,12 @@ seo_image: /image/posts/2026-11-11-Tan-man-ve-doanh-nghiep/seo.png
 comments: true
 ---
 
-Tản màn về việc tạo dựng doanh nghiệp, những dòng tôi viết dưới đây là những suy nghĩ rời rạc từ chính những thứ tôi
+Tản mạn về việc tạo dựng doanh nghiệp, những dòng tôi viết dưới đây là những suy nghĩ rời rạc từ chính những thứ tôi
 nhìn thấy.
 
-- Về mặt lý tưởng,  **chủ doanh nghiệp / công ty**ọ là những người nhìn thấy vấn đề của những người xung quanh, hay to
-tát hơn là cả xả hội. Họ tìm cách giải quyết vấn đề đó. Cuối cùng là họ được trả thưởng cho giải pháp mà họ đưa ra.
-- Lợi nhuận và tiền bạc là những thứ có được ở điểm cuối, hoặc ít nhất là gần cuối của quá trình trình:
+- Về mặt lý tưởng,  **chủ doanh nghiệp / công ty** họ là những người nhìn thấy vấn đề của những người xung quanh, hay to
+tát hơn là cả xã hội. Họ tìm cách giải quyết vấn đề đó. Cuối cùng là họ được trả thưởng cho giải pháp mà họ đưa ra.
+- Lợi nhuận và tiền bạc là những thứ có được ở điểm cuối, hoặc ít nhất là gần cuối của quá trình:
     - Nhìn ra **vấn đề**
     - Tìm ra **giải pháp** khi này giải pháp vẫn trên giấy
     - Tạo ra **giải pháp** khi này giải pháp không còn trên giấy, nó đã có tính thực tiễn
