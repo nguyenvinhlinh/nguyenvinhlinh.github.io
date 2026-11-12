@@ -19,15 +19,15 @@ nhìn thấy.
 tát hơn là cả xã hội. Họ tìm cách giải quyết vấn đề đó. Cuối cùng là họ được trả thưởng cho giải pháp mà họ đưa ra.
 - Lợi nhuận và tiền bạc là những thứ có được ở điểm cuối, hoặc ít nhất là gần cuối của quá trình:
     - Nhìn ra **vấn đề**
-    - Tìm ra **giải pháp** khi này giải pháp vẫn trên giấy
-    - Tạo ra **giải pháp** khi này giải pháp không còn trên giấy, nó đã có tính thực tiễn
+    - Tìm ra **giải pháp**, khi này giải pháp vẫn trên giấy
+    - Tạo ra **giải pháp**, khi này giải pháp không còn trên giấy, nó đã có tính thực tiễn
     - Nhận **phần thưởng**
 
 Tuy nhiên, ta cần phải làm rõ 5 điểm sau:
 - [1] Nhìn ra **vấn đề**, chưa chắc đã tìm ra **giải pháp**.
 
 - [2] Tìm ra **giải pháp** trên giấy rồi đó, nhưng chưa chắc đã tạo ra được **giải pháp**, hay làm nó trở nên thực
-tiễn hơn
+tiễn hơn.
 
 - [3] Tạo ra **giải pháp** rồi, đúng là nó đã **có tính thực tiễn** rồi, nhưng chưa chắc đã nhận được **phần thưởng**.
 
